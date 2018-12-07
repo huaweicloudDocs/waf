@@ -60,7 +60,7 @@ Web基础防护开启后，可防范以下常规的web攻击：
     <tbody><tr id="row8899732153112"><td class="cellrowborder" valign="top" width="36.28%" headers="mcps1.2.3.1.1 "><p id="p189011132173111"><a name="p189011132173111"></a><a name="p189011132173111"></a>状态</p>
     </td>
     <td class="cellrowborder" valign="top" width="63.72%" headers="mcps1.2.3.1.2 "><p id="p11901832163110"><a name="p11901832163110"></a><a name="p11901832163110"></a>Web应用防护攻击的状态。</p>
-    <p id="p211311517318"><a name="p211311517318"></a><a name="p211311517318"></a><a name="image119605216318"></a><a name="image119605216318"></a><span><img id="image119605216318" src="figures/开启图标.jpg" width="48.877500000000005" height="19.950000000000003"></span>：开启状态。</p>
+    <p id="p211311517318"><a name="p211311517318"></a><a name="p211311517318"></a><a name="image119605216318"></a><a name="image119605216318"></a><span><img id="image119605216318" src="figures/开启图标.png" width="48.877500000000005" height="19.950000000000003"></span>：开启状态。</p>
     <p id="p214615715311"><a name="p214615715311"></a><a name="p214615715311"></a><a name="image868051143212"></a><a name="image868051143212"></a><span><img id="image868051143212" src="figures/关闭图标.jpg" width="47.88" height="23.94"></span>：关闭状态。</p>
     <p id="p20490135531515"><a name="p20490135531515"></a><a name="p20490135531515"></a>单击<a name="image2010173342314"></a><a name="image2010173342314"></a><span><img id="image2010173342314" src="figures/关闭图标.jpg"></span>，开启防护检测。</p>
     </td>
@@ -75,7 +75,7 @@ Web基础防护开启后，可防范以下常规的web攻击：
 
 5.  在“Web基础防护“配置框中，单击“高级设置“，进入“Web基础防护“界面，根据您的业务场景，开启合适的防护功能，如[图3](#fig17347539113910)所示。
 
-    用户可根据业务需要，在不需要防护的类型所在行操作栏中，单击![](figures/开启图标.jpg)关闭检测，关闭检测后，页面右上角弹出“关闭成功”，![](figures/开启图标.jpg)变更为![](figures/关闭图标.jpg)则说明检测项关闭成功。
+    用户可根据业务需要，在不需要防护的类型所在行操作栏中，单击![](figures/开启图标.png)关闭检测，关闭检测后，页面右上角弹出“关闭成功”，![](figures/开启图标.png)变更为![](figures/关闭图标.jpg)则说明检测项关闭成功。
 
     **图 3**  Web基础防护<a name="fig17347539113910"></a>  
     ![](figures/Web基础防护.png "Web基础防护")
