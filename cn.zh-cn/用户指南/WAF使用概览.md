@@ -27,7 +27,7 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row1960762215351"><td class="cellrowborder" valign="top" width="28.99%" headers="mcps1.2.3.1.1 "><p id="p19607112220359"><a name="p19607112220359"></a><a name="p19607112220359"></a>配置自定义规则</p>
 </td>
-<td class="cellrowborder" valign="top" width="71.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="配置防护规则.md">配置防护规则</a>。</p>
+<td class="cellrowborder" valign="top" width="71.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="zh-cn_topic_0110861289.md">配置防护规则</a>。</p>
 </td>
 </tr>
 <tr id="row16914191884019"><td class="cellrowborder" valign="top" width="28.99%" headers="mcps1.2.3.1.1 "><p id="p209141418104019"><a name="p209141418104019"></a><a name="p209141418104019"></a>开启告警通知</p>
