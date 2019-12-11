@@ -33,7 +33,7 @@
 
 3.  在弹出的对话框中，根据[表1](#table1173915209149)配置CC防护规则。
 
-    以[图4](#fig172782071413)的配置为例，其含义为：Cookie标识为“name“的用户访问目标地址（以/admin为前缀的地址，例如，Https://www.example.com/adminlogic）时，一旦在60秒内访问超过10次，就直接阻断该Cookie用户访问目标URL地址，阻断操作持续600秒，阻断页面返回自定义的页面内容。
+    以[图4](#fig172782071413)的配置为例，其含义为：Cookie标识为“name“的用户访问目标地址（以/admin为前缀的地址，例如，Https<span>://</span>www<span>.</span>example.com/adminlogic）时，一旦在60秒内访问超过10次，就直接阻断该Cookie用户访问目标URL地址，阻断操作持续600秒，阻断页面返回自定义的页面内容。
 
     **图 4**  添加CC防护规则<a name="fig172782071413"></a>  
     ![](figures/添加CC防护规则.png "添加CC防护规则")
@@ -83,7 +83,7 @@
     <tr id="row8733192051415"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.1 "><p id="p37301020121411"><a name="p37301020121411"></a><a name="p37301020121411"></a>限速模式</p>
     </td>
     <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><a name="ul167322202146"></a><a name="ul167322202146"></a><ul id="ul167322202146"><li>IP限速：根据IP区分单个Web访问者。</li><li>用户限速：根据Cookie键值区分单个Web访问者。</li><li>其他：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。<div class="note" id="note17732132091410"><a name="note17732132091410"></a><a name="note17732132091410"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p147321020151413"><a name="p147321020151413"></a><a name="p147321020151413"></a>当<span class="parmname" id="parmname773122018141"><a name="parmname773122018141"></a><a name="parmname773122018141"></a>“防护模式”</span>选择<span class="parmvalue" id="parmvalue1273122019147"><a name="parmvalue1273122019147"></a><a name="parmvalue1273122019147"></a>“其他”</span>时，<span class="parmvalue" id="parmvalue16731320181412"><a name="parmvalue16731320181412"></a><a name="parmvalue16731320181412"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue19731192013140"><a name="parmvalue19731192013140"></a><a name="parmvalue19731192013140"></a>“内容”</span>填写为包含域名的完整URL链接，仅支持前缀匹配和精准匹配的逻辑，<span class="parmvalue" id="parmvalue2073152021416"><a name="parmvalue2073152021416"></a><a name="parmvalue2073152021416"></a>“内容”</span>里不能含有连续的多条斜线的配置，如<span class="parmvalue" id="parmvalue18731220151412"><a name="parmvalue18731220151412"></a><a name="parmvalue18731220151412"></a>“///admin”</span>，WAF引擎会将<span class="parmvalue" id="parmvalue17732122014143"><a name="parmvalue17732122014143"></a><a name="parmvalue17732122014143"></a>“///”</span>转为<span class="parmvalue" id="parmvalue10732202081416"><a name="parmvalue10732202081416"></a><a name="parmvalue10732202081416"></a>“/”</span>。</p>
-    <p id="p77329207149"><a name="p77329207149"></a><a name="p77329207149"></a>例如：防护路径设置为<span class="parmvalue" id="parmvalue1973213208144"><a name="parmvalue1973213208144"></a><a name="parmvalue1973213208144"></a>“/admin”</span>，若用户不希望访问者从<span class="parmvalue" id="parmvalue1073217209147"><a name="parmvalue1073217209147"></a><a name="parmvalue1073217209147"></a>“www.test.com”</span>访问该页面，则<span class="parmname" id="parmname1673202016142"><a name="parmname1673202016142"></a><a name="parmname1673202016142"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue7732122012148"><a name="parmvalue7732122012148"></a><a name="parmvalue7732122012148"></a>“内容”</span>设置为<span class="parmvalue" id="parmvalue9732162091417"><a name="parmvalue9732162091417"></a><a name="parmvalue9732162091417"></a>“http://www.test.com”</span></p>
+    <p id="p77329207149"><a name="p77329207149"></a><a name="p77329207149"></a>例如：防护路径设置为<span class="parmvalue" id="parmvalue1973213208144"><a name="parmvalue1973213208144"></a><a name="parmvalue1973213208144"></a>“/admin”</span>，若用户不希望访问者从<span class="parmvalue" id="parmvalue1073217209147"><a name="parmvalue1073217209147"></a><a name="parmvalue1073217209147"></a>“www<span>.</span>test.com”</span>访问该页面，则<span class="parmname" id="parmname1673202016142"><a name="parmname1673202016142"></a><a name="parmname1673202016142"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue7732122012148"><a name="parmvalue7732122012148"></a><a name="parmvalue7732122012148"></a>“内容”</span>设置为<span class="parmvalue" id="parmvalue9732162091417"><a name="parmvalue9732162091417"></a><a name="parmvalue9732162091417"></a>“http<span>://</span>www<span>.</span>test.com”</span></p>
     </div></div>
     </li></ul>
     </td>
@@ -177,12 +177,12 @@
 
 ## 防护效果<a name="section2969132523417"></a>
 
-假如已添加域名“www.example.com“，且配置了如[图4](#fig172782071413)所示的CC防护规则。可参照以下步骤验证防护效果：
+假如已添加域名“www<span>.</span>example.com“，且配置了如[图4](#fig172782071413)所示的CC防护规则。可参照以下步骤验证防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
     -   不能正常访问，参照[域名接入](域名接入.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li88102353919)。
 
-2.  <a name="li88102353919"></a>清理浏览器缓存，在浏览器中访问满足Cookie条件的“http://www.example.com/admin“页面，在60秒内刷新页面10次，正常情况下，在第11次访问该页面时，返回自定义的拦截页面；600秒后刷新目标页面，页面访问正常。
+2.  <a name="li88102353919"></a>清理浏览器缓存，在浏览器中访问满足Cookie条件的“http<span>://</span>www<span>.</span>example.com/admin“页面，在60秒内刷新页面10次，正常情况下，在第11次访问该页面时，返回自定义的拦截页面；600秒后刷新目标页面，页面访问正常。
 3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](下载防护事件数据.md)。
 
