@@ -9,88 +9,47 @@
 
 ## 策略语法<a name="zh-cn_topic_0169425416_section76852310268"></a>
 
-如下以SDRS服务的“SDRS Administrator“为例，说明RBAC策略语法。
+如下以HSS服务的“HSS Administrator“为例，说明RBAC策略语法。
 
-**图 2**  策略内容<a name="zh-cn_topic_0169425416_fig16534154617489"></a>  
+**图 2**  策略内容<a name="zh-cn_topic_0169425416_fig2265593466"></a>  
 ![](figures/策略内容.png "策略内容")
 
 ```
-{ 
-        "Version": "1.0", 
-        "Statement": [ 
-                { 
-                        "Action": [ 
-                                "SDRS:*:*" 
-                        ], 
-                        "Effect": "Allow" 
-                } 
-        ], 
-        "Depends": [ 
-                { 
-                        "catalog": "BASE", 
-                        "display_name": "Tenant Guest" 
-                }, 
-                { 
-                        "catalog": "BASE", 
-                        "display_name": "Server Administrator" 
-                } 
-        ] 
+{
+    "Version": "1.0",
+    "Statement": [
+        {
+            "Action": [
+                "HSS:HSS:*"
+            ],
+            "Effect": "Allow"
+        }
+    ],
+    "Depends": [
+        {
+            "catalog": "BASE",
+            "display_name": "Tenant Guest"
+        }
+    ]
 }
 ```
 
-**表 1**  参数说明
+-   Version：标识策略的版本号，主要用于区分Role-Based Access Control（RBAC）策略和细粒度策略。
+    -   1.0：RBAC策略。RBAC策略是将服务作为一个整体进行授权，授权后，用户可以拥有这个服务的所有权限。
+    -   1.1：细粒度策略。相比RBAC策略，细粒度策略基于服务的API接口进行权限拆分，授权更加精细。授权后，用户可以对这个服务执行特定的操作。细粒度策略包括系统预置和用户自定义两种：
 
-<a name="zh-cn_topic_0169425416_table1968910332618"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0169425416_row128903372615"><th class="cellrowborder" colspan="2" valign="top" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0169425416_p2089010392616"><a name="zh-cn_topic_0169425416_p2089010392616"></a><a name="zh-cn_topic_0169425416_p2089010392616"></a>参数</p>
-</th>
-<th class="cellrowborder" valign="top" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0169425416_p1889019332617"><a name="zh-cn_topic_0169425416_p1889019332617"></a><a name="zh-cn_topic_0169425416_p1889019332617"></a>含义</p>
-</th>
-<th class="cellrowborder" valign="top" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0169425416_p188911392611"><a name="zh-cn_topic_0169425416_p188911392611"></a><a name="zh-cn_topic_0169425416_p188911392611"></a>值</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="zh-cn_topic_0169425416_row17891153122617"><td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p28912312617"><a name="zh-cn_topic_0169425416_p28912312617"></a><a name="zh-cn_topic_0169425416_p28912312617"></a>Version</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169425416_p1289110310267"><a name="zh-cn_topic_0169425416_p1289110310267"></a><a name="zh-cn_topic_0169425416_p1289110310267"></a>策略的版本</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169425416_p5891731262"><a name="zh-cn_topic_0169425416_p5891731262"></a><a name="zh-cn_topic_0169425416_p5891731262"></a>固定为<span class="parmvalue" id="zh-cn_topic_0169425416_parmvalue142284714307"><a name="zh-cn_topic_0169425416_parmvalue142284714307"></a><a name="zh-cn_topic_0169425416_parmvalue142284714307"></a>“1.0”</span>。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0169425416_row14891143152611"><td class="cellrowborder" rowspan="2" valign="top" width="8.04080408040804%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p20891232263"><a name="zh-cn_topic_0169425416_p20891232263"></a><a name="zh-cn_topic_0169425416_p20891232263"></a>Statement</p>
-</td>
-<td class="cellrowborder" valign="top" width="10.561056105610561%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p14891103112610"><a name="zh-cn_topic_0169425416_p14891103112610"></a><a name="zh-cn_topic_0169425416_p14891103112610"></a>Action</p>
-</td>
-<td class="cellrowborder" valign="top" width="24.052405240524052%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169425416_p11891033267"><a name="zh-cn_topic_0169425416_p11891033267"></a><a name="zh-cn_topic_0169425416_p11891033267"></a>定义对SDRS的具体操作。</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.34573457345735%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169425416_p1891331269"><a name="zh-cn_topic_0169425416_p1891331269"></a><a name="zh-cn_topic_0169425416_p1891331269"></a>格式为：服务名:资源类型:操作</p>
-<p id="zh-cn_topic_0169425416_p289173112619"><a name="zh-cn_topic_0169425416_p289173112619"></a><a name="zh-cn_topic_0169425416_p289173112619"></a>"SDRS:*:*"，表示对SDRS的所有操作，其中SDRS为服务名称；“*”为通配符，表示对所有的资源类型可以执行所有操作。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0169425416_row98919352615"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p11891203172614"><a name="zh-cn_topic_0169425416_p11891203172614"></a><a name="zh-cn_topic_0169425416_p11891203172614"></a>Effect</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p1689123172617"><a name="zh-cn_topic_0169425416_p1689123172617"></a><a name="zh-cn_topic_0169425416_p1689123172617"></a>定义Action中所包含的具体操作是否允许执行。</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><a name="zh-cn_topic_0169425416_ul48911237264"></a><a name="zh-cn_topic_0169425416_ul48911237264"></a><ul id="zh-cn_topic_0169425416_ul48911237264"><li>Allow：允许执行。</li><li>Deny：不允许执行。</li></ul>
-</td>
-</tr>
-<tr id="zh-cn_topic_0169425416_row18911338261"><td class="cellrowborder" rowspan="2" valign="top" width="8.04080408040804%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p28913322614"><a name="zh-cn_topic_0169425416_p28913322614"></a><a name="zh-cn_topic_0169425416_p28913322614"></a>Depends</p>
-</td>
-<td class="cellrowborder" valign="top" width="10.561056105610561%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p68918316262"><a name="zh-cn_topic_0169425416_p68918316262"></a><a name="zh-cn_topic_0169425416_p68918316262"></a>catalog</p>
-</td>
-<td class="cellrowborder" valign="top" width="24.052405240524052%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169425416_p6891832261"><a name="zh-cn_topic_0169425416_p6891832261"></a><a name="zh-cn_topic_0169425416_p6891832261"></a>依赖的其他策略的所属目录。</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.34573457345735%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169425416_p68911537269"><a name="zh-cn_topic_0169425416_p68911537269"></a><a name="zh-cn_topic_0169425416_p68911537269"></a>服务名称。</p>
-<p id="zh-cn_topic_0169425416_p88911033262"><a name="zh-cn_topic_0169425416_p88911033262"></a><a name="zh-cn_topic_0169425416_p88911033262"></a>例如：BASE</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0169425416_row989163172617"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p128919317263"><a name="zh-cn_topic_0169425416_p128919317263"></a><a name="zh-cn_topic_0169425416_p128919317263"></a>display_name</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169425416_p58911302615"><a name="zh-cn_topic_0169425416_p58911302615"></a><a name="zh-cn_topic_0169425416_p58911302615"></a>依赖的其他权限的名称。</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169425416_p1789212318265"><a name="zh-cn_topic_0169425416_p1789212318265"></a><a name="zh-cn_topic_0169425416_p1789212318265"></a>权限名称。</p>
-<p id="zh-cn_topic_0169425416_p48928382619"><a name="zh-cn_topic_0169425416_p48928382619"></a><a name="zh-cn_topic_0169425416_p48928382619"></a>例如：Tenant Administrator</p>
-</td>
-</tr>
-</tbody>
-</table>
+-   Statement：策略授权语句，描述策略的详细信息，包含Effect（作用）和Action（授权项）。
+    -   Action（授权项）
+
+        对资源的具体操作权限，格式为：服务名:资源类型:操作，支持单个或多个操作权限，支持通配符号\*，通配符号表示所有。
+
+    -   Effect（作用）
+
+        作用包含两种：Allow（允许）和Deny（拒绝），系统预置策略仅包含允许的授权语句，自定义策略中可以同时包含允许和拒绝的授权语句，当策略中既有允许又有拒绝的授权语句时，遵循Deny优先的原则。
+
+
+-   Depends：策略的依赖关系，给用户组授予该策略时，需要同时勾选依赖的权限，否则该策略不会生效。
+    -   catalog：依赖的策略的所属服务。
+    -   display\_name：依赖的策略的名称，“HSS Administraor”依赖Base服务的“Tenant Guest”策略。
+
 
