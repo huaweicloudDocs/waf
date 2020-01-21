@@ -22,7 +22,7 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row16607422173517"><td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.3.1.1 "><p id="p14746935173916"><a name="p14746935173916"></a><a name="p14746935173916"></a>添加防护域名</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.97%" headers="mcps1.2.3.1.2 "><p id="p193095914285"><a name="p193095914285"></a><a name="p193095914285"></a>购买WAF后，添加需要防护的域名或网站。详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</p>
+<td class="cellrowborder" valign="top" width="70.97%" headers="mcps1.2.3.1.2 "><p id="p193095914285"><a name="p193095914285"></a><a name="p193095914285"></a>添加需要防护的域名或网站。详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</p>
 </td>
 </tr>
 <tr id="row460742212359"><td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.3.1.1 "><p id="p260772263514"><a name="p260772263514"></a><a name="p260772263514"></a>开启WAF防护</p>
