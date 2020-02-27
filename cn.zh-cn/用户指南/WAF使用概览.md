@@ -49,7 +49,7 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row1999341519405"><td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.3.1.1 "><p id="p299315156400"><a name="p299315156400"></a><a name="p299315156400"></a>安全总览</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.97%" headers="mcps1.2.3.1.2 "><p id="p1199319156407"><a name="p1199319156407"></a><a name="p1199319156407"></a>可查看到昨天、今天、3天、7天或者30天范围内的访问与攻击统计次数、攻击分布、攻击源IP TOP5的次数。详细操作请参见<a href="安全总览.md">安全总览</a>。</p>
+<td class="cellrowborder" valign="top" width="70.97%" headers="mcps1.2.3.1.2 "><p id="p1199319156407"><a name="p1199319156407"></a><a name="p1199319156407"></a>可查看到昨天、今天、3天、7天或者30天范围内的访问与攻击统计次数、攻击分布、受攻击域名 TOP10、攻击源IP TOP10和受攻击URL TOP10的次数。详细操作请参见<a href="安全总览.md">安全总览</a>。</p>
 </td>
 </tr>
 </tbody>
