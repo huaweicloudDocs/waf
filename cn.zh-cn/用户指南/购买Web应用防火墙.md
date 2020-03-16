@@ -10,7 +10,7 @@ Web应用防火墙提供三个服务版本：专业版、企业版和旗舰版�
 
 ## 操作步骤<a name="zh-cn_topic_0110861189_section29942210739"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/&locale=zh-cn)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入立即购买入口，如[图1](#zh-cn_topic_0110861189_fig1521873317493)所示。
 
     **图 1**  立即购买入口<a name="zh-cn_topic_0110861189_fig1521873317493"></a>  

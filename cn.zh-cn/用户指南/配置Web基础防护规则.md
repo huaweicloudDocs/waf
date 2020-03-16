@@ -11,7 +11,7 @@
 
 ## 操作步骤<a name="section61533550183130"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/&locale=zh-cn)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入防护配置入口，如[图1](#fig089771664710)所示。
 
     **图 1**  防护配置入口<a name="fig089771664710"></a>  
