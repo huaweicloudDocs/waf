@@ -34,7 +34,7 @@
     <tbody><tr id="row8899732153112"><td class="cellrowborder" valign="top" width="22.49%" headers="mcps1.2.3.1.1 "><p id="p189011132173111"><a name="p189011132173111"></a><a name="p189011132173111"></a>状态</p>
     </td>
     <td class="cellrowborder" valign="top" width="77.51%" headers="mcps1.2.3.1.2 "><p id="p11901832163110"><a name="p11901832163110"></a><a name="p11901832163110"></a>Web应用防护攻击的状态。</p>
-    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image3674828111315"></a><a name="image3674828111315"></a><span><img id="image3674828111315" src="figures/icon-open.png"></span>：开启状态。</li><li><a name="image041610818166"></a><a name="image041610818166"></a><span><img id="image041610818166" src="figures/icon-close.png"></span>：关闭状态。</li></ul>
+    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image1945111441539"></a><a name="image1945111441539"></a><span><img id="image1945111441539" src="figures/icon-enable.png"></span>：开启状态。</li><li><a name="image2391121555513"></a><a name="image2391121555513"></a><span><img id="image2391121555513" src="figures/icon-disable.png"></span>：关闭状态。</li></ul>
     </td>
     </tr>
     <tr id="row28096830192825"><td class="cellrowborder" valign="top" width="22.49%" headers="mcps1.2.3.1.1 "><p id="p10384205820363"><a name="p10384205820363"></a><a name="p10384205820363"></a>模式</p>
@@ -160,7 +160,7 @@
 
 放行百度或者谷歌的搜索引擎，同时拦截百度的POST请求。
 
-1.  参照[操作步骤](#section61533550183130)将“搜索引擎“设置为放行，即将“搜索引擎“的“状态“设置为![](figures/icon-close.png)。
+1.  参照[操作步骤](#section61533550183130)将“搜索引擎“设置为放行，即将“搜索引擎“的“状态“设置为![](figures/icon-disable.png)。
 2.  参照[配置精准访问防护规则](配置精准访问防护规则.md)配置如[图4 ](#fig1439052051516)的规则。
 
     **图 4**  拦截POST请求<a name="fig1439052051516"></a>  
