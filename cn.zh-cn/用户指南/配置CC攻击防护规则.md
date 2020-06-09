@@ -13,9 +13,9 @@
 ## 操作步骤<a name="section61533550183130"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入防护配置入口，如[图1](#waf_01_0008_fig089771664710)所示。
+2.  进入防护配置入口，如[图1](#zh-cn_topic_0110861309_fig089771664710)所示。
 
-    **图 1**  防护配置入口<a name="waf_01_0008_fig089771664710"></a>  
+    **图 1**  防护配置入口<a name="zh-cn_topic_0110861309_fig089771664710"></a>  
     ![](figures/防护配置入口.png "防护配置入口")
 
 
@@ -77,7 +77,7 @@
     <tr id="row8733192051415"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.1 "><p id="p37301020121411"><a name="p37301020121411"></a><a name="p37301020121411"></a>限速模式</p>
     </td>
     <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><a name="ul167322202146"></a><a name="ul167322202146"></a><ul id="ul167322202146"><li>IP限速：根据IP区分单个Web访问者。</li><li>用户限速：根据Cookie键值区分单个Web访问者。</li><li>其他：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。<div class="note" id="note17732132091410"><a name="note17732132091410"></a><a name="note17732132091410"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p147321020151413"><a name="p147321020151413"></a><a name="p147321020151413"></a>当<span class="parmname" id="parmname773122018141"><a name="parmname773122018141"></a><a name="parmname773122018141"></a>“防护模式”</span>选择<span class="parmvalue" id="parmvalue1273122019147"><a name="parmvalue1273122019147"></a><a name="parmvalue1273122019147"></a>“其他”</span>时，<span class="parmvalue" id="parmvalue16731320181412"><a name="parmvalue16731320181412"></a><a name="parmvalue16731320181412"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue19731192013140"><a name="parmvalue19731192013140"></a><a name="parmvalue19731192013140"></a>“内容”</span>填写为包含域名的完整URL链接，仅支持前缀匹配和精准匹配的逻辑，<span class="parmvalue" id="parmvalue2073152021416"><a name="parmvalue2073152021416"></a><a name="parmvalue2073152021416"></a>“内容”</span>里不能含有连续的多条斜线的配置，如<span class="parmvalue" id="parmvalue18731220151412"><a name="parmvalue18731220151412"></a><a name="parmvalue18731220151412"></a>“///admin”</span>，WAF引擎会将<span class="parmvalue" id="parmvalue17732122014143"><a name="parmvalue17732122014143"></a><a name="parmvalue17732122014143"></a>“///”</span>转为<span class="parmvalue" id="parmvalue10732202081416"><a name="parmvalue10732202081416"></a><a name="parmvalue10732202081416"></a>“/”</span>。</p>
-    <p id="p77329207149"><a name="p77329207149"></a><a name="p77329207149"></a>例如：防护路径设置为<span class="parmvalue" id="parmvalue1973213208144"><a name="parmvalue1973213208144"></a><a name="parmvalue1973213208144"></a>“/admin”</span>，若用户不希望访问者从<span class="parmvalue" id="parmvalue1073217209147"><a name="parmvalue1073217209147"></a><a name="parmvalue1073217209147"></a>“www.test.com”</span>访问该页面，则<span class="parmname" id="parmname1673202016142"><a name="parmname1673202016142"></a><a name="parmname1673202016142"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue7732122012148"><a name="parmvalue7732122012148"></a><a name="parmvalue7732122012148"></a>“内容”</span>设置为<span class="parmvalue" id="parmvalue9732162091417"><a name="parmvalue9732162091417"></a><a name="parmvalue9732162091417"></a>“http://www.test.com”</span></p>
+    <p id="p77329207149"><a name="p77329207149"></a><a name="p77329207149"></a>例如：防护路径设置为<span class="parmvalue" id="parmvalue1973213208144"><a name="parmvalue1973213208144"></a><a name="parmvalue1973213208144"></a>“/admin”</span>，若用户不希望访问者从<span class="parmvalue" id="parmvalue1073217209147"><a name="parmvalue1073217209147"></a><a name="parmvalue1073217209147"></a>“www.test.com”</span>访问该页面，则<span class="parmname" id="parmname1673202016142"><a name="parmname1673202016142"></a><a name="parmname1673202016142"></a>“Referer”</span>对应的<span class="parmvalue" id="parmvalue7732122012148"><a name="parmvalue7732122012148"></a><a name="parmvalue7732122012148"></a>“内容”</span>设置为<span class="parmvalue" id="parmvalue9732162091417"><a name="parmvalue9732162091417"></a><a name="parmvalue9732162091417"></a>“http://www.test.com”</span>。</p>
     </div></div>
     </li></ul>
     </td>
@@ -174,7 +174,7 @@
 假如已添加域名“www.example.com“，且配置了如[图3](#fig172782071413)所示的CC防护规则。可参照以下步骤验证防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
+    -   不能正常访问，参照[域名接入WAF](zh-cn_topic_0125242653.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li88102353919)。
 
 2.  <a name="li88102353919"></a>清理浏览器缓存，在浏览器中访问满足Cookie条件的“http://www.example.com/admin“页面，在60秒内刷新页面10次，正常情况下，在第11次访问该页面时，返回自定义的拦截页面；600秒后刷新目标页面，页面访问正常。
