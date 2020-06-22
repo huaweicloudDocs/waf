@@ -12,7 +12,49 @@
 
 ## 前提条件<a name="section5529155183815"></a>
 
-给用户组授权之前，请您了解用户组可以添加的WAF权限，并结合实际需求进行选择，WAF支持的系统权限，请参见：[WAF系统权限](https://support.huaweicloud.com/productdesc-waf/waf_01_0052.html)。若您需要对除WAF之外的其它服务授权，IAM支持服务的所有权限请参见[系统权限](https://support.huaweicloud.com/permissions/policy_list.html?product=waf)。
+给用户组授权之前，请您了解用户组可以添加的WAF权限，并结合实际需求进行选择，WAF支持的系统权限如[表1](#table59949279269)所示。若您需要对除WAF之外的其它服务授权，IAM支持服务的所有权限请参见[系统权限](https://support.huaweicloud.com/permissions/policy_list.html?product=waf)。
+
+**表 1**  WAF系统角色
+
+<a name="table59949279269"></a>
+<table><thead align="left"><tr id="zh-cn_topic_0169881967_row1346222921318"><th class="cellrowborder" valign="top" width="21.25%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0169881967_p246217292138"><a name="zh-cn_topic_0169881967_p246217292138"></a><a name="zh-cn_topic_0169881967_p246217292138"></a>系统角色/策略名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.46%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0169881967_p146292918139"><a name="zh-cn_topic_0169881967_p146292918139"></a><a name="zh-cn_topic_0169881967_p146292918139"></a>描述</p>
+</th>
+<th class="cellrowborder" valign="top" width="18.57%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0169881967_p1494811344211"><a name="zh-cn_topic_0169881967_p1494811344211"></a><a name="zh-cn_topic_0169881967_p1494811344211"></a>类别</p>
+</th>
+<th class="cellrowborder" valign="top" width="35.72%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0169881967_p446218291138"><a name="zh-cn_topic_0169881967_p446218291138"></a><a name="zh-cn_topic_0169881967_p446218291138"></a>依赖关系</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a><span>WAF Administrator</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="24.46%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p0462172991319"><a name="zh-cn_topic_0169881967_p0462172991319"></a><a name="zh-cn_topic_0169881967_p0462172991319"></a>Web应用防火墙服务的管理员权限。</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169881967_p99491316427"><a name="zh-cn_topic_0169881967_p99491316427"></a><a name="zh-cn_topic_0169881967_p99491316427"></a>系统角色</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0169881967_p10147184514238"><a name="zh-cn_topic_0169881967_p10147184514238"></a><a name="zh-cn_topic_0169881967_p10147184514238"></a>依赖Tenant Guest和Server Administrator角色。</p>
+<a name="zh-cn_topic_0169881967_ul11985658102319"></a><a name="zh-cn_topic_0169881967_ul11985658102319"></a><ul id="zh-cn_topic_0169881967_ul11985658102319"><li>Tenant Guest：全局级角色，在全局项目中勾选。</li><li>Server Administrator：项目级角色，在同项目中勾选。</li></ul>
+</td>
+</tr>
+<tr id="zh-cn_topic_0169881967_row01828458393"><td class="cellrowborder" valign="top" width="21.25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p18182545183916"><a name="zh-cn_topic_0169881967_p18182545183916"></a><a name="zh-cn_topic_0169881967_p18182545183916"></a>WAF FullAccess</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.46%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p31835452393"><a name="zh-cn_topic_0169881967_p31835452393"></a><a name="zh-cn_topic_0169881967_p31835452393"></a>Web应用防火墙服务的所有权限。</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169881967_p199493324215"><a name="zh-cn_topic_0169881967_p199493324215"></a><a name="zh-cn_topic_0169881967_p199493324215"></a>系统策略</p>
+</td>
+<td class="cellrowborder" rowspan="2" valign="top" width="35.72%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0169881967_p24128283710"><a name="zh-cn_topic_0169881967_p24128283710"></a><a name="zh-cn_topic_0169881967_p24128283710"></a>无。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0169881967_row17174015181314"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p71751615161315"><a name="zh-cn_topic_0169881967_p71751615161315"></a><a name="zh-cn_topic_0169881967_p71751615161315"></a>WAF ReadOnlyAccess</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p5175141517137"><a name="zh-cn_topic_0169881967_p5175141517137"></a><a name="zh-cn_topic_0169881967_p5175141517137"></a>Web应用防火墙的只读访问权限。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169881967_p1917518152139"><a name="zh-cn_topic_0169881967_p1917518152139"></a><a name="zh-cn_topic_0169881967_p1917518152139"></a>系统策略</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## 示例流程<a name="section14802133574715"></a>
 
