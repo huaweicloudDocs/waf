@@ -4,6 +4,9 @@
 
 您也可以参考[Web基础防护功能最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0014.html)了解更多Web基础防护规则的配置信息。
 
+>![](public_sys-resources/icon-notice.gif) **须知：**   
+>Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。  
+
 ## 前提条件<a name="section2256777914731"></a>
 
 -   已获取管理控制台的账号和密码。
@@ -40,6 +43,8 @@
     <tr id="row28096830192825"><td class="cellrowborder" valign="top" width="22.49%" headers="mcps1.2.3.1.1 "><p id="p10384205820363"><a name="p10384205820363"></a><a name="p10384205820363"></a>模式</p>
     </td>
     <td class="cellrowborder" valign="top" width="77.51%" headers="mcps1.2.3.1.2 "><a name="ul946621183715"></a><a name="ul946621183715"></a><ul id="ul946621183715"><li>拦截：发现攻击行为后立即阻断并记录。</li><li>仅记录：发现攻击行为后只记录不阻断攻击。</li></ul>
+    <div class="notice" id="note054144775412"><a name="note054144775412"></a><a name="note054144775412"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p1054184719544"><a name="p1054184719544"></a><a name="p1054184719544"></a>检测版仅支持<span class="parmname" id="parmname06802226556"><a name="parmname06802226556"></a><a name="parmname06802226556"></a>“仅记录”</span>模式。</p>
+    </div></div>
     </td>
     </tr>
     </tbody>
