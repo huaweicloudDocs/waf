@@ -2,25 +2,21 @@
 
 您可以自定义CC（Challenge Collapsar）防护规则，限制单个IP/Cookie/Referer访问者对您的网站上特定路径（URL）的访问频率，WAF会根据您配置的规则，精准识别CC攻击以及有效缓解CC攻击。例如，您可以配置该规则：当Cookie标识为name的用户在60秒内访问您域名下的“/admin\*“页面超过10次时，封禁该用户访问目标网址600秒。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->WAF会在客户请求Cookie中插入HWWAFSESID，HWWAFSESTIME等字段，这些字段服务于WAF统计和安全特性。  
-
 >![](public_sys-resources/icon-notice.gif) **须知：**   
 >-   WAF会在客户请求Cookie中插入HWWAFSESID，HWWAFSESTIME等字段，这些字段服务于WAF统计和安全特性。  
 >-   检测版不支持该功能。  
 
-## 前提条件<a name="section2256777914731"></a>
+## 前提条件<a name="section5903171661012"></a>
 
--   已获取管理控制台的账号和密码。
--   已添加防护域名。
+已添加防护网站。
 
 ## 操作步骤<a name="section61533550183130"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入防护配置入口，如[图1](#waf_01_0008_fig089771664710)所示。
+2.  进入防护策略配置入口，如[图1](#waf_01_0008_fig089771664710)所示。
 
-    **图 1**  防护配置入口<a name="waf_01_0008_fig089771664710"></a>  
-    ![](figures/防护配置入口.png "防护配置入口")
+    **图 1**  防护策略配置入口<a name="waf_01_0008_fig089771664710"></a>  
+    ![](figures/防护策略配置入口.png "防护策略配置入口")
 
 
 1.  在“CC攻击防护“配置框中，用户可根据自己的需要更改“状态“，单击“自定义CC攻击防护规则“，进入CC防护规则配置页面，如[图2](#fig102851827142620)所示。
@@ -71,7 +67,7 @@
     <p id="p7182153715485"><a name="p7182153715485"></a><a name="p7182153715485"></a><span>单击</span><span class="uicontrol" id="uicontrol1121619347492"><a name="uicontrol1121619347492"></a><a name="uicontrol1121619347492"></a>“添加”</span><span>增加新的条件，至少配置一项条件，最多可添加30项条件，多个条件同时满足时，本条规则才生效。</span></p>
     <a name="ul61829843104748"></a><a name="ul61829843104748"></a><ul id="ul61829843104748"><li>字段：路径、IP、Cookie。</li><li>子字段：当<span class="parmname" id="parmname16697185810527"><a name="parmname16697185810527"></a><a name="parmname16697185810527"></a>“字段”</span>选择<span class="parmvalue" id="parmvalue7793131533815"><a name="parmvalue7793131533815"></a><a name="parmvalue7793131533815"></a>“Cookie”</span>时，请根据实际需求配置子字段。<div class="notice" id="note85400119109"><a name="note85400119109"></a><a name="note85400119109"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p954031113102"><a name="p954031113102"></a><a name="p954031113102"></a>子字段的长度不能超过2048字节，且只能由数字、字母、下划线和中划线组成。</p>
     </div></div>
-    </li><li>逻辑：在<span class="parmname" id="parmname43845565104748"><a name="parmname43845565104748"></a><a name="parmname43845565104748"></a>“逻辑”</span>下拉列表中选择需要的逻辑关系。<div class="note" id="note168625321513"><a name="note168625321513"></a><a name="note168625321513"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p19863173225111"><a name="p19863173225111"></a><a name="p19863173225111"></a>当<span class="parmname" id="parmname9158165611519"><a name="parmname9158165611519"></a><a name="parmname9158165611519"></a>“逻辑”</span>关系选择<span class="parmvalue" id="parmvalue316420107"><a name="parmvalue316420107"></a><a name="parmvalue316420107"></a>“包含任意一个”</span>、<span class="parmvalue" id="parmvalue12165801907"><a name="parmvalue12165801907"></a><a name="parmvalue12165801907"></a>“不包含所有”</span>、<span class="parmvalue" id="parmvalue1816610017019"><a name="parmvalue1816610017019"></a><a name="parmvalue1816610017019"></a>“等于任意一个”</span>、<span class="parmvalue" id="parmvalue1616710407"><a name="parmvalue1616710407"></a><a name="parmvalue1616710407"></a>“不等于所有”</span>、<span class="parmvalue" id="parmvalue1616911010016"><a name="parmvalue1616911010016"></a><a name="parmvalue1616911010016"></a>“前缀为任意一个”</span>、<span class="parmvalue" id="parmvalue61702001013"><a name="parmvalue61702001013"></a><a name="parmvalue61702001013"></a>“前缀不为所有”</span>、<span class="parmvalue" id="parmvalue5170308017"><a name="parmvalue5170308017"></a><a name="parmvalue5170308017"></a>“后缀为任意一个”</span>或者<span class="parmvalue" id="parmvalue1717050303"><a name="parmvalue1717050303"></a><a name="parmvalue1717050303"></a>“后缀不为所有”</span>时，需要选择引用表，创建引用表的详细操作请参见<a href="zh-cn_topic_0125216175.md">创建引用表</a>。</p>
+    </li><li>逻辑：在<span class="parmname" id="parmname43845565104748"><a name="parmname43845565104748"></a><a name="parmname43845565104748"></a>“逻辑”</span>下拉列表中选择需要的逻辑关系。<div class="note" id="note168625321513"><a name="note168625321513"></a><a name="note168625321513"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p19863173225111"><a name="p19863173225111"></a><a name="p19863173225111"></a>当<span class="parmname" id="parmname9158165611519"><a name="parmname9158165611519"></a><a name="parmname9158165611519"></a>“逻辑”</span>关系选择<span class="parmvalue" id="parmvalue316420107"><a name="parmvalue316420107"></a><a name="parmvalue316420107"></a>“包含任意一个”</span>、<span class="parmvalue" id="parmvalue12165801907"><a name="parmvalue12165801907"></a><a name="parmvalue12165801907"></a>“不包含所有”</span>、<span class="parmvalue" id="parmvalue1816610017019"><a name="parmvalue1816610017019"></a><a name="parmvalue1816610017019"></a>“等于任意一个”</span>、<span class="parmvalue" id="parmvalue1616710407"><a name="parmvalue1616710407"></a><a name="parmvalue1616710407"></a>“不等于所有”</span>、<span class="parmvalue" id="parmvalue1616911010016"><a name="parmvalue1616911010016"></a><a name="parmvalue1616911010016"></a>“前缀为任意一个”</span>、<span class="parmvalue" id="parmvalue61702001013"><a name="parmvalue61702001013"></a><a name="parmvalue61702001013"></a>“前缀不为所有”</span>、<span class="parmvalue" id="parmvalue5170308017"><a name="parmvalue5170308017"></a><a name="parmvalue5170308017"></a>“后缀为任意一个”</span>或者<span class="parmvalue" id="parmvalue1717050303"><a name="parmvalue1717050303"></a><a name="parmvalue1717050303"></a>“后缀不为所有”</span>时，需要选择引用表，创建引用表的详细操作请参见<a href="创建引用表.md">创建引用表</a>。</p>
     </div></div>
     </li><li>内容：输入或者选择条件匹配的内容。</li></ul>
     </td>
@@ -178,7 +174,7 @@
 假如已添加域名“www.example.com“，且配置了如[图3](#fig172782071413)所示的CC防护规则。可参照以下步骤验证防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](zh-cn_topic_0125242653.md)章节重新完成域名接入。
+    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li88102353919)。
 
 2.  <a name="li88102353919"></a>清理浏览器缓存，在浏览器中访问满足Cookie条件的“http://www.example.com/admin“页面，在60秒内刷新页面10次，正常情况下，在第11次访问该页面时，返回自定义的拦截页面；600秒后刷新目标页面，页面访问正常。

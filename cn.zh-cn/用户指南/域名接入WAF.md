@@ -2,7 +2,7 @@
 
 该章节指导用户进行域名接入，使网站流量接入Web应用防火墙。
 
-域名接入前，为了确保WAF转发正常，建议您先参照[本地验证](zh-cn_topic_0119703271.md)通过本地验证确保一切配置正常。
+域名接入前，为了确保WAF转发正常，建议您先参照[本地验证](本地验证.md)通过本地验证确保一切配置正常。
 
 ## 工作原理<a name="section6836114910249"></a>
 
@@ -59,13 +59,13 @@
 ## 操作步骤<a name="section9842135074313"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入域名配置页面入口，如[图1](#zh-cn_topic_0110861354_fig172535820151)所示。
+2.  进入网站配置页面入口，如[图1](#waf_01_0002_fig172535820151)所示。
 
-    **图 1**  域名列表入口<a name="zh-cn_topic_0110861354_fig172535820151"></a>  
-    ![](figures/域名列表入口.png "域名列表入口")
+    **图 1**  网站列表入口<a name="waf_01_0002_fig172535820151"></a>  
+    ![](figures/网站列表入口.png "网站列表入口")
 
 3.  在目标域名所在行的“防护域名“列中，单击域名，进入域名基本信息页面。
-4.  在“CNAME“行中，单击![](figures/icon-copy.jpg)，复制“CNAME”值，如[图2](#fig3485313163918)。
+4.  在“CNAME“行中，单击![](figures/icon-fuzhi.png)，复制“CNAME”值，如[图2](#fig3485313163918)。
 
     **图 2**  复制CNAME<a name="fig3485313163918"></a>  
     ![](figures/复制CNAME.png "复制CNAME")
@@ -107,7 +107,7 @@
 
     -   使用了代理
 
-        将使用的代理类服务（高防DDOS、CDN服务等）的回源地址修改为复制的目标域名的CNAME，具体的方法请参见[网站业务接入](https://support.huaweicloud.com/usermanual-aad/aad_01_0012.html)。
+        将使用的代理类服务（高防DDoS、CDN服务等）的回源地址修改为复制的目标域名的CNAME，具体的方法请参见[网站业务接入](https://support.huaweicloud.com/usermanual-aad/aad_01_0012.html)。
 
         >![](public_sys-resources/icon-note.gif) **说明：**   
         >为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您的DNS服务商处添加“子域名“和“TXT记录“。  

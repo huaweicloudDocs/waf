@@ -17,9 +17,9 @@
 **表 1**  WAF系统角色
 
 <a name="table59949279269"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0169881967_row1346222921318"><th class="cellrowborder" valign="top" width="21.25%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0169881967_p246217292138"><a name="zh-cn_topic_0169881967_p246217292138"></a><a name="zh-cn_topic_0169881967_p246217292138"></a>系统角色/策略名称</p>
+<table><thead align="left"><tr id="zh-cn_topic_0169881967_row1346222921318"><th class="cellrowborder" valign="top" width="21.8%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0169881967_p246217292138"><a name="zh-cn_topic_0169881967_p246217292138"></a><a name="zh-cn_topic_0169881967_p246217292138"></a>系统角色/策略名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="24.46%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0169881967_p146292918139"><a name="zh-cn_topic_0169881967_p146292918139"></a><a name="zh-cn_topic_0169881967_p146292918139"></a>描述</p>
+<th class="cellrowborder" valign="top" width="23.91%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0169881967_p146292918139"><a name="zh-cn_topic_0169881967_p146292918139"></a><a name="zh-cn_topic_0169881967_p146292918139"></a>描述</p>
 </th>
 <th class="cellrowborder" valign="top" width="18.57%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0169881967_p1494811344211"><a name="zh-cn_topic_0169881967_p1494811344211"></a><a name="zh-cn_topic_0169881967_p1494811344211"></a>类别</p>
 </th>
@@ -27,9 +27,9 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a><span>WAF Administrator</span></p>
+<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.8%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a><span>WAF Administrator</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="24.46%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p0462172991319"><a name="zh-cn_topic_0169881967_p0462172991319"></a><a name="zh-cn_topic_0169881967_p0462172991319"></a>Web应用防火墙服务的管理员权限。</p>
+<td class="cellrowborder" valign="top" width="23.91%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p0462172991319"><a name="zh-cn_topic_0169881967_p0462172991319"></a><a name="zh-cn_topic_0169881967_p0462172991319"></a>Web应用防火墙服务的管理员权限。</p>
 </td>
 <td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169881967_p99491316427"><a name="zh-cn_topic_0169881967_p99491316427"></a><a name="zh-cn_topic_0169881967_p99491316427"></a>系统角色</p>
 </td>
@@ -37,9 +37,9 @@
 <a name="zh-cn_topic_0169881967_ul11985658102319"></a><a name="zh-cn_topic_0169881967_ul11985658102319"></a><ul id="zh-cn_topic_0169881967_ul11985658102319"><li>Tenant Guest：全局级角色，在全局项目中勾选。</li><li>Server Administrator：项目级角色，在同项目中勾选。</li></ul>
 </td>
 </tr>
-<tr id="zh-cn_topic_0169881967_row01828458393"><td class="cellrowborder" valign="top" width="21.25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p18182545183916"><a name="zh-cn_topic_0169881967_p18182545183916"></a><a name="zh-cn_topic_0169881967_p18182545183916"></a>WAF FullAccess</p>
+<tr id="zh-cn_topic_0169881967_row01828458393"><td class="cellrowborder" valign="top" width="21.8%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p18182545183916"><a name="zh-cn_topic_0169881967_p18182545183916"></a><a name="zh-cn_topic_0169881967_p18182545183916"></a>WAF FullAccess</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.46%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p31835452393"><a name="zh-cn_topic_0169881967_p31835452393"></a><a name="zh-cn_topic_0169881967_p31835452393"></a>Web应用防火墙服务的所有权限。</p>
+<td class="cellrowborder" valign="top" width="23.91%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p31835452393"><a name="zh-cn_topic_0169881967_p31835452393"></a><a name="zh-cn_topic_0169881967_p31835452393"></a>Web应用防火墙服务的所有权限。</p>
 </td>
 <td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0169881967_p199493324215"><a name="zh-cn_topic_0169881967_p199493324215"></a><a name="zh-cn_topic_0169881967_p199493324215"></a>系统策略</p>
 </td>
