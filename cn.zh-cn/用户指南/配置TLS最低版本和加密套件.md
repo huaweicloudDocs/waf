@@ -15,8 +15,8 @@ WAF默认配置的最低TLS版本为TLS v1.0，加密套件为默认加密套件
 
 WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼容，不能兼容部分老版本的浏览器，以TLS v1.0协议为例，加密套件不兼容的浏览器及客户端参考说明如[表1](#table893015311885)所示。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->建议您以实际客户端环境测试的兼容情况为准，避免影响现网业务。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>建议您以实际客户端环境测试的兼容情况为准，避免影响现网业务。
 
 **表 1**  加密套件不兼容的浏览器/客户端参考说明（TLS v1.0）
 
@@ -279,47 +279,49 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     **表 2**  加密套件说明
 
     <a name="table17733717165019"></a>
-    <table><thead align="left"><tr id="row1487913215612"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p6879102195613"><a name="p6879102195613"></a><a name="p6879102195613"></a>加密套件名称</p>
+    <table><thead align="left"><tr id="row1487913215612"><th class="cellrowborder" valign="top" width="20.830000000000002%" id="mcps1.2.4.1.1"><p id="p6879102195613"><a name="p6879102195613"></a><a name="p6879102195613"></a>加密套件名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p1387911213562"><a name="p1387911213562"></a><a name="p1387911213562"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="40.160000000000004%" id="mcps1.2.4.1.2"><p id="p98791626560"><a name="p98791626560"></a><a name="p98791626560"></a>加密算法</p>
     </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p98791626560"><a name="p98791626560"></a><a name="p98791626560"></a>加密算法</p>
+    <th class="cellrowborder" valign="top" width="39.01%" id="mcps1.2.4.1.3"><p id="p1623713189516"><a name="p1623713189516"></a><a name="p1623713189516"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row1687918217567"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1587916216560"><a name="p1587916216560"></a><a name="p1587916216560"></a>默认加密套件</p>
+    <tbody><tr id="row1687918217567"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1587916216560"><a name="p1587916216560"></a><a name="p1587916216560"></a>默认加密套件</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p17879102135616"><a name="p17879102135616"></a><a name="p17879102135616"></a>默认配置，兼容性较好，支持的客户端较为广泛，安全性一般。</p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p88797218568"><a name="p88797218568"></a><a name="p88797218568"></a><span>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p88797218568"><a name="p88797218568"></a><a name="p88797218568"></a><span>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</span></p>
-    </td>
-    </tr>
-    <tr id="row108791825563"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p588032195610"><a name="p588032195610"></a><a name="p588032195610"></a>加密套件1</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1488014210562"><a name="p1488014210562"></a><a name="p1488014210562"></a>推荐的安全配置，兼顾兼容性。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p208804235612"><a name="p208804235612"></a><a name="p208804235612"></a><span>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</span></p>
+    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p1638915377711"><a name="p1638915377711"></a><a name="p1638915377711"></a>默认配置。</p>
+    <a name="ul5894331187"></a><a name="ul5894331187"></a><ul id="ul5894331187"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般</li></ul>
     </td>
     </tr>
-    <tr id="row134001337195610"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p154011373568"><a name="p154011373568"></a><a name="p154011373568"></a>加密套件2</p>
+    <tr id="row108791825563"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p588032195610"><a name="p588032195610"></a><a name="p588032195610"></a>加密套件1</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p12401937185619"><a name="p12401937185619"></a><a name="p12401937185619"></a>严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p208804235612"><a name="p208804235612"></a><a name="p208804235612"></a><span>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p4401037105613"><a name="p4401037105613"></a><a name="p4401037105613"></a><span>EECDH+AESGCM:EDH+AESGCM</span></p>
-    </td>
-    </tr>
-    <tr id="row1293124610566"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p99324616566"><a name="p99324616566"></a><a name="p99324616566"></a>加密套件3</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p293154611561"><a name="p293154611561"></a><a name="p293154611561"></a>支持ECDHE、DHE-GCM、RSA-AES-GCM，不支持CBC算法。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p19334616563"><a name="p19334616563"></a><a name="p19334616563"></a><span>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</span></p>
+    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p162561042181013"><a name="p162561042181013"></a><a name="p162561042181013"></a>推荐配置。</p>
+    <a name="ul1251115812815"></a><a name="ul1251115812815"></a><ul id="ul1251115812815"><li>兼容性：较好</li><li>安全性：较高</li></ul>
     </td>
     </tr>
-    <tr id="row983711401112"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1383818401412"><a name="p1383818401412"></a><a name="p1383818401412"></a>加密套件4</p>
+    <tr id="row134001337195610"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p154011373568"><a name="p154011373568"></a><a name="p154011373568"></a>加密套件2</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p208399408115"><a name="p208399408115"></a><a name="p208399408115"></a>在默认加密套件基础上，增加GCM算法支持。</p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p4401037105613"><a name="p4401037105613"></a><a name="p4401037105613"></a><span>EECDH+AESGCM:EDH+AESGCM</span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a><span>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</span></p>
+    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul1994313292913"></a><a name="ul1994313292913"></a><ul id="ul1994313292913"><li>兼容性：一般，严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</li><li>安全性：高</li></ul>
+    </td>
+    </tr>
+    <tr id="row1293124610566"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p99324616566"><a name="p99324616566"></a><a name="p99324616566"></a>加密套件3</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p19334616563"><a name="p19334616563"></a><a name="p19334616563"></a><span>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</span></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul9343941131620"></a><a name="ul9343941131620"></a><ul id="ul9343941131620"><li>兼容性：一般，较低版本浏览器可能无法访问。</li><li>安全性：高，支持ECDHE、DHE-GCM、RSA-AES-GCM多种算法。</li></ul>
+    </td>
+    </tr>
+    <tr id="row983711401112"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1383818401412"><a name="p1383818401412"></a><a name="p1383818401412"></a>加密套件4</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a><span>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</span></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul51541821131114"></a><a name="ul51541821131114"></a><ul id="ul51541821131114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般，新增支持GCM算法。</li></ul>
     </td>
     </tr>
     </tbody>
