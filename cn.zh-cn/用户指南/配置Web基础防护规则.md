@@ -4,8 +4,8 @@
 
 您也可以参考[Web基础防护功能最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0014.html)了解更多Web基础防护规则的配置信息。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
 
 ## 前提条件<a name="section5903171661012"></a>
 
@@ -49,7 +49,8 @@
     </tbody>
     </table>
 
-4.  在“Web基础防护“配置框中，单击“高级设置“，进入“Web基础防护“界面，根据您的业务场景，开启合适的防护功能，如[图3](#fig17347539113910)所示，检测项说明如[表2](#table1054818371898)所示。
+4.  在“Web基础防护“配置框中，单击“高级设置“，进入“Web基础防护“界面。
+5.  选择“防护配置“页签，根据您的业务场景，开启合适的防护功能，如[图3](#fig17347539113910)所示，检测项说明如[表2](#table1054818371898)所示。
 
     **图 3**  Web基础防护<a name="fig17347539113910"></a>  
     ![](figures/Web基础防护.png "Web基础防护")
@@ -147,6 +148,56 @@
 
         默认开启“常规检测“和“扫描器“防护检测，用户可根据业务需要，参照[表2](#table1054818371898)开启其他需要防护的检测类型。
 
+6.  选择“防护规则“页签，查看Web基础防护规则的详细信息，如[图4](#fig8837434185019)所示，相关参数说明如[表4](#table19135226105218)所示。
+
+    **图 4**  查看防护规则<a name="fig8837434185019"></a>  
+    ![](figures/查看防护规则.png "查看防护规则")
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >单击![](figures/icon-paixu.png)，您可以根据“CVE编号“、“危险等级“、“应用类型“或“防护类型“，搜索指定规则。
+
+    **表 4**  防护规则说明
+
+    <a name="table19135226105218"></a>
+    <table><thead align="left"><tr id="row1813682605214"><th class="cellrowborder" valign="top" width="25.28%" id="mcps1.2.3.1.1"><p id="p913602645217"><a name="p913602645217"></a><a name="p913602645217"></a>参数</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="74.72%" id="mcps1.2.3.1.2"><p id="p19136126125217"><a name="p19136126125217"></a><a name="p19136126125217"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row171361526115216"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p11136122615218"><a name="p11136122615218"></a><a name="p11136122615218"></a>规则ID</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p21367263523"><a name="p21367263523"></a><a name="p21367263523"></a>防护规则的ID，由系统自动生成。</p>
+    </td>
+    </tr>
+    <tr id="row1213782612529"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p16137112665214"><a name="p16137112665214"></a><a name="p16137112665214"></a>CVE编号</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p15816113315363"><a name="p15816113315363"></a><a name="p15816113315363"></a>防护规则对应的CVE（Common Vulnerabilities &amp; Exposures，通用漏洞披露）编号。对于非CVE漏洞，显示为--。</p>
+    </td>
+    </tr>
+    <tr id="row10137226195213"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p11137326165210"><a name="p11137326165210"></a><a name="p11137326165210"></a>危险等级</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p113732613525"><a name="p113732613525"></a><a name="p113732613525"></a>防护规则防护漏洞的危险等级，包括：</p>
+    <a name="ul17258349201"></a><a name="ul17258349201"></a><ul id="ul17258349201"><li>高危</li><li>中危</li><li>低危</li></ul>
+    </td>
+    </tr>
+    <tr id="row1137122612524"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p7137426165217"><a name="p7137426165217"></a><a name="p7137426165217"></a>应用类型</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p2137526125219"><a name="p2137526125219"></a><a name="p2137526125219"></a>防护规则对应的应用类型，例如，WordPress。</p>
+    </td>
+    </tr>
+    <tr id="row8138122611524"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p1113892675219"><a name="p1113892675219"></a><a name="p1113892675219"></a>防护类型</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p3138202610529"><a name="p3138202610529"></a><a name="p3138202610529"></a>防护规则的类型，例如，命令注入。</p>
+    </td>
+    </tr>
+    <tr id="row15138142611528"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p15138142616526"><a name="p15138142616526"></a><a name="p15138142616526"></a>规则描述</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p213872616520"><a name="p213872616520"></a><a name="p213872616520"></a>防护规则对应的攻击详细描述。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 
 ## 防护效果<a name="section1773143201419"></a>
@@ -154,20 +205,20 @@
 假如已添加域名“www.example.com“，且已开启了Web基础防护的“常规检测“，防护模式为“拦截“。您可以参照以下步骤验证WAF防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
+    -   不能正常访问，参照[域名接入WAF](zh-cn_topic_0125242653.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li2057953372517)。
 
 2.  <a name="li2057953372517"></a>清理浏览器缓存，在浏览器中输入“http://www.example.com?id=1%27%20or%201=1“模拟SQL注入攻击。
-3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](下载防护事件数据.md)。
+3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](zh-cn_topic_0124433570.md)。
 
 ## 配置示例<a name="section1978194713716"></a>
 
 放行百度或者谷歌的搜索引擎，同时拦截百度的POST请求。
 
 1.  参照[操作步骤](#section61533550183130)将“搜索引擎“设置为放行，即将“搜索引擎“的“状态“设置为![](figures/icon-disable.png)。
-2.  参照[配置精准访问防护规则](配置精准访问防护规则.md)配置如[图4 ](#fig1439052051516)的规则。
+2.  参照[配置精准访问防护规则](zh-cn_topic_0110861295.md)配置如[图4 ](#fig1439052051516)的规则。
 
-    **图 4**  拦截POST请求<a name="fig1439052051516"></a>  
+    **图 5**  拦截POST请求<a name="fig1439052051516"></a>  
     ![](figures/拦截POST请求.png "拦截POST请求")
 
 
