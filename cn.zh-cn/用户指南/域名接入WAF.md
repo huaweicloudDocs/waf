@@ -14,9 +14,9 @@
 
     当网站没有接入到WAF前，DNS解析到DDoS高防等代理，流量先经过DDoS高防等代理，DDoS高防等代理再将流量直接转到源站。网站接入WAF后，需要将DDoS高防等代理回源地址修改为WAF的“CNAME“，这样流量才会被DDoS高防等代理转发到WAF，WAF再将流量转到源站，实现网站流量检测和攻击拦截。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   为了确保WAF转发正常，在修改DNS解析配置前，建议您参照[本地验证](https://support.huaweicloud.com/usermanual-waf/waf_01_0073.html)进行本地验证确保一切配置正常。  
-    >-   为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您到DNS服务商处添加“子域名“，并为它配置“TXT记录“。WAF会据此判断域名的所有权真正属于哪个用户。具体的配置方法请参见[未配置子域名和TXT记录的影响](https://support.huaweicloud.com/waf_faq/waf_01_0056.html)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   为了确保WAF转发正常，在修改DNS解析配置前，建议您参照[本地验证](https://support.huaweicloud.com/usermanual-waf/waf_01_0073.html)进行本地验证确保一切配置正常。
+    >-   为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您到DNS服务商处添加“子域名“，并为它配置“TXT记录“。WAF会据此判断域名的所有权真正属于哪个用户。具体的配置方法请参见[未配置子域名和TXT记录的影响](https://support.huaweicloud.com/waf_faq/waf_01_0056.html)。
 
 
 ## 操作指导<a name="section0983101620477"></a>
@@ -64,7 +64,7 @@
     **图 1**  网站列表入口<a name="waf_01_0002_fig172535820151"></a>  
     ![](figures/网站列表入口.png "网站列表入口")
 
-3.  在目标域名所在行的“防护域名“列中，单击域名，进入域名基本信息页面。
+3.  在目标域名所在行的“防护网站“列中，单击域名，进入域名基本信息页面。
 4.  在“CNAME“行中，单击![](figures/icon-fuzhi.png)，复制“CNAME”值，如[图2](#fig3485313163918)。
 
     **图 2**  复制CNAME<a name="fig3485313163918"></a>  
@@ -94,11 +94,11 @@
             -   “值“：修改为已复制的WAF CNAME地址。
             -   其他的设置保持不变。
 
-            >![](public_sys-resources/icon-note.gif) **说明：**   
-            >关于修改解析记录：  
-            >-   对于同一个主机记录，CNAME解析记录不能重复，您需要将已存在的解析记录的CNAME修改为WAF CNAME地址。  
-            >-   同一解析记录下，不同DNS解析记录类型间可能存在冲突。例如，对于同一个主机记录，CNAME记录与A记录、MX记录、TXT记录等其他记录互相冲突。在无法直接修改记录类型的情况下，您可以先删除存在冲突的其他记录，再添加一条新的CNAME记录。删除其他解析记录并新增CNAME解析记录的过程应尽可能在短时间内完成。如果删除A记录后没有添加CNAME解析记录，可能导致域名无法正常解析。  
-            >域名解析类型的限制规则请参见[为什么会提示解析记录集已经存在？](https://support.huaweicloud.com/dns_faq/dns_faq_016.html)。  
+            >![](public_sys-resources/icon-note.gif) **说明：** 
+            >关于修改解析记录：
+            >-   对于同一个主机记录，CNAME解析记录不能重复，您需要将已存在的解析记录的CNAME修改为WAF CNAME地址。
+            >-   同一解析记录下，不同DNS解析记录类型间可能存在冲突。例如，对于同一个主机记录，CNAME记录与A记录、MX记录、TXT记录等其他记录互相冲突。在无法直接修改记录类型的情况下，您可以先删除存在冲突的其他记录，再添加一条新的CNAME记录。删除其他解析记录并新增CNAME解析记录的过程应尽可能在短时间内完成。如果删除A记录后没有添加CNAME解析记录，可能导致域名无法正常解析。
+            >域名解析类型的限制规则请参见[为什么会提示解析记录集已经存在？](https://support.huaweicloud.com/dns_faq/dns_faq_016.html)。
 
             **图 4**  修改记录集<a name="zh-cn_topic_0171278289_fig161041532185410"></a>  
             ![](figures/修改记录集.png "修改记录集")
@@ -109,11 +109,11 @@
 
         将使用的代理类服务（高防DDoS、CDN服务等）的回源地址修改为复制的目标域名的CNAME，具体的方法请参见[网站业务接入](https://support.huaweicloud.com/usermanual-aad/aad_01_0012.html)。
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您的DNS服务商处添加“子域名“和“TXT记录“。  
-        >1.  获取“子域名“和“TXT记录“：在“接入状态“所在行，单击“如何接入？“，在弹出的“接入指导“对话框中，复制“子域名“和“TXT记录“。  
-        >2.  到DNS服务商处添加“子域名“，并为它配置“TXT记录“。具体的配置方法请参见[未配置子域名和TXT记录的影响](https://support.huaweicloud.com/waf_faq/waf_01_0056.html)。  
-        >WAF会根据配置“子域名“和“TXT记录“判断域名的所有权属于哪个用户。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您的DNS服务商处添加“子域名“和“TXT记录“。
+        >1.  获取“子域名“和“TXT记录“：在“接入状态“所在行，单击“如何接入？“，在弹出的“接入指导“对话框中，复制“子域名“和“TXT记录“。
+        >2.  到DNS服务商处添加“子域名“，并为它配置“TXT记录“。具体的配置方法请参见[未配置子域名和TXT记录的影响](https://support.huaweicloud.com/waf_faq/waf_01_0056.html)。
+        >WAF会根据配置“子域名“和“TXT记录“判断域名的所有权属于哪个用户。
 
 
 6.  验证域名的CNAME是否配置成功。
@@ -129,9 +129,9 @@
         **图 5**  查询CNAME<a name="fig1190717481633"></a>  
         ![](figures/查询CNAME.png "查询CNAME")
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >-   默认情况下，服务每隔一小时就会自动检测每个防护域名的“接入状态“。  
-        >-   一般情况下，如果您确认已完成域名接入，“接入状态“为“已接入“，表示域名接入成功。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >-   默认情况下，服务每隔一小时就会自动检测每个防护域名的“接入状态“。
+        >-   一般情况下，如果您确认已完成域名接入，“接入状态“为“已接入“，表示域名接入成功。
 
 
 

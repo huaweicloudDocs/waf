@@ -289,7 +289,7 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     </thead>
     <tbody><tr id="row1687918217567"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1587916216560"><a name="p1587916216560"></a><a name="p1587916216560"></a>默认加密套件</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p88797218568"><a name="p88797218568"></a><a name="p88797218568"></a><span>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p88797218568"><a name="p88797218568"></a><a name="p88797218568"></a>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p1638915377711"><a name="p1638915377711"></a><a name="p1638915377711"></a>默认配置。</p>
     <a name="ul5894331187"></a><a name="ul5894331187"></a><ul id="ul5894331187"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般</li></ul>
@@ -297,7 +297,7 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     </tr>
     <tr id="row108791825563"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p588032195610"><a name="p588032195610"></a><a name="p588032195610"></a>加密套件1</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p208804235612"><a name="p208804235612"></a><a name="p208804235612"></a><span>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p208804235612"><a name="p208804235612"></a><a name="p208804235612"></a>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p162561042181013"><a name="p162561042181013"></a><a name="p162561042181013"></a>推荐配置。</p>
     <a name="ul1251115812815"></a><a name="ul1251115812815"></a><ul id="ul1251115812815"><li>兼容性：较好</li><li>安全性：较高</li></ul>
@@ -305,21 +305,21 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     </tr>
     <tr id="row134001337195610"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p154011373568"><a name="p154011373568"></a><a name="p154011373568"></a>加密套件2</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p4401037105613"><a name="p4401037105613"></a><a name="p4401037105613"></a><span>EECDH+AESGCM:EDH+AESGCM</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p4401037105613"><a name="p4401037105613"></a><a name="p4401037105613"></a>EECDH+AESGCM:EDH+AESGCM</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul1994313292913"></a><a name="ul1994313292913"></a><ul id="ul1994313292913"><li>兼容性：一般，严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</li><li>安全性：高</li></ul>
     </td>
     </tr>
     <tr id="row1293124610566"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p99324616566"><a name="p99324616566"></a><a name="p99324616566"></a>加密套件3</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p19334616563"><a name="p19334616563"></a><a name="p19334616563"></a><span>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p19334616563"><a name="p19334616563"></a><a name="p19334616563"></a>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul9343941131620"></a><a name="ul9343941131620"></a><ul id="ul9343941131620"><li>兼容性：一般，较低版本浏览器可能无法访问。</li><li>安全性：高，支持ECDHE、DHE-GCM、RSA-AES-GCM多种算法。</li></ul>
     </td>
     </tr>
     <tr id="row983711401112"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1383818401412"><a name="p1383818401412"></a><a name="p1383818401412"></a>加密套件4</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a><span>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul51541821131114"></a><a name="ul51541821131114"></a><ul id="ul51541821131114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般，新增支持GCM算法。</li></ul>
     </td>

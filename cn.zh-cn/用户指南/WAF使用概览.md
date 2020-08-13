@@ -16,13 +16,13 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 <tbody><tr id="row181711555123513"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p1717265511351"><a name="p1717265511351"></a><a name="p1717265511351"></a>开通WAF</p>
 </td>
 <td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p14108911588"><a name="p14108911588"></a><a name="p14108911588"></a>支持包年包月（云模式）和按需计费（独享模式）方式开通WAF。</p>
-<p id="p201266375458"><a name="p201266375458"></a><a name="p201266375458"></a>详细操作请参见<a href="zh-cn_topic_0178853264.md">开通WAF</a>。</p>
+<p id="p201266375458"><a name="p201266375458"></a><a name="p201266375458"></a>详细操作请参见<a href="开通WAF.md">开通WAF</a>。</p>
 </td>
 </tr>
 <tr id="row837775104313"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p93781254433"><a name="p93781254433"></a><a name="p93781254433"></a>添加防护网站</p>
 </td>
 <td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1437812504316"><a name="p1437812504316"></a><a name="p1437812504316"></a>添加需要防护的网站。</p>
-<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</li><li>独享模式：详细操作请参见<a href="zh-cn_topic_0257848321.md">添加防护网站</a>。</li></ul>
+<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</li><li>独享模式：详细操作请参见<a href="添加防护网站.md">添加防护网站</a>。</li></ul>
 </td>
 </tr>
 <tr id="row460742212359"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p260772263514"><a name="p260772263514"></a><a name="p260772263514"></a>开启WAF防护</p>
@@ -34,17 +34,17 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row1960762215351"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p19607112220359"><a name="p19607112220359"></a><a name="p19607112220359"></a>配置自定义规则</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="zh-cn_topic_0110861289.md">配置防护规则</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="配置防护规则.md">配置防护规则</a>。</p>
 </td>
 </tr>
 <tr id="row16914191884019"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p209141418104019"><a name="p209141418104019"></a><a name="p209141418104019"></a>开启告警通知</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1491512181402"><a name="p1491512181402"></a><a name="p1491512181402"></a>开启告警通知后，用户可以第一时间接收被拦截和仅记录的攻击日志。详细操作请参见<a href="zh-cn_topic_0110861229.md">开启告警通知</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1491512181402"><a name="p1491512181402"></a><a name="p1491512181402"></a>开启告警通知后，用户可以第一时间接收被拦截和仅记录的攻击日志。详细操作请参见<a href="开启告警通知.md">开启告警通知</a>。</p>
 </td>
 </tr>
 <tr id="row758655211510"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p0924629858"><a name="p0924629858"></a><a name="p0924629858"></a>处理误报事件</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1955314388418"><a name="p1955314388418"></a><a name="p1955314388418"></a>WAF拦截或者记录的攻击事件为误报时，可对误报进行屏蔽处理。详细操作请参见<a href="zh-cn_topic_0110861226.md">处理误报事件</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1955314388418"><a name="p1955314388418"></a><a name="p1955314388418"></a>WAF拦截或者记录的攻击事件为误报时，可对误报进行屏蔽处理。详细操作请参见<a href="处理误报事件.md">处理误报事件</a>。</p>
 </td>
 </tr>
 <tr id="row1999341519405"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p299315156400"><a name="p299315156400"></a><a name="p299315156400"></a>安全总览</p>
