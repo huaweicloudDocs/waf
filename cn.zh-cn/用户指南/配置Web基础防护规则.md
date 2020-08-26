@@ -4,8 +4,10 @@
 
 您也可以参考[Web基础防护功能最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0014.html)了解更多Web基础防护规则的配置信息。
 
->![](public_sys-resources/icon-notice.gif) **须知：** 
->Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
+## 操作须知<a name="section1698713971712"></a>
+
+-   Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
+-   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
 
 ## 前提条件<a name="section5903171661012"></a>
 
@@ -36,7 +38,7 @@
     <tbody><tr id="row8899732153112"><td class="cellrowborder" valign="top" width="22.49%" headers="mcps1.2.3.1.1 "><p id="p189011132173111"><a name="p189011132173111"></a><a name="p189011132173111"></a>状态</p>
     </td>
     <td class="cellrowborder" valign="top" width="77.51%" headers="mcps1.2.3.1.2 "><p id="p11901832163110"><a name="p11901832163110"></a><a name="p11901832163110"></a>Web应用防护攻击的状态。</p>
-    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image1945111441539"></a><a name="image1945111441539"></a><span><img id="image1945111441539" src="figures/icon-enable.png"></span>：开启状态。</li><li><a name="image2391121555513"></a><a name="image2391121555513"></a><span><img id="image2391121555513" src="figures/icon-disable.png"></span>：关闭状态。</li></ul>
+    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image1945111441539"></a><a name="image1945111441539"></a><span><img id="image1945111441539" src="figures/icon-enable.png"></span>：开启状态。</li><li><a name="image1195117112509"></a><a name="image1195117112509"></a><span><img id="image1195117112509" src="figures/icon-disable.png"></span>：关闭状态。</li></ul>
     </td>
     </tr>
     <tr id="row28096830192825"><td class="cellrowborder" valign="top" width="22.49%" headers="mcps1.2.3.1.1 "><p id="p10384205820363"><a name="p10384205820363"></a><a name="p10384205820363"></a>模式</p>
@@ -54,6 +56,9 @@
 
     **图 3**  Web基础防护<a name="fig17347539113910"></a>  
     ![](figures/Web基础防护.png "Web基础防护")
+
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >当“模式“设置为“拦截“时，您可以根据需要选择配置的攻击惩罚。
 
     默认开启“常规检测“和“扫描器“防护检测，用户可根据业务需要，开启其他需要防护的检测类型。
 
@@ -205,11 +210,11 @@
 假如已添加域名“www.example.com“，且已开启了Web基础防护的“常规检测“，防护模式为“拦截“。您可以参照以下步骤验证WAF防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
+    -   不能正常访问，参照[域名接入WAF](zh-cn_topic_0125242653.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li2057953372517)。
 
 2.  <a name="li2057953372517"></a>清理浏览器缓存，在浏览器中输入“http://www.example.com?id=1%27%20or%201=1“模拟SQL注入攻击。
-3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](下载防护事件数据.md)。
+3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](zh-cn_topic_0124433570.md)。
 
 ## 配置示例<a name="section1978194713716"></a>
 
