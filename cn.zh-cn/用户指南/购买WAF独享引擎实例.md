@@ -2,7 +2,7 @@
 
 如果您的业务服务器部署在华为云上，您可以通过购买WAF独享引擎实例对重要的域名或仅有IP的Web服务进行防护。
 
-WAF独享引擎支持按需计费模式，按使用时长收费。
+WAF独享引擎支持按需计费模式，按使用时长收费。独享引擎实例规格不能修改。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
 >创建实例大约需要5分钟。当实例的运行状态为“运行中“时，说明实例已经创建成功。
@@ -59,9 +59,9 @@ WAF独享引擎支持按需计费模式，按使用时长收费。
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p51329357300"><a name="p51329357300"></a><a name="p51329357300"></a>设置购买的WAF实例个数。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>CPU规格</p>
+    <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>规格</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的CPU规格。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格。</p>
     </td>
     </tr>
     <tr id="row195202055162711"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p45211555102711"><a name="p45211555102711"></a><a name="p45211555102711"></a>虚拟私有云</p>
