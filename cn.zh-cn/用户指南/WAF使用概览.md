@@ -22,7 +22,7 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 <tr id="row837775104313"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p93781254433"><a name="p93781254433"></a><a name="p93781254433"></a>添加防护网站</p>
 </td>
 <td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1437812504316"><a name="p1437812504316"></a><a name="p1437812504316"></a>添加需要防护的网站。</p>
-<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</li><li>独享模式：详细操作请参见<a href="添加防护网站.md">添加防护网站</a>。</li></ul>
+<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</li><li>独享模式：详细操作请参见<a href="zh-cn_topic_0257848321.md">添加防护网站</a>。</li></ul>
 </td>
 </tr>
 <tr id="row460742212359"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p260772263514"><a name="p260772263514"></a><a name="p260772263514"></a>开启WAF防护</p>

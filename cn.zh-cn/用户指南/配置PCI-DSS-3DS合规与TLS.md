@@ -15,6 +15,9 @@ WAF默认配置的最低TLS版本为TLS v1.0，加密套件为加密套件1，�
 -   开启PCI 3DS合规认证后，不能修改TLS最低版本，且最低TLS版本将设置为“TLS v1.2“。
 -   开启PCI 3DS合规认证后，您将不能关闭该认证，请根据业务实际需求进行操作。
 
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>在配置前TLS前，您可以[查看网站TLS版本](https://myssl.com/ssl.html)。
+
 ## 前提条件<a name="section1032870191810"></a>
 
 -   已添加防护网站。
