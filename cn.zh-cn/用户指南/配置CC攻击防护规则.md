@@ -6,6 +6,11 @@
 
 -   WAF会在客户请求Cookie中插入HWWAFSESID，HWWAFSESTIME等字段，这些字段服务于WAF统计和安全特性。
 -   检测版不支持该功能。
+-   CC攻击防护规则可以添加引用表，引用表防护规则对所有防护域名都生效，即所有防护域名都可以使用CC攻击防护规则的引用表。
+
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >检测版和专业版不支持引用表管理功能。
+
 -   专业版和通过按需计费方式购买的WAF云模式，不支持引用表功能。
 -   网站同时接入WAF和CDN（Content Delivery Network，内容分发网络）时，如果“防护动作“配置为“人机验证“，请注意：
     -   建议防护规则的“路径“配置为动态页面。
@@ -108,7 +113,7 @@
     <tr id="row4735102013144"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.1 "><p id="p1573462071420"><a name="p1573462071420"></a><a name="p1573462071420"></a>防护动作</p>
     </td>
     <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><p id="p177341320101410"><a name="p177341320101410"></a><a name="p177341320101410"></a>当访问的请求频率超过<span class="parmname" id="parmname12866152313105"><a name="parmname12866152313105"></a><a name="parmname12866152313105"></a>“限速频率”</span>时，可设置以下防护动作：</p>
-    <a name="ul1273582011416"></a><a name="ul1273582011416"></a><ul id="ul1273582011416"><li class="MsoBodyText">人机验证：表示超过<span class="parmname" id="parmname135017162317"><a name="parmname135017162317"></a><a name="parmname135017162317"></a>“限速频率”</span>后弹出验证码，进行人机验证，完成验证后，请求将不受访问限制。</li><li class="MsoBodyText">阻断：表示超过<span class="parmname" id="parmname2027844183115"><a name="parmname2027844183115"></a><a name="parmname2027844183115"></a>“限速频率”</span>将直接阻断。</li><li>动态阻断：上一个限速周期内，请求频率超过<span class="parmname" id="parmname7247154133211"><a name="parmname7247154133211"></a><a name="parmname7247154133211"></a>“限速频率”</span>将被阻断，那么在下一个限速周期内，请求频率超过<span class="parmname" id="parmname2024714143216"><a name="parmname2024714143216"></a><a name="parmname2024714143216"></a>“放行频率”</span>将被阻断。<p id="p1413384683216"><a name="p1413384683216"></a><a name="p1413384683216"></a>仅<span class="parmname" id="parmname544935418133"><a name="parmname544935418133"></a><a name="parmname544935418133"></a>“工作模式”</span>选择<span class="parmvalue" id="parmvalue184491354171317"><a name="parmvalue184491354171317"></a><a name="parmvalue184491354171317"></a>“高级”</span>时，才支持此防护动作。</p>
+    <a name="ul1273582011416"></a><a name="ul1273582011416"></a><ul id="ul1273582011416"><li class="MsoBodyText">人机验证：表示超过<span class="parmname" id="parmname135017162317"><a name="parmname135017162317"></a><a name="parmname135017162317"></a>“限速频率”</span>后弹出验证码，进行人机验证，完成验证后，请求将不受访问限制。人机验证目前支持英文。</li><li class="MsoBodyText">阻断：表示超过<span class="parmname" id="parmname2027844183115"><a name="parmname2027844183115"></a><a name="parmname2027844183115"></a>“限速频率”</span>将直接阻断。</li><li>动态阻断：上一个限速周期内，请求频率超过<span class="parmname" id="parmname7247154133211"><a name="parmname7247154133211"></a><a name="parmname7247154133211"></a>“限速频率”</span>将被阻断，那么在下一个限速周期内，请求频率超过<span class="parmname" id="parmname2024714143216"><a name="parmname2024714143216"></a><a name="parmname2024714143216"></a>“放行频率”</span>将被阻断。<p id="p1413384683216"><a name="p1413384683216"></a><a name="p1413384683216"></a>仅<span class="parmname" id="parmname544935418133"><a name="parmname544935418133"></a><a name="parmname544935418133"></a>“工作模式”</span>选择<span class="parmvalue" id="parmvalue184491354171317"><a name="parmvalue184491354171317"></a><a name="parmvalue184491354171317"></a>“高级”</span>时，才支持此防护动作。</p>
     </li><li class="MsoBodyText">仅记录：表示超过<span class="parmname" id="parmname5477145263110"><a name="parmname5477145263110"></a><a name="parmname5477145263110"></a>“限速频率”</span>将只记录不阻断。可<a href="下载防护事件数据.md">下载防护事件数据</a>查看域名的防护日志。</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="26.740000000000002%" headers="mcps1.2.4.1.3 "><p id="p9735192091414"><a name="p9735192091414"></a><a name="p9735192091414"></a>阻断</p>

@@ -346,7 +346,7 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     </tr>
     <tr id="row983711401112"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1383818401412"><a name="p1383818401412"></a><a name="p1383818401412"></a>加密套件4</p>
     </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a><span>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</span></p>
+    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul51541821131114"></a><a name="ul51541821131114"></a><ul id="ul51541821131114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般，新增支持GCM算法。</li></ul>
     </td>
