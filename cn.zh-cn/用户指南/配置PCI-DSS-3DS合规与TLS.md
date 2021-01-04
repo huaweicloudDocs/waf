@@ -1,36 +1,120 @@
 # 配置PCI DSS/3DS合规与TLS<a name="waf_01_0169"></a>
 
-安全传输层协议（Transport Layer Security，TLS）在两个通信应用程序之间提供保密性和数据完整性。HTTPS协议是由TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议，当防护网站的“对外协议“为“HTTPS“时，您可以通过WAF为网站设置最低TLS版本和加密套件（多种加密算法的集合），对于低于最低TLS版本的请求，将无法正常访问网站，以满足行业客户的安全需求。
-
-当防护网站的“对外协议“为“HTTP“时，HTTP协议不涉及TLS，请忽略该章节。
+安全传输层协议（Transport Layer Security，TLS）在两个通信应用程序之间提供保密性和数据完整性。HTTPS协议是由TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议。当防护网站的部署模式为“云模式“或“独享模式“且“对外协议“为“HTTPS“时，您可以通过WAF为网站设置最低TLS版本和加密套件（多种加密算法的集合），对于低于最低TLS版本的请求，将无法正常访问网站，以满足行业客户的安全需求。
 
 WAF默认配置的最低TLS版本为TLS v1.0，加密套件为加密套件1，为了确保网站安全，建议您将网站的最低TLS版本和TLS加密套件配置为安全性更高TLS版本和加密套件。
 
 同时，WAF支持开启PCI DSS和PCI 3DS合规认证功能，开启合规认证后，最低TLS版本将设置为TLS v1.2，以满足PCI DSS和PCI 3DS合规认证要求。
 
-## 操作须知<a name="section15822173913613"></a>
+## 前提条件<a name="section7175429781"></a>
 
--   开启PCI DSS合规认证后，不能修改TLS最低版本和加密套件，且最低TLS版本将设置为“TLS v1.2“，加密套件设置为EECDH+AESGCM:EDH+AESGCM。
--   开启PCI DSS合规认证后，如果您需要修改TLS最低版本和加密套件，请关闭该认证。
--   开启PCI 3DS合规认证后，不能修改TLS最低版本，且最低TLS版本将设置为“TLS v1.2“。
--   开启PCI 3DS合规认证后，您将不能关闭该认证，请根据业务实际需求进行操作。
-
->![](public_sys-resources/icon-note.gif) **说明：** 
->在配置前TLS前，您可以[查看网站TLS版本](https://myssl.com/ssl.html)。
-
-## 前提条件<a name="section1032870191810"></a>
-
--   已添加防护网站。
+-   防护网站的部署模式为“云模式“或“独享模式“。
 -   防护网站的“对外协议“使用了HTTPS协议。
 
-## 加密套件兼容性说明<a name="section1645404816720"></a>
+## 约束条件<a name="section1119411227134"></a>
 
-WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼容，不能兼容部分老版本的浏览器，以TLS v1.0协议为例，加密套件不兼容的浏览器及客户端参考说明如[表1](#table893015311885)所示。
+当防护网站的“对外协议“为“HTTP“时，HTTP协议不涉及TLS，请忽略该章节。
+
+## 应用场景<a name="section1645404816720"></a>
+
+WAF默认配置的最低TLS版本为“TLS v1.0“，为了确保网站安全，建议您根据业务实际需求进行配置，推荐配置的最低TLS版本如[表1](#table19196118195712)所示。
+
+**表 1**  推荐配置的最低TLS版本说明
+
+<a name="table19196118195712"></a>
+<table><thead align="left"><tr id="row5197583579"><th class="cellrowborder" valign="top" width="32.879999999999995%" id="mcps1.2.4.1.1"><p id="p15197785573"><a name="p15197785573"></a><a name="p15197785573"></a>场景</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.73%" id="mcps1.2.4.1.2"><p id="p1519715814576"><a name="p1519715814576"></a><a name="p1519715814576"></a>最低TLS版本（推荐）</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.39%" id="mcps1.2.4.1.3"><p id="p178261451497"><a name="p178261451497"></a><a name="p178261451497"></a>防护效果</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row101976814577"><td class="cellrowborder" valign="top" width="32.879999999999995%" headers="mcps1.2.4.1.1 "><p id="p1419719865716"><a name="p1419719865716"></a><a name="p1419719865716"></a>网站安全性能要求很高（例如，银行金融、证券、电子商务等有重要商业信息和重要数据的行业）</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.73%" headers="mcps1.2.4.1.2 "><p id="p4197188175710"><a name="p4197188175710"></a><a name="p4197188175710"></a>TLS v1.2</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.39%" headers="mcps1.2.4.1.3 "><p id="p18266452494"><a name="p18266452494"></a><a name="p18266452494"></a>WAF将自动拦截TLS v1.0和TLS v1.1协议的访问请求。</p>
+</td>
+</tr>
+<tr id="row4197138135711"><td class="cellrowborder" valign="top" width="32.879999999999995%" headers="mcps1.2.4.1.1 "><p id="p519810810573"><a name="p519810810573"></a><a name="p519810810573"></a>网站安全性能要求一般（例如，中小企业门户网站）</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.73%" headers="mcps1.2.4.1.2 "><p id="p819813819572"><a name="p819813819572"></a><a name="p819813819572"></a>TLS v1.1</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.39%" headers="mcps1.2.4.1.3 "><p id="p1382664544918"><a name="p1382664544918"></a><a name="p1382664544918"></a>WAF将自动拦截TLS1.0协议的访问请求。</p>
+</td>
+</tr>
+<tr id="row15198128125718"><td class="cellrowborder" valign="top" width="32.879999999999995%" headers="mcps1.2.4.1.1 "><p id="p1719814815572"><a name="p1719814815572"></a><a name="p1719814815572"></a>客户端APP无安全性要求，可以正常访问网站</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.73%" headers="mcps1.2.4.1.2 "><p id="p1319814885719"><a name="p1319814885719"></a><a name="p1319814885719"></a>TLS v1.0</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.39%" headers="mcps1.2.4.1.3 "><p id="p58262045144918"><a name="p58262045144918"></a><a name="p58262045144918"></a>所有的TLS协议都可以访问网站。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>在配置前TLS前，您可以先[查看网站TLS版本](https://myssl.com/ssl.html)。
+
+WAF默认和推荐配置的加密套件为“加密套件1“，可以满足浏览器兼容性和安全性，各加密套件相关说明如[表2](#table173581645172115)所示。
+
+**表 2**  加密套件说明
+
+<a name="table173581645172115"></a>
+<table><thead align="left"><tr id="row735934517212"><th class="cellrowborder" valign="top" width="20.830000000000002%" id="mcps1.2.4.1.1"><p id="p8359184512115"><a name="p8359184512115"></a><a name="p8359184512115"></a>加密套件名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.160000000000004%" id="mcps1.2.4.1.2"><p id="p83591545122111"><a name="p83591545122111"></a><a name="p83591545122111"></a>加密算法</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.01%" id="mcps1.2.4.1.3"><p id="p143597450216"><a name="p143597450216"></a><a name="p143597450216"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row2359154512119"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p7359445102116"><a name="p7359445102116"></a><a name="p7359445102116"></a>默认加密套件</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p143591445192111"><a name="p143591445192111"></a><a name="p143591445192111"></a>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul435984513212"></a><a name="ul435984513212"></a><ul id="ul435984513212"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般</li></ul>
+</td>
+</tr>
+<tr id="row2036074516211"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p936074513218"><a name="p936074513218"></a><a name="p936074513218"></a>加密套件1</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p136024532115"><a name="p136024532115"></a><a name="p136024532115"></a>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p3360645162112"><a name="p3360645162112"></a><a name="p3360645162112"></a>默认推荐配置。</p>
+<a name="ul173601845132114"></a><a name="ul173601845132114"></a><ul id="ul173601845132114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：较高</li></ul>
+</td>
+</tr>
+<tr id="row3360545172111"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p2036019456219"><a name="p2036019456219"></a><a name="p2036019456219"></a>加密套件2</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p836012454211"><a name="p836012454211"></a><a name="p836012454211"></a>EECDH+AESGCM:EDH+AESGCM</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul33601445152117"></a><a name="ul33601445152117"></a><ul id="ul33601445152117"><li>兼容性：一般，严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</li><li>安全性：高</li></ul>
+</td>
+</tr>
+<tr id="row3360114572113"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p133609451218"><a name="p133609451218"></a><a name="p133609451218"></a>加密套件3</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p73611645192116"><a name="p73611645192116"></a><a name="p73611645192116"></a>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul163611045152110"></a><a name="ul163611045152110"></a><ul id="ul163611045152110"><li>兼容性：一般，较低版本浏览器可能无法访问。</li><li>安全性：高，支持ECDHE、DHE-GCM、RSA-AES-GCM多种算法。</li></ul>
+</td>
+</tr>
+<tr id="row83611245192116"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p183611645102111"><a name="p183611645102111"></a><a name="p183611645102111"></a>加密套件4</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p6361134532112"><a name="p6361134532112"></a><a name="p6361134532112"></a>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul12361134522117"></a><a name="ul12361134522117"></a><ul id="ul12361134522117"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般，新增支持GCM算法。</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼容，不能兼容部分老版本的浏览器，以TLS v1.0协议为例，加密套件不兼容的浏览器及客户端参考说明如[表3](#table893015311885)所示。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
 >建议您以实际客户端环境测试的兼容情况为准，避免影响现网业务。
 
-**表 1**  加密套件不兼容的浏览器/客户端参考说明（TLS v1.0）
+**表 3**  加密套件不兼容的浏览器/客户端参考说明（TLS v1.0）
 
 <a name="table893015311885"></a>
 <table><thead align="left"><tr id="row119311731483"><th class="cellrowborder" valign="top" width="26.97%" id="mcps1.2.7.1.1"><p id="p169317318818"><a name="p169317318818"></a><a name="p169317318818"></a>浏览器/客户端</p>
@@ -263,6 +347,17 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
 </tbody>
 </table>
 
+## 系统影响<a name="section43561042125018"></a>
+
+-   PCI DSS
+    -   开启PCI DSS合规认证后，不能修改TLS最低版本和加密套件，且最低TLS版本将设置为“TLS v1.2“，加密套件设置为EECDH+AESGCM:EDH+AESGCM。
+    -   开启PCI DSS合规认证后，如果您需要修改TLS最低版本和加密套件，请关闭该认证。
+
+-   PCI 3DS
+    -   开启PCI 3DS合规认证后，不能修改TLS最低版本，且最低TLS版本将设置为“TLS v1.2“。
+    -   开启PCI 3DS合规认证后，您将不能关闭该认证，请根据业务实际需求进行操作。
+
+
 ## 操作步骤<a name="section127762575214"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
@@ -293,7 +388,7 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
         >-   选择开启PCI 3DS合规认证后，您将不能关闭该认证，请根据业务实际需求进行操作。
 
 
-5.  在弹出的“TLS配置“对话框中，选择最低TLS版本和加密套件，如[图3](#fig1518314493518)所示，加密套件相关说明如[表2](#table17733717165019)所示。
+5.  在弹出的“TLS配置“对话框中，选择最低TLS版本和加密套件，如[图3](#fig1518314493518)所示，加密套件相关说明如[表2](#table173581645172115)所示。
 
     **图 3** “TLS配置“对话框<a name="fig1518314493518"></a>  
     ![](figures/TLS配置对话框.png "TLS配置对话框")
@@ -304,55 +399,9 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
     -   选择TLS v1.1版本时，TLS v1.1及以上版本的请求可以访问域名。
     -   选择TLS v1.2版本时，TLS v1.2及以上版本的请求可以访问域名。
 
-    **表 2**  加密套件说明
-
-    <a name="table17733717165019"></a>
-    <table><thead align="left"><tr id="row1487913215612"><th class="cellrowborder" valign="top" width="20.830000000000002%" id="mcps1.2.4.1.1"><p id="p6879102195613"><a name="p6879102195613"></a><a name="p6879102195613"></a>加密套件名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="40.160000000000004%" id="mcps1.2.4.1.2"><p id="p98791626560"><a name="p98791626560"></a><a name="p98791626560"></a>加密算法</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="39.01%" id="mcps1.2.4.1.3"><p id="p1623713189516"><a name="p1623713189516"></a><a name="p1623713189516"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row1687918217567"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1587916216560"><a name="p1587916216560"></a><a name="p1587916216560"></a>默认加密套件</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p88797218568"><a name="p88797218568"></a><a name="p88797218568"></a><span>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</span></p>
-    </td>
-    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul5894331187"></a><a name="ul5894331187"></a><ul id="ul5894331187"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般</li></ul>
-    </td>
-    </tr>
-    <tr id="row108791825563"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p588032195610"><a name="p588032195610"></a><a name="p588032195610"></a>加密套件1</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p208804235612"><a name="p208804235612"></a><a name="p208804235612"></a><span>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</span></p>
-    </td>
-    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p162561042181013"><a name="p162561042181013"></a><a name="p162561042181013"></a>默认推荐配置。</p>
-    <a name="ul1251115812815"></a><a name="ul1251115812815"></a><ul id="ul1251115812815"><li>兼容性：较好</li><li>安全性：较高</li></ul>
-    </td>
-    </tr>
-    <tr id="row134001337195610"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p154011373568"><a name="p154011373568"></a><a name="p154011373568"></a>加密套件2</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p4401037105613"><a name="p4401037105613"></a><a name="p4401037105613"></a><span>EECDH+AESGCM:EDH+AESGCM</span></p>
-    </td>
-    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul1994313292913"></a><a name="ul1994313292913"></a><ul id="ul1994313292913"><li>兼容性：一般，严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</li><li>安全性：高</li></ul>
-    </td>
-    </tr>
-    <tr id="row1293124610566"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p99324616566"><a name="p99324616566"></a><a name="p99324616566"></a>加密套件3</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p19334616563"><a name="p19334616563"></a><a name="p19334616563"></a><span>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</span></p>
-    </td>
-    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul9343941131620"></a><a name="ul9343941131620"></a><ul id="ul9343941131620"><li>兼容性：一般，较低版本浏览器可能无法访问。</li><li>安全性：高，支持ECDHE、DHE-GCM、RSA-AES-GCM多种算法。</li></ul>
-    </td>
-    </tr>
-    <tr id="row983711401112"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p1383818401412"><a name="p1383818401412"></a><a name="p1383818401412"></a>加密套件4</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p1083910401818"><a name="p1083910401818"></a><a name="p1083910401818"></a>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul51541821131114"></a><a name="ul51541821131114"></a><ul id="ul51541821131114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般，新增支持GCM算法。</li></ul>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
 6.  单击“确定“，TLS配置完成。
+
+## 生效条件<a name="section168581723173910"></a>
+
+假定“最低TLS版本“配置为“TLS v1.2“，则TLS v1.2协议可以正常访问网站，TLS v1.1及以下协议不能正常访问网站。
 

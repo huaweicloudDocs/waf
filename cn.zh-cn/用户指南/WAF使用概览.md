@@ -15,14 +15,14 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </thead>
 <tbody><tr id="row181711555123513"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p1717265511351"><a name="p1717265511351"></a><a name="p1717265511351"></a>开通WAF</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p14108911588"><a name="p14108911588"></a><a name="p14108911588"></a>云模式支持包年/包月或按需计费方式开通，独享模式支持按需计费方式开通。</p>
-<p id="p201266375458"><a name="p201266375458"></a><a name="p201266375458"></a>详细操作请参见<a href="zh-cn_topic_0178853264.md">开通WAF</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p11671184411217"><a name="p11671184411217"></a><a name="p11671184411217"></a>云模式支持包年/包月计费方式开通，独享模式和ELB模式支持按需计费方式开通。</p>
+<p id="p201266375458"><a name="p201266375458"></a><a name="p201266375458"></a>详细操作请参见<a href="开通WAF.md">开通WAF</a>。</p>
 </td>
 </tr>
 <tr id="row837775104313"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p93781254433"><a name="p93781254433"></a><a name="p93781254433"></a>添加防护网站</p>
 </td>
 <td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1437812504316"><a name="p1437812504316"></a><a name="p1437812504316"></a>添加需要防护的网站。</p>
-<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">添加防护域名</a>。</li><li>独享模式：详细操作请参见<a href="zh-cn_topic_0257848321.md">添加防护网站</a>。</li></ul>
+<a name="ul19732161718483"></a><a name="ul19732161718483"></a><ul id="ul19732161718483"><li>云模式：详细操作请参见<a href="添加防护域名.md">网站接入（云模式）</a>。</li><li>独享模式：详细操作请参见<a href="添加防护网站（独享模式）.md">网站接入（独享模式）</a>。</li><li>ELB模式：详细操作请参见<a href="添加防护网站（ELB模式）.md">网站接入（ELB模式）</a>。</li></ul>
 </td>
 </tr>
 <tr id="row460742212359"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p260772263514"><a name="p260772263514"></a><a name="p260772263514"></a>开启WAF防护</p>
@@ -34,7 +34,7 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row1960762215351"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p19607112220359"><a name="p19607112220359"></a><a name="p19607112220359"></a>配置自定义规则</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="zh-cn_topic_0110861289.md">配置防护规则</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p12607112215352"><a name="p12607112215352"></a><a name="p12607112215352"></a>WAF除了内置的防护规则外，还提供了丰富全面的自定义防护配置规则，全方位的防护您的网站。详细操作请参见<a href="配置防护规则.md">配置防护规则</a>。</p>
 </td>
 </tr>
 <tr id="row16914191884019"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p209141418104019"><a name="p209141418104019"></a><a name="p209141418104019"></a>开启告警通知</p>
@@ -49,17 +49,30 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </tr>
 <tr id="row1999341519405"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p299315156400"><a name="p299315156400"></a><a name="p299315156400"></a>安全总览</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1199319156407"><a name="p1199319156407"></a><a name="p1199319156407"></a>可查看到昨天、今天、3天、7天或者30天范围内的访问与攻击统计次数、攻击分布、受攻击域名 TOP10、攻击源IP TOP10和受攻击URL TOP10的次数。详细操作请参见<a href="安全总览.md">安全总览</a>。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p1199319156407"><a name="p1199319156407"></a><a name="p1199319156407"></a>可查看到昨天、今天、3天、7天或者30天范围内的防护数据。详细操作请参见<a href="安全总览.md">安全总览</a>。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-网站接入WAF的操作流程图如[图1](#fig11714343123618)和[图2](#fig188812509288)所示。
+## 网站接入（云模式）流程图<a name="section7172123792716"></a>
 
-**图 1**  网站接入WAF的操作流程图-云模式<a name="fig11714343123618"></a>  
+网站接入WAF的操作流程图如[图1](#fig985134112284)所示。
+
+**图 1**  网站接入WAF的操作流程图-云模式<a name="fig985134112284"></a>  
 ![](figures/网站接入WAF的操作流程图-云模式.png "网站接入WAF的操作流程图-云模式")
 
-**图 2**  网站接入WAF的操作流程图-独享模式<a name="fig188812509288"></a>  
+## 网站接入（独享模式）流程图<a name="section155810112291"></a>
+
+网站接入WAF的操作流程图如[图2](#fig3118103718294)所示。
+
+**图 2**  网站接入WAF的操作流程图-独享模式<a name="fig3118103718294"></a>  
 ![](figures/网站接入WAF的操作流程图-独享模式.png "网站接入WAF的操作流程图-独享模式")
+
+## 网站接入（ELB模式）流程图<a name="section522391815358"></a>
+
+网站接入WAF的操作流程图如[图3](#fig8223418193518)所示。
+
+**图 3**  网站接入WAF的操作流程图-ELB模式<a name="fig8223418193518"></a>  
+![](figures/网站接入WAF的操作流程图-ELB模式.png "网站接入WAF的操作流程图-ELB模式")
 
