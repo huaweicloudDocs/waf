@@ -60,7 +60,7 @@
     </tr>
     <tr id="row1192175711538"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p131926571535"><a name="p131926571535"></a><a name="p131926571535"></a>实例组</p>
     </td>
-    <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p1919275714537"><a name="p1919275714537"></a><a name="p1919275714537"></a>选择防护网站绑定的实例组。您可以单击创建实例组，新建新的实例组，有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
+    <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p1919275714537"><a name="p1919275714537"></a><a name="p1919275714537"></a>选择防护网站绑定的实例组。您可以单击创建实例组，新建新的实例组，有关创建实例组的详细操作，请参见<a href="zh-cn_topic_0298408746.md">创建实例组</a>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p619275765317"><a name="p619275765317"></a><a name="p619275765317"></a>waf</p>
     </td>

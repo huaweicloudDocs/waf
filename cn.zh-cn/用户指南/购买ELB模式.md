@@ -9,7 +9,7 @@ ELB模式支持按需计费模式，按使用时长收费。
 
 ## 前提条件<a name="zh-cn_topic_0110861189_section5331623210436"></a>
 
-已获取管理控制台的登录账号（拥有WAF Administrator与BSS Administrator权限）与密码。
+已获取管理控制台的登录帐号（拥有WAF Administrator与BSS Administrator权限）与密码。
 
 ## 规格限制<a name="section379282141915"></a>
 
@@ -18,10 +18,6 @@ ELB模式支持按需计费模式，按使用时长收费。
 ## 约束条件<a name="section1753081119317"></a>
 
 已购买华为云独享型ELB，且该ELB必须与ELB模式实例在同一个VPC内，否则，可能导致业务接入异常。
-
->![](public_sys-resources/icon-note.gif) **说明：** 
->支持购买WAF的区域：华东-上海一、华东-上海二、华北-北京一、华北-北京四、华南-广州、华南-深圳、亚太-香港、亚太-曼谷、亚太-新加坡、拉美-圣保罗一。
->原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
 
 ## 应用场景<a name="section1828463910329"></a>
 
@@ -32,7 +28,7 @@ ELB模式支持按需计费模式，按使用时长收费。
 ## 操作步骤<a name="section92421628131311"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  单击管理控制台左上角的![](figures/选择区域图标.jpg)，选择区域或项目。
+2.  单击管理控制台左上角的![](figures/icon-region.jpg)，选择区域或项目。
 3.  单击页面左上方的![](figures/icon-Service.png)，选择“安全  \>  Web应用防火墙 WAF“。
 4.  首次购买WAF时，在界面左侧，单击“购买WAF“。
 
@@ -56,8 +52,9 @@ ELB模式支持按需计费模式，按使用时长收费。
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p690274525910"><a name="p690274525910"></a><a name="p690274525910"></a>支持购买WAF的区域：华东-上海一、华东-上海二、华北-北京一、华北-北京四、华南-广州、华南-深圳、亚太-香港、亚太-曼谷、亚太-新加坡、拉美-圣保罗一。</p>
-    <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
+    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442_1"><a name="zh-cn_topic_0178852794_p26971939442_1"></a><a name="zh-cn_topic_0178852794_p26971939442_1"></a>当前仅<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>区域支持ELB模式。</p>
+    </div></div>
     </td>
     </tr>
     <tr id="row16462181515576"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p1446316152570"><a name="p1446316152570"></a><a name="p1446316152570"></a>可用区</p>
@@ -92,7 +89,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tr>
     <tr id="row195202055162711"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p45211555102711"><a name="p45211555102711"></a><a name="p45211555102711"></a>实例组</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="zh-cn_topic_0298408746.md">创建实例组</a>。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>业务网卡</p>

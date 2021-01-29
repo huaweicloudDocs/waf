@@ -11,7 +11,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 ## 约束条件<a name="section3393202511516"></a>
 
 -   Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
--   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
+-   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](zh-cn_topic_0272541691.md)。
 
 ## 操作步骤<a name="section61533550183130"></a>
 
@@ -85,9 +85,9 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     </div></div>
     </td>
     </tr>
-    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a>深度检测</p>
+    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a><span>深度检测</span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护同形字符混淆、通配符变形的命令注入、UTF7、Data URI Schema等深度反逃逸。</p>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护<span>同形字符混淆、通配符变形的命令注入、UTF7、Data URI Schema等</span>深度反逃逸。</p>
     <div class="note" id="note825125516470"><a name="note825125516470"></a><a name="note825125516470"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1425155154718"><a name="p1425155154718"></a><a name="p1425155154718"></a>开启<span class="parmname" id="parmname1622619445528"><a name="parmname1622619445528"></a><a name="parmname1622619445528"></a>“深度检测”</span>后，WAF将对深度反逃逸进行检测防护。</p>
     </div></div>
     </td>

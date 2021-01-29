@@ -2,11 +2,11 @@
 
 如果您需要对您所拥有的WAF进行精细的权限管理，您可以使用[统一身份认证服务](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)（Identity and Access Management，简称IAM），通过IAM，您可以：
 
--   根据企业的业务组织，在您的华为云账号中，给企业中不同职能部门的员工创建IAM用户，让员工拥有唯一安全凭证，并使用WAF资源。
+-   根据企业的业务组织，在您的华为云帐号中，给企业中不同职能部门的员工创建IAM用户，让员工拥有唯一安全凭证，并使用WAF资源。
 -   根据企业用户的职能，设置不同的访问权限，以达到用户之间的权限隔离。
--   将WAF资源委托给更专业、高效的其他华为云账号或者云服务，这些账号或者云服务可以根据权限进行代运维。
+-   将WAF资源委托给更专业、高效的其他华为云帐号或者云服务，这些帐号或者云服务可以根据权限进行代运维。
 
-如果华为云账号已经能满足您的要求，不需要创建独立的IAM用户，您可以跳过本章节，不影响您使用WAF服务的其它功能。
+如果华为云帐号已经能满足您的要求，不需要创建独立的IAM用户，您可以跳过本章节，不影响您使用WAF服务的其它功能。
 
 本章节为您介绍对用户授权的方法，操作流程如[图1](#fig673713328586)所示。
 
@@ -27,7 +27,7 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.7%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a>WAF Administrator</p>
+<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.7%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a><span>WAF Administrator</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="30.94%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p0462172991319"><a name="zh-cn_topic_0169881967_p0462172991319"></a><a name="zh-cn_topic_0169881967_p0462172991319"></a>Web应用防火墙服务的管理员权限。</p>
 </td>

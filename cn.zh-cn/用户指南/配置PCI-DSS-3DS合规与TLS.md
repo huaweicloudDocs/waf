@@ -72,14 +72,14 @@ WAF默认和推荐配置的加密套件为“加密套件1“，可以满足浏�
 </thead>
 <tbody><tr id="row2359154512119"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p7359445102116"><a name="p7359445102116"></a><a name="p7359445102116"></a>默认加密套件</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p143591445192111"><a name="p143591445192111"></a><a name="p143591445192111"></a>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</p>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p143591445192111"><a name="p143591445192111"></a><a name="p143591445192111"></a><span>ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul435984513212"></a><a name="ul435984513212"></a><ul id="ul435984513212"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：一般</li></ul>
 </td>
 </tr>
 <tr id="row2036074516211"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p936074513218"><a name="p936074513218"></a><a name="p936074513218"></a>加密套件1</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p136024532115"><a name="p136024532115"></a><a name="p136024532115"></a>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</p>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p136024532115"><a name="p136024532115"></a><a name="p136024532115"></a><span>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p3360645162112"><a name="p3360645162112"></a><a name="p3360645162112"></a>默认推荐配置。</p>
 <a name="ul173601845132114"></a><a name="ul173601845132114"></a><ul id="ul173601845132114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：较高</li></ul>
@@ -87,14 +87,14 @@ WAF默认和推荐配置的加密套件为“加密套件1“，可以满足浏�
 </tr>
 <tr id="row3360545172111"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p2036019456219"><a name="p2036019456219"></a><a name="p2036019456219"></a>加密套件2</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p836012454211"><a name="p836012454211"></a><a name="p836012454211"></a>EECDH+AESGCM:EDH+AESGCM</p>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p836012454211"><a name="p836012454211"></a><a name="p836012454211"></a><span>EECDH+AESGCM:EDH+AESGCM</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul33601445152117"></a><a name="ul33601445152117"></a><ul id="ul33601445152117"><li>兼容性：一般，严格符合PCI DSS的FS要求，较低版本浏览器可能无法访问。</li><li>安全性：高</li></ul>
 </td>
 </tr>
 <tr id="row3360114572113"><td class="cellrowborder" valign="top" width="20.830000000000002%" headers="mcps1.2.4.1.1 "><p id="p133609451218"><a name="p133609451218"></a><a name="p133609451218"></a>加密套件3</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p73611645192116"><a name="p73611645192116"></a><a name="p73611645192116"></a>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</p>
+<td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p73611645192116"><a name="p73611645192116"></a><a name="p73611645192116"></a><span>ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><a name="ul163611045152110"></a><a name="ul163611045152110"></a><ul id="ul163611045152110"><li>兼容性：一般，较低版本浏览器可能无法访问。</li><li>安全性：高，支持ECDHE、DHE-GCM、RSA-AES-GCM多种算法。</li></ul>
 </td>
@@ -388,7 +388,7 @@ WAF提供的TLS加密套件对于高版本的浏览器及客户端都可以兼�
         >-   选择开启PCI 3DS合规认证后，您将不能关闭该认证，请根据业务实际需求进行操作。
 
 
-5.  在弹出的“TLS配置“对话框中，选择最低TLS版本和加密套件，如[图3](#fig1518314493518)所示，加密套件相关说明如[表2](#table173581645172115)所示。
+5.  在弹出的“TLS配置“对话框中，选择最低TLS版本和加密套件，如[图3](#fig1518314493518)所示。
 
     **图 3** “TLS配置“对话框<a name="fig1518314493518"></a>  
     ![](figures/TLS配置对话框.png "TLS配置对话框")
