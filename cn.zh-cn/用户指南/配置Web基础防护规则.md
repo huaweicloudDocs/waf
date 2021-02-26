@@ -4,6 +4,9 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 
 您也可以参考[Web基础防护功能最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0014.html)了解更多Web基础防护规则的配置信息。
 
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，为该企业项目下域名配置防护策略。
+
 ## 前提条件<a name="section5903171661012"></a>
 
 已添加防护网站。
@@ -11,7 +14,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 ## 约束条件<a name="section3393202511516"></a>
 
 -   Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
--   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](zh-cn_topic_0272541691.md)。
+-   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
 
 ## 操作步骤<a name="section61533550183130"></a>
 
@@ -89,6 +92,13 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     </td>
     <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护<span>同形字符混淆、通配符变形的命令注入、UTF7、Data URI Schema等</span>深度反逃逸。</p>
     <div class="note" id="note825125516470"><a name="note825125516470"></a><a name="note825125516470"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1425155154718"><a name="p1425155154718"></a><a name="p1425155154718"></a>开启<span class="parmname" id="parmname1622619445528"><a name="parmname1622619445528"></a><a name="parmname1622619445528"></a>“深度检测”</span>后，WAF将对深度反逃逸进行检测防护。</p>
+    </div></div>
+    </td>
+    </tr>
+    <tr id="row124533351015"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p122469331102"><a name="p122469331102"></a><a name="p122469331102"></a><span>header全检测</span></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1714019071217"><a name="p1714019071217"></a><a name="p1714019071217"></a>默认关闭。关闭状态下WAF<span>会检测常规存在注入点的header字段</span>。</p>
+    <div class="note" id="note6982930171110"><a name="note6982930171110"></a><a name="note6982930171110"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20983730201118"><a name="p20983730201118"></a><a name="p20983730201118"></a>开启<span class="parmname" id="parmname179831730161111"><a name="parmname179831730161111"></a><a name="parmname179831730161111"></a>“header全检测”</span>后，WAF将<span>对请求里header中所有字段进行攻击检测</span>。</p>
     </div></div>
     </td>
     </tr>

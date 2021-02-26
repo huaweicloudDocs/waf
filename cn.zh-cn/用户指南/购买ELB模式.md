@@ -30,13 +30,21 @@ ELB模式支持按需计费模式，按使用时长收费。
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  单击管理控制台左上角的![](figures/icon-region.jpg)，选择区域或项目。
 3.  单击页面左上方的![](figures/icon-Service.png)，选择“安全  \>  Web应用防火墙 WAF“。
-4.  首次购买WAF时，在界面左侧，单击“购买WAF“。
+4.  首次购买WAF时，在界面左侧，单击“立即购买WAF“。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >再次购买WAF时，请在界面右上角，单击“购买WAF“。
 
-5.  在“购买Web应用防火墙“界面，选择“ELB模式“。
-6.  配置ELB模式实例参数，如[图1](#zh-cn_topic_0110861189_fig5029231715163)所示，相关参数说明如[表1](#zh-cn_topic_0161005736_table4295843716304)所示。
+5.  在“企业项目“下拉列表中选择您所在的企业项目。
+
+    企业项目针对企业用户使用，只有开通了企业项目的客户，或者权限为企业主帐号的客户才可见。如需使用该功能，请[开通企业管理功能](https://support.huaweicloud.com/usermanual-em/em_am_0008.html)。企业项目是一种云资源管理方式，企业项目管理服务提供统一的云资源按项目管理，以及项目内的资源管理、成员管理。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   “default“为默认企业项目，帐号下原有资源和未选择企业项目的资源均在默认企业项目内。
+    >-   只有注册的华为云帐号购买WAF时，“企业项目“下拉列表中才可以选择到“default“。
+
+6.  在“购买Web应用防火墙“界面，选择“ELB模式“。
+7.  配置ELB模式实例参数，如[图1](#zh-cn_topic_0110861189_fig5029231715163)所示，相关参数说明如[表1](#zh-cn_topic_0161005736_table4295843716304)所示。
 
     **图 1**  配置ELB模式实例<a name="zh-cn_topic_0110861189_fig5029231715163"></a>  
     ![](figures/配置ELB模式实例.png "配置ELB模式实例")
@@ -89,7 +97,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tr>
     <tr id="row195202055162711"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p45211555102711"><a name="p45211555102711"></a><a name="p45211555102711"></a>实例组</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="zh-cn_topic_0298408746.md">创建实例组</a>。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>业务网卡</p>
@@ -107,8 +115,8 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tbody>
     </table>
 
-7.  确认参数配置无误后，在页面右下角单击“立即购买“。
-8.  确认订单详情无误并阅读《华为云Web应用防火墙免责声明》后，勾选“我已阅读并同意《华为云Web应用防火墙免责声明》“，单击“去支付“，完成购买操作。
+8.  确认参数配置无误后，在页面右下角单击“立即购买“。
+9.  确认订单详情无误并阅读《华为云Web应用防火墙免责声明》后，勾选“我已阅读并同意《华为云Web应用防火墙免责声明》“，单击“去支付“，完成购买操作。
 
 1.  进入“付款“页面，选择付款方式进行付款。
 2.  成功付款后，单击“返回独享引擎列表“，在独享引擎实例列表界面，可以查看实例的创建情况。
