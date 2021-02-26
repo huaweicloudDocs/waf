@@ -6,6 +6,9 @@ WAF默认配置的最低TLS版本为TLS v1.0，加密套件为加密套件1，�
 
 同时，WAF支持开启PCI DSS和PCI 3DS合规认证功能，开启合规认证后，最低TLS版本将设置为TLS v1.2，以满足PCI DSS和PCI 3DS合规认证要求。
 
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，为该企业项目下的域名配置PCI DSS/3DS合规与TLS。
+
 ## 前提条件<a name="section7175429781"></a>
 
 -   防护网站的部署模式为“云模式“或“独享模式“。
