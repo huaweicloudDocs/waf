@@ -20,7 +20,6 @@ ELB模式支持按需计费模式，按使用时长收费。
 已购买华为云独享型ELB，且该ELB必须与ELB模式实例在同一个VPC内，否则，可能导致业务接入异常。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->支持购买ELB模式的区域：华北-北京二、华北-北京四。
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
 
 ## 应用场景<a name="section1828463910329"></a>
@@ -39,7 +38,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >再次购买WAF时，请在界面右上角，单击“购买WAF“。
 
-5.  在“企业项目“下拉列表中选择您所在的企业项目。
+5.  （可选）在“企业项目“下拉列表中选择您所在的企业项目。
 
     企业项目针对企业用户使用，只有开通了企业项目的客户，或者权限为企业主帐号的客户才可见。如需使用该功能，请[开通企业管理功能](https://support.huaweicloud.com/usermanual-em/em_am_0008.html)。企业项目是一种云资源管理方式，企业项目管理服务提供统一的云资源按项目管理，以及项目内的资源管理、成员管理。
 
@@ -64,8 +63,9 @@ ELB模式支持按需计费模式，按使用时长收费。
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
-    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442_1"><a name="zh-cn_topic_0178852794_p26971939442_1"></a><a name="zh-cn_topic_0178852794_p26971939442_1"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_1"><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a>“华北-北京四”</span>区域支持ELB模式。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p843491411715"><a name="p843491411715"></a><a name="p843491411715"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_1"><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a>“华北-北京四”</span>区域支持ELB模式。</p>
+    <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
+    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442_1"><a name="zh-cn_topic_0178852794_p26971939442_1"></a><a name="zh-cn_topic_0178852794_p26971939442_1"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_2"><a name="zh-cn_topic_0178852794_parmname9838102859_2"></a><a name="zh-cn_topic_0178852794_parmname9838102859_2"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_2"><a name="zh-cn_topic_0178852794_parmname11564104243113_2"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_2"></a>“华北-北京四”</span>区域支持ELB模式。</p>
     </div></div>
     </td>
     </tr>
@@ -101,7 +101,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tr>
     <tr id="row195202055162711"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p45211555102711"><a name="p45211555102711"></a><a name="p45211555102711"></a>实例组</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="zh-cn_topic_0298408746.md">创建实例组</a>。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>业务网卡</p>

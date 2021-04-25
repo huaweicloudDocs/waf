@@ -63,8 +63,6 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     >![](public_sys-resources/icon-notice.gif) **须知：** 
     >当“模式“设置为“拦截“时，您可以根据需要选择配置的攻击惩罚。
 
-    默认开启“常规检测“防护检测，用户可根据业务需要，开启其他需要防护的检测类型。
-
     **表 2**  检测项说明
 
     <a name="table1054818371898"></a>
@@ -88,17 +86,17 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     </div></div>
     </td>
     </tr>
-    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a><span>深度检测</span></p>
+    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a>深度检测</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护<span>同形字符混淆、通配符变形的命令注入、UTF7、Data URI Schema等</span>深度反逃逸。</p>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护同形字符混淆、通配符变形的命令注入、UTF7、Data URI Scheme等深度反逃逸。</p>
     <div class="note" id="note825125516470"><a name="note825125516470"></a><a name="note825125516470"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1425155154718"><a name="p1425155154718"></a><a name="p1425155154718"></a>开启<span class="parmname" id="parmname1622619445528"><a name="parmname1622619445528"></a><a name="parmname1622619445528"></a>“深度检测”</span>后，WAF将对深度反逃逸进行检测防护。</p>
     </div></div>
     </td>
     </tr>
-    <tr id="row124533351015"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p122469331102"><a name="p122469331102"></a><a name="p122469331102"></a><span>header全检测</span></p>
+    <tr id="row124533351015"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p122469331102"><a name="p122469331102"></a><a name="p122469331102"></a>header全检测</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1714019071217"><a name="p1714019071217"></a><a name="p1714019071217"></a>默认关闭。关闭状态下WAF<span>会检测常规存在注入点的header字段</span>。</p>
-    <div class="note" id="note6982930171110"><a name="note6982930171110"></a><a name="note6982930171110"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20983730201118"><a name="p20983730201118"></a><a name="p20983730201118"></a>开启<span class="parmname" id="parmname179831730161111"><a name="parmname179831730161111"></a><a name="parmname179831730161111"></a>“header全检测”</span>后，WAF将<span>对请求里header中所有字段进行攻击检测</span>。</p>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1714019071217"><a name="p1714019071217"></a><a name="p1714019071217"></a>默认关闭。关闭状态下WAF会检测常规存在注入点的header字段。</p>
+    <div class="note" id="note6982930171110"><a name="note6982930171110"></a><a name="note6982930171110"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20983730201118"><a name="p20983730201118"></a><a name="p20983730201118"></a>开启<span class="parmname" id="parmname179831730161111"><a name="parmname179831730161111"></a><a name="parmname179831730161111"></a>“header全检测”</span>后，WAF将对请求里header中所有字段进行攻击检测。</p>
     </div></div>
     </td>
     </tr>
@@ -140,7 +138,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 
     2.  防护检测类型设置。
 
-        默认开启“常规检测“和“扫描器“防护检测，用户可根据业务需要，参照[表2](#table1054818371898)开启其他需要防护的检测类型。
+        默认开启“常规检测“防护检测，用户可根据业务需要，参照[表2](#table1054818371898)开启其他需要防护的检测类型。
 
 
 6.  选择“防护规则“页签，查看Web基础防护规则的详细信息，如[图4](#fig8837434185019)所示，相关参数说明如[表4](#table19135226105218)所示。

@@ -27,7 +27,7 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.7%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a><span>WAF Administrator</span></p>
+<tbody><tr id="zh-cn_topic_0169881967_row1462142915137"><td class="cellrowborder" valign="top" width="21.7%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0169881967_p176971716134913"><a name="zh-cn_topic_0169881967_p176971716134913"></a><a name="zh-cn_topic_0169881967_p176971716134913"></a>WAF Administrator</p>
 </td>
 <td class="cellrowborder" valign="top" width="30.94%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0169881967_p0462172991319"><a name="zh-cn_topic_0169881967_p0462172991319"></a><a name="zh-cn_topic_0169881967_p0462172991319"></a>Web应用防火墙服务的管理员权限。</p>
 </td>

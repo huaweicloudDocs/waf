@@ -12,7 +12,7 @@
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  单击管理控制台左上角的![](figures/icon-region.jpg)，选择区域或项目。
-3.  单击页面左上方的![](figures/icon-Service-0.png)，选择“网络  \>  弹性负载均衡 ELB“，进入“负载均衡器“页面。
+3.  单击页面左上方的![](figures/icon-Service-0.png)，选择“网络  \>  弹性负载均衡“，进入“负载均衡器“页面。
 4.  <a name="li11870192512125"></a>在“负载均衡器“页面，目标源站的负载均衡器所在行“操作“列，选择“更多  \>  解绑弹性公网IP“，如[图1](#fig116641742207)所示。
 
     **图 1**  解绑弹性公网IP<a name="fig116641742207"></a>  

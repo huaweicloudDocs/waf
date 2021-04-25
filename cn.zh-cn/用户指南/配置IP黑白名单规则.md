@@ -16,6 +16,10 @@
 ## 约束条件<a name="section17458916115210"></a>
 
 -   WAF黑白名单规则不支持配置0.0.0.0/0 IP地址段，且白名单规则优先级高于黑名单规则。如果您需要放行某个网段指定的IP并拦截某个网段其他所有IP，请先添加黑名单规则，拦截将该网段的所有IP，然后添加白名单规则，放行指定IP。
+
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >如果您需要拦截所有来源IP或仅允许指定IP访问防护网站，请参见[拦截所有来源IP或仅允许指定IP访问防护网站，如何配置？](https://support.huaweicloud.com/waf_faq/waf_01_0312.html)进行配置。
+
 -   当黑白名单规则的“防护动作“设置为“拦截“时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
 
 ## 系统影响<a name="section298020596537"></a>
@@ -60,7 +64,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="36.633663366336634%" headers="mcps1.2.4.1.2 "><p id="p123164594811"><a name="p123164594811"></a><a name="p123164594811"></a>支持IPv4和IPv6格式的IP地址或IP地址段。</p>
     <a name="ul16332155911817"></a><a name="ul16332155911817"></a><ul id="ul16332155911817"><li>IP地址：添加黑名单或者白名单的IP地址。</li><li>IP地址段：IP地址与子网掩码。</li></ul>
-    <div class="notice" id="note3522103392412"><a name="note3522103392412"></a><a name="note3522103392412"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="waf_01_0002_p9994853161215"><a name="waf_01_0002_p9994853161215"></a><a name="waf_01_0002_p9994853161215"></a>当前仅<span class="parmname" id="waf_01_0002_parmname139304481307"><a name="waf_01_0002_parmname139304481307"></a><a name="waf_01_0002_parmname139304481307"></a>“华北”</span>区域支持IPv6防护，且仅企业版和旗舰版支持IPv6。</p>
+    <div class="notice" id="note3522103392412"><a name="note3522103392412"></a><a name="note3522103392412"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="waf_01_0002_p9994853161215"><a name="waf_01_0002_p9994853161215"></a><a name="waf_01_0002_p9994853161215"></a>当前仅<span class="parmname" id="waf_01_0002_parmname139304481307"><a name="waf_01_0002_parmname139304481307"></a><a name="waf_01_0002_parmname139304481307"></a>“华东”</span>区域支持IPv6防护，且仅企业版和旗舰版支持IPv6。</p>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.4.1.3 "><a name="ul20137241191011"></a><a name="ul20137241191011"></a><ul id="ul20137241191011"><li>IPv4格式：<a name="ul2071625551110"></a><a name="ul2071625551110"></a><ul id="ul2071625551110"><li>192.168.2.3</li><li>10.1.1.0/24</li></ul>

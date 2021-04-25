@@ -18,9 +18,9 @@
 </th>
 <th class="cellrowborder" valign="top" width="37.23372337233724%" id="mcps1.1.5.1.2"><p id="p19438733133512"><a name="p19438733133512"></a><a name="p19438733133512"></a>授权项</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.75207520752075%" id="mcps1.1.5.1.3"><p id="p5609151914280"><a name="p5609151914280"></a><a name="p5609151914280"></a><span>IAM项目(Project)</span></p>
+<th class="cellrowborder" valign="top" width="20.75207520752075%" id="mcps1.1.5.1.3"><p id="p5609151914280"><a name="p5609151914280"></a><a name="p5609151914280"></a>IAM项目(Project)</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.25172517251725%" id="mcps1.1.5.1.4"><p id="p95277361933"><a name="p95277361933"></a><a name="p95277361933"></a><span>企业项目(Enterprise Project)</span></p>
+<th class="cellrowborder" valign="top" width="17.25172517251725%" id="mcps1.1.5.1.4"><p id="p95277361933"><a name="p95277361933"></a><a name="p95277361933"></a>企业项目(Enterprise Project)</p>
 </th>
 </tr>
 </thead>
