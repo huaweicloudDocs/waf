@@ -117,7 +117,7 @@
         >![](public_sys-resources/icon-notice.gif) **须知：** 
         >若接入Web应用防火墙的网站已使用高防、CDN、云加速等代理，为了保证WAF的安全策略能够针对真实源IP生效，请确保网站的“是否已使用代理“已配置为“是“，详细操作请参见[查看基本信息](查看基本信息.md)。
 
-        将使用的代理类服务（高防、CDN服务等）的回源地址修改为复制的目标域名的CNAME，具体的方法请参见[网站业务接入](https://support.huaweicloud.com/usermanual-aad/aad_01_0012.html)。
+        将使用的代理类服务（高防、CDN服务等）的回源地址修改为复制的目标域名的CNAME，具体的方法请参见[网站业务接入](https://support.huaweicloud.com/usermanual-ads/ads_01_0057.html)。
 
         >![](public_sys-resources/icon-note.gif) **说明：** 
         >为了防止其他用户提前将您的域名配置到Web应用防火墙上，从而对您的域名防护造成干扰，建议您的DNS服务商处添加“子域名“和“TXT记录“。

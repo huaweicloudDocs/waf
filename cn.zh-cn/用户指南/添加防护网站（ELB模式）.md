@@ -72,6 +72,13 @@
     <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p619275765317"><a name="p619275765317"></a><a name="p619275765317"></a>waf</p>
     </td>
     </tr>
+    <tr id="row15161655204910"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p193792388109"><a name="p193792388109"></a><a name="p193792388109"></a>策略配置</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p51716558495"><a name="p51716558495"></a><a name="p51716558495"></a>选择防护网站的配置策略。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p1217105515490"><a name="p1217105515490"></a><a name="p1217105515490"></a>系统自动生成策略</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
