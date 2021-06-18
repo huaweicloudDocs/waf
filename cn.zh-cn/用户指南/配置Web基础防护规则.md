@@ -163,6 +163,11 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p21367263523"><a name="p21367263523"></a><a name="p21367263523"></a>防护规则的ID，由系统自动生成。</p>
     </td>
     </tr>
+    <tr id="row678613065320"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p96722675319"><a name="p96722675319"></a><a name="p96722675319"></a>规则描述</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p15672156185319"><a name="p15672156185319"></a><a name="p15672156185319"></a>防护规则对应的攻击详细描述。</p>
+    </td>
+    </tr>
     <tr id="row1213782612529"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p16137112665214"><a name="p16137112665214"></a><a name="p16137112665214"></a>CVE编号</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p15816113315363"><a name="p15816113315363"></a><a name="p15816113315363"></a>防护规则对应的CVE（Common Vulnerabilities &amp; Exposures，通用漏洞披露）编号。对于非CVE漏洞，显示为--。</p>
@@ -184,11 +189,6 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p3138202610529"><a name="p3138202610529"></a><a name="p3138202610529"></a>防护规则的类型，例如，命令注入。</p>
     </td>
     </tr>
-    <tr id="row15138142611528"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p15138142616526"><a name="p15138142616526"></a><a name="p15138142616526"></a>规则描述</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p213872616520"><a name="p213872616520"></a><a name="p213872616520"></a>防护规则对应的攻击详细描述。</p>
-    </td>
-    </tr>
     </tbody>
     </table>
 
@@ -198,7 +198,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 假如已添加域名“www.example.com“，且已开启了Web基础防护的“常规检测“，防护模式为“拦截“。您可以参照以下步骤验证WAF防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
+    -   不能正常访问，参照[步骤三：域名接入配置](步骤三-域名接入配置.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li2057953372517)。
 
 2.  <a name="li2057953372517"></a>清理浏览器缓存，在浏览器中输入“http://www.example.com?id=1%27%20or%201=1“模拟SQL注入攻击。

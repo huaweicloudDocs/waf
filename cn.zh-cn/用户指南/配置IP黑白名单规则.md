@@ -11,10 +11,16 @@
 
 ## 规格限制<a name="section1268362217284"></a>
 
-检测版不支持该功能。
+-   云模式各版本、独享模式和ELB模式支持创建的IP黑白名单规则条数请参见[服务版本差异](https://support.huaweicloud.com/productdesc-waf/waf_01_0106.html#section1)。
+-   如果您购买了云模式，当前版本的IP黑白名单防护规则条数不能满足要求时，您可以通过购买规则扩展包或升级云模式版本增加IP黑白名单防护规则条数，以满足的防护配置需求。
+
+    一个规则扩展包包含10条IP黑白名单防护规则。有关升级规则的详细操作，请参见[升级WAF云模式版本和规格](https://support.huaweicloud.com/usermanual-waf/waf_01_0114.html)。
+
 
 ## 约束条件<a name="section17458916115210"></a>
 
+-   检测版不支持该功能。
+-   WAF不支持批量导入黑白名单，如果您需要配置多个IP/IP地址段规则，请逐条添加黑白名单防护规则，放行或拦截指定IP/IP地址段。
 -   WAF黑白名单规则不支持配置0.0.0.0/0 IP地址段，且白名单规则优先级高于黑名单规则。如果您需要放行某个网段指定的IP并拦截某个网段其他所有IP，请先添加黑名单规则，拦截将该网段的所有IP，然后添加白名单规则，放行指定IP。
 
     >![](public_sys-resources/icon-notice.gif) **须知：** 
@@ -64,7 +70,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="36.633663366336634%" headers="mcps1.2.4.1.2 "><p id="p123164594811"><a name="p123164594811"></a><a name="p123164594811"></a>支持IPv4和IPv6格式的IP地址或IP地址段。</p>
     <a name="ul16332155911817"></a><a name="ul16332155911817"></a><ul id="ul16332155911817"><li>IP地址：添加黑名单或者白名单的IP地址。</li><li>IP地址段：IP地址与子网掩码。</li></ul>
-    <div class="notice" id="note3522103392412"><a name="note3522103392412"></a><a name="note3522103392412"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="waf_01_0002_p9994853161215"><a name="waf_01_0002_p9994853161215"></a><a name="waf_01_0002_p9994853161215"></a>当前仅<span class="parmname" id="waf_01_0002_parmname139304481307"><a name="waf_01_0002_parmname139304481307"></a><a name="waf_01_0002_parmname139304481307"></a>“华东”</span>区域支持IPv6防护，且仅企业版和旗舰版支持IPv6。</p>
+    <div class="notice" id="note3522103392412"><a name="note3522103392412"></a><a name="note3522103392412"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="waf_01_0002_p9994853161215"><a name="waf_01_0002_p9994853161215"></a><a name="waf_01_0002_p9994853161215"></a>仅企业版和旗舰版支持IPv6防护，且当前仅<span class="parmname" id="waf_01_0002_parmname29569543318"><a name="waf_01_0002_parmname29569543318"></a><a name="waf_01_0002_parmname29569543318"></a>“华东”</span>和<span class="parmname" id="waf_01_0002_parmname585285171111"><a name="waf_01_0002_parmname585285171111"></a><a name="waf_01_0002_parmname585285171111"></a>“华北”</span>区域支持IPv4/6双栈和NAT64。</p>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.4.1.3 "><a name="ul20137241191011"></a><a name="ul20137241191011"></a><ul id="ul20137241191011"><li>IPv4格式：<a name="ul2071625551110"></a><a name="ul2071625551110"></a><ul id="ul2071625551110"><li>192.168.2.3</li><li>10.1.1.0/24</li></ul>
@@ -105,7 +111,7 @@
     -   若需要删除添加的黑白名单规则时，可单击待删除的黑白名单IP规则所在行的“删除“，删除黑白名单规则。
 
 
-## 配置示例<a name="section156514893912"></a>
+## 配置示例-放行指定IP<a name="section156514893912"></a>
 
 假如您仅需要放行3个IP，其他的IP全部拦截。
 
@@ -119,7 +125,7 @@
 假如已添加域名“www.example.com“。可参照以下步骤验证防护效果：
 
 1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[域名接入WAF](域名接入WAF.md)章节重新完成域名接入。
+    -   不能正常访问，参照[步骤三：域名接入配置](步骤三-域名接入配置.md)章节重新完成域名接入。
     -   能正常访问，执行[2](#li885731953512)。
 
 2.  <a name="li885731953512"></a>参照[操作步骤](#section61533550183130)，将您的客户端IP配置为黑名单。

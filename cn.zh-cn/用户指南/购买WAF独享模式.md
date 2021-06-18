@@ -4,6 +4,9 @@
 
 独享模式支持按需计费模式，按使用时长收费。
 
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>购买WAF独享模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式。否则，您将无法购买独享模式实例。
+
 ## 前提条件<a name="zh-cn_topic_0110861189_section5331623210436"></a>
 
 已获取管理控制台的登录帐号（拥有WAF Administrator与BSS Administrator权限）与密码。
@@ -17,7 +20,7 @@
 如果WAF独享引擎实例与源站不在同一个VPC中，需要在安全组中设置实例与源站的子网互通。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->支持购买WAF的区域说明如下：
+>支持购买WAF独享模式的区域说明如下：
 >-   华东-上海二
 >-   华北-北京一
 >-   华北-北京二
@@ -66,7 +69,7 @@
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><div class="p" id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF的区域说明如下：<a name="ul1014432613519"></a><a name="ul1014432613519"></a><ul id="ul1014432613519"><li>华东-上海二</li><li>华北-北京一</li><li>华北-北京二</li><li>华北-北京四</li><li>华南-广州</li></ul>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><div class="p" id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF独享模式的区域说明如下：<a name="ul1014432613519"></a><a name="ul1014432613519"></a><ul id="ul1014432613519"><li>华东-上海二</li><li>华北-北京一</li><li>华北-北京二</li><li>华北-北京四</li><li>华南-广州</li></ul>
     </div>
     <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
     </td>
@@ -84,6 +87,7 @@
     <tr id="zh-cn_topic_0161005736_row1319658616304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p12055799163143"><a name="zh-cn_topic_0161005736_p12055799163143"></a><a name="zh-cn_topic_0161005736_p12055799163143"></a>WAF实例数量</p>
     </td>
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p51329357300"><a name="p51329357300"></a><a name="p51329357300"></a>设置购买的WAF实例个数。</p>
+    <p id="p597719211531"><a name="p597719211531"></a><a name="p597719211531"></a>建议至少购买2个WAF实例，并将业务分别部署到WAF实例上。当业务部署多个WAF实例时，如果某个WAF实例发生故障时，WAF会自动将流量切换到其它正在运行的WAF实例上，确保业务正常运行。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>WAF实例规格</p>

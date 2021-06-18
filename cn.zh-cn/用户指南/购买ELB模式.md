@@ -5,7 +5,7 @@
 ELB模式支持按需计费模式，按使用时长收费。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
->当前“华北-北京二“和“华北-北京四“区域支持ELB模式。
+>购买ELB模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通ELB模式。否则，您将无法购买ELB模式实例。
 
 ## 前提条件<a name="zh-cn_topic_0110861189_section5331623210436"></a>
 
@@ -20,6 +20,9 @@ ELB模式支持按需计费模式，按使用时长收费。
 已购买华为云独享型ELB，且该ELB必须与ELB模式实例在同一个VPC内，否则，可能导致业务接入异常。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
+>支持购买ELB模式的区域说明如下：
+>-   华北-北京二
+>-   华北-北京四
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
 
 ## 应用场景<a name="section1828463910329"></a>
@@ -63,9 +66,9 @@ ELB模式支持按需计费模式，按使用时长收费。
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p843491411715"><a name="p843491411715"></a><a name="p843491411715"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_1"><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a>“华北-北京四”</span>区域支持ELB模式。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p843491411715"><a name="p843491411715"></a><a name="p843491411715"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859"><a name="zh-cn_topic_0178852794_parmname9838102859"></a><a name="zh-cn_topic_0178852794_parmname9838102859"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113"><a name="zh-cn_topic_0178852794_parmname11564104243113"></a><a name="zh-cn_topic_0178852794_parmname11564104243113"></a>“华北-北京四”</span>区域支持ELB模式。</p>
     <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
-    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442_1"><a name="zh-cn_topic_0178852794_p26971939442_1"></a><a name="zh-cn_topic_0178852794_p26971939442_1"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_2"><a name="zh-cn_topic_0178852794_parmname9838102859_2"></a><a name="zh-cn_topic_0178852794_parmname9838102859_2"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_2"><a name="zh-cn_topic_0178852794_parmname11564104243113_2"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_2"></a>“华北-北京四”</span>区域支持ELB模式。</p>
+    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442"><a name="zh-cn_topic_0178852794_p26971939442"></a><a name="zh-cn_topic_0178852794_p26971939442"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_1"><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a>“华北-北京四”</span>区域支持ELB模式。</p>
     </div></div>
     </td>
     </tr>
