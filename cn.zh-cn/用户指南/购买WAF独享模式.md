@@ -5,7 +5,7 @@
 独享模式支持按需计费模式，按使用时长收费。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
->购买WAF独享模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式。否则，您将无法购买独享模式实例。
+>购买WAF独享模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0065264094.html)申请开通独享模式。否则，您将无法购买独享模式实例。
 
 ## 前提条件<a name="zh-cn_topic_0110861189_section5331623210436"></a>
 
