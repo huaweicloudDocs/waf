@@ -4,7 +4,7 @@
 
 ## 约束限制<a name="section1622624713157"></a>
 
-ELB模式可以防护华为云上通过域名或IP访问的Web应用/网站。有关ELB模式功能特性的详细介绍，请参见[云模式、独享模式和ELB模式说明](https://support.huaweicloud.com/productdesc-waf/waf_01_0106.html)。
+ELB模式可以防护华为云上通过域名或IP访问的Web应用/网站。有关ELB模式功能特性的详细介绍，请参见[服务版本差异](https://support.huaweicloud.com/productdesc-waf/waf_01_0106.html)。
 
 ## 网站接入流程说明<a name="section1627512449533"></a>
 
