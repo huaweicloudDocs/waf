@@ -35,7 +35,7 @@ ELB模式支持按需计费模式，按使用时长收费。
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  单击管理控制台左上角的![](figures/icon-region.jpg)，选择区域或项目。
-3.  单击页面左上方的![](figures/icon-Service.png)，选择“安全  \>  Web应用防火墙 WAF“。
+3.  单击页面左上方的![](figures/icon-Service.png)，选择“安全与合规  \>  Web应用防火墙 WAF“。
 4.  首次购买WAF时，在界面左侧，单击“立即购买WAF“。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
@@ -131,4 +131,122 @@ ELB模式支持按需计费模式，按使用时长收费。
 ## 生效条件<a name="section493711571450"></a>
 
 创建实例大约需要5分钟。当实例的运行状态为“运行中“时，说明实例已经创建成功。
+
+## WAF通信安全授权<a name="section55301551102314"></a>
+
+如果业务使用ELB模式部署方式，直接访问VPC内的数据需要开通相应的安全组规则，而开通相应的安全组规则需要获取用户授权，此授权过程称为通信安全授权。
+
+成功购买ELB模式后，WAF默认开启通信安全授权，即开通如[表2](#table10347925129)所示的安全组规则。
+
+**表 2**  WAF通信安全授权安全组规则
+
+<a name="table10347925129"></a>
+<table><thead align="left"><tr id="waf_01_0248_row3347112513212"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="waf_01_0248_p9347132517213"><a name="waf_01_0248_p9347132517213"></a><a name="waf_01_0248_p9347132517213"></a>协议端口</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.97%" id="mcps1.2.5.1.2"><p id="waf_01_0248_p63472253213"><a name="waf_01_0248_p63472253213"></a><a name="waf_01_0248_p63472253213"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="25.03%" id="mcps1.2.5.1.3"><p id="waf_01_0248_p334711257211"><a name="waf_01_0248_p334711257211"></a><a name="waf_01_0248_p334711257211"></a>源地址</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="waf_01_0248_p18347102513220"><a name="waf_01_0248_p18347102513220"></a><a name="waf_01_0248_p18347102513220"></a>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="waf_01_0248_row33471925825"><td class="cellrowborder" colspan="4" valign="top" headers="mcps1.2.5.1.1 mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="waf_01_0248_p634718258219"><a name="waf_01_0248_p634718258219"></a><a name="waf_01_0248_p634718258219"></a><strong id="waf_01_0248_b1637235551513"><a name="waf_01_0248_b1637235551513"></a><a name="waf_01_0248_b1637235551513"></a>入方向规则</strong></p>
+</td>
+</tr>
+<tr id="waf_01_0248_row5347725224"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p33480251323"><a name="waf_01_0248_p33480251323"></a><a name="waf_01_0248_p33480251323"></a>TCP: 22</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p153485254219"><a name="waf_01_0248_p153485254219"></a><a name="waf_01_0248_p153485254219"></a>IPv4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p183481925527"><a name="waf_01_0248_p183481925527"></a><a name="waf_01_0248_p183481925527"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p123489251128"><a name="waf_01_0248_p123489251128"></a><a name="waf_01_0248_p123489251128"></a>WAF远程运维</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row634892513215"><td class="cellrowborder" colspan="4" valign="top" headers="mcps1.2.5.1.1 mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="waf_01_0248_p43484257210"><a name="waf_01_0248_p43484257210"></a><a name="waf_01_0248_p43484257210"></a><strong id="waf_01_0248_b19970518131610"><a name="waf_01_0248_b19970518131610"></a><a name="waf_01_0248_b19970518131610"></a>出方向规则</strong></p>
+</td>
+</tr>
+<tr id="waf_01_0248_row00104851412"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p1194818143"><a name="waf_01_0248_p1194818143"></a><a name="waf_01_0248_p1194818143"></a>TCP: 9011</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p812484147"><a name="waf_01_0248_p812484147"></a><a name="waf_01_0248_p812484147"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p18124881417"><a name="waf_01_0248_p18124881417"></a><a name="waf_01_0248_p18124881417"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p16184811412"><a name="waf_01_0248_p16184811412"></a><a name="waf_01_0248_p16184811412"></a>WAF事件日志上报</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row9998526142"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p1375111445161"><a name="waf_01_0248_p1375111445161"></a><a name="waf_01_0248_p1375111445161"></a>TCP: 9012</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p19100185201410"><a name="waf_01_0248_p19100185201410"></a><a name="waf_01_0248_p19100185201410"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p17100175215145"><a name="waf_01_0248_p17100175215145"></a><a name="waf_01_0248_p17100175215145"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p5100352111410"><a name="waf_01_0248_p5100352111410"></a><a name="waf_01_0248_p5100352111410"></a>WAF事件日志上报</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row184301249111619"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p9431949201610"><a name="waf_01_0248_p9431949201610"></a><a name="waf_01_0248_p9431949201610"></a>TCP: 9013</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p0431114917168"><a name="waf_01_0248_p0431114917168"></a><a name="waf_01_0248_p0431114917168"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p13431749111619"><a name="waf_01_0248_p13431749111619"></a><a name="waf_01_0248_p13431749111619"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p4245112616392"><a name="waf_01_0248_p4245112616392"></a><a name="waf_01_0248_p4245112616392"></a>WAF事件日志上报</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row1323093818185"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p123063817186"><a name="waf_01_0248_p123063817186"></a><a name="waf_01_0248_p123063817186"></a>TCP: 9018</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p13230438101811"><a name="waf_01_0248_p13230438101811"></a><a name="waf_01_0248_p13230438101811"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p172317385181"><a name="waf_01_0248_p172317385181"></a><a name="waf_01_0248_p172317385181"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p72311238201812"><a name="waf_01_0248_p72311238201812"></a><a name="waf_01_0248_p72311238201812"></a>WAF策略同步</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row1838622217206"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p638762212014"><a name="waf_01_0248_p638762212014"></a><a name="waf_01_0248_p638762212014"></a>TCP: 9019</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p18387132242011"><a name="waf_01_0248_p18387132242011"></a><a name="waf_01_0248_p18387132242011"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p133878223202"><a name="waf_01_0248_p133878223202"></a><a name="waf_01_0248_p133878223202"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p49731436164014"><a name="waf_01_0248_p49731436164014"></a><a name="waf_01_0248_p49731436164014"></a>WAF心跳日志上报</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row1099133214208"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p18991032112019"><a name="waf_01_0248_p18991032112019"></a><a name="waf_01_0248_p18991032112019"></a>TCP: 4505</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p119917321204"><a name="waf_01_0248_p119917321204"></a><a name="waf_01_0248_p119917321204"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p1499153215200"><a name="waf_01_0248_p1499153215200"></a><a name="waf_01_0248_p1499153215200"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p1099133214204"><a name="waf_01_0248_p1099133214204"></a><a name="waf_01_0248_p1099133214204"></a>WAF策略同步</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row834864320202"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p2242164662019"><a name="waf_01_0248_p2242164662019"></a><a name="waf_01_0248_p2242164662019"></a>TCP: 4506</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p334814392018"><a name="waf_01_0248_p334814392018"></a><a name="waf_01_0248_p334814392018"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p1234813432208"><a name="waf_01_0248_p1234813432208"></a><a name="waf_01_0248_p1234813432208"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p13348174316207"><a name="waf_01_0248_p13348174316207"></a><a name="waf_01_0248_p13348174316207"></a>WAF策略同步</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row208816565203"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p1488115602010"><a name="waf_01_0248_p1488115602010"></a><a name="waf_01_0248_p1488115602010"></a>TCP: 50051</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p088205692019"><a name="waf_01_0248_p088205692019"></a><a name="waf_01_0248_p088205692019"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p11885562203"><a name="waf_01_0248_p11885562203"></a><a name="waf_01_0248_p11885562203"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p178805615207"><a name="waf_01_0248_p178805615207"></a><a name="waf_01_0248_p178805615207"></a>WAF性能日志上报</p>
+</td>
+</tr>
+<tr id="waf_01_0248_row614481716213"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="waf_01_0248_p1727494042116"><a name="waf_01_0248_p1727494042116"></a><a name="waf_01_0248_p1727494042116"></a>TCP: 443</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.97%" headers="mcps1.2.5.1.2 "><p id="waf_01_0248_p914411171210"><a name="waf_01_0248_p914411171210"></a><a name="waf_01_0248_p914411171210"></a>IPV4</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.03%" headers="mcps1.2.5.1.3 "><p id="waf_01_0248_p1151895454216"><a name="waf_01_0248_p1151895454216"></a><a name="waf_01_0248_p1151895454216"></a>100.125.0.0/16</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="waf_01_0248_p12735132219426"><a name="waf_01_0248_p12735132219426"></a><a name="waf_01_0248_p12735132219426"></a>WAF策略同步</p>
+</td>
+</tr>
+</tbody>
+</table>
 
