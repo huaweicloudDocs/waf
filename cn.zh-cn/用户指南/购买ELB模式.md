@@ -66,9 +66,8 @@ ELB模式支持按需计费模式，按使用时长收费。
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p843491411715"><a name="p843491411715"></a><a name="p843491411715"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859"><a name="zh-cn_topic_0178852794_parmname9838102859"></a><a name="zh-cn_topic_0178852794_parmname9838102859"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113"><a name="zh-cn_topic_0178852794_parmname11564104243113"></a><a name="zh-cn_topic_0178852794_parmname11564104243113"></a>“华北-北京四”</span>区域支持ELB模式。</p>
-    <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
-    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p26971939442"><a name="zh-cn_topic_0178852794_p26971939442"></a><a name="zh-cn_topic_0178852794_p26971939442"></a>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859_1"><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a><a name="zh-cn_topic_0178852794_parmname9838102859_1"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113_1"><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a><a name="zh-cn_topic_0178852794_parmname11564104243113_1"></a>“华北-北京四”</span>区域支持ELB模式。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
+    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0178852794_ul36575198292"></a><a name="zh-cn_topic_0178852794_ul36575198292"></a><ul id="zh-cn_topic_0178852794_ul36575198292"><li>使用独享模式或ELB模式前，请确认已<a href="https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html" target="_blank" rel="noopener noreferrer">提交工单</a>申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。</li><li>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname9838102859"><a name="zh-cn_topic_0178852794_parmname9838102859"></a><a name="zh-cn_topic_0178852794_parmname9838102859"></a>“华北-北京二”</span>和<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113"><a name="zh-cn_topic_0178852794_parmname11564104243113"></a><a name="zh-cn_topic_0178852794_parmname11564104243113"></a>“华北-北京四”</span>区域支持ELB模式。</li></ul>
     </div></div>
     </td>
     </tr>
@@ -89,7 +88,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tr>
     <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>WAF实例规格</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格。支持500Mbit/s和100Mbit/s。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格。</p>
     </td>
     </tr>
     <tr id="row68111281274"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p5811828871"><a name="p5811828871"></a><a name="p5811828871"></a>CPU架构</p>

@@ -13,9 +13,11 @@ Web应用防火墙的使用概览如[表1](#table186068221358)所示。
 </th>
 </tr>
 </thead>
-<tbody><tr id="row181711555123513"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p1717265511351"><a name="p1717265511351"></a><a name="p1717265511351"></a>开通WAF</p>
+<tbody><tr id="row181711555123513"><td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.3.1.1 "><p id="p1717265511351"><a name="p1717265511351"></a><a name="p1717265511351"></a>购买WAF</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p11671184411217"><a name="p11671184411217"></a><a name="p11671184411217"></a>云模式支持包年/包月计费方式开通，独享模式和ELB模式支持按需计费方式开通。</p>
+<td class="cellrowborder" valign="top" width="80.34%" headers="mcps1.2.3.1.2 "><p id="p11671184411217"><a name="p11671184411217"></a><a name="p11671184411217"></a>云模式支持包年/包月计费方式购买，独享模式和ELB模式支持按需计费方式购买。</p>
+<div class="notice" id="note1233431916125"><a name="note1233431916125"></a><a name="note1233431916125"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p83342019121216"><a name="p83342019121216"></a><a name="p83342019121216"></a>独享模式和ELB模式需要<a href="https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html" target="_blank" rel="noopener noreferrer">提交工单</a>申请开通后才能购买。</p>
+</div></div>
 <p id="p201266375458"><a name="p201266375458"></a><a name="p201266375458"></a>详细操作请参见<a href="开通WAF.md">开通WAF</a>。</p>
 </td>
 </tr>

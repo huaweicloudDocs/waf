@@ -3,7 +3,8 @@
 如果您的业务服务器部署在华为云上，您可以将网站的域名或IP添加到WAF，使网站流量切入WAF。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
->当前“华北-北京二“和“华北-北京四“区域支持ELB模式。
+>-   使用独享模式或ELB模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。
+>-   当前“华北-北京二“和“华北-北京四“区域支持ELB模式。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，在该企业项目下添加防护网站。
