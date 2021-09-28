@@ -23,7 +23,6 @@
 >支持购买WAF独享模式的区域说明如下：
 >-   华东-上海二
 >-   华北-北京一
->-   华北-北京二
 >-   华北-北京四
 >-   华南-广州
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
@@ -69,7 +68,7 @@
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><div class="p" id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF独享模式的区域说明如下：<a name="ul1014432613519"></a><a name="ul1014432613519"></a><ul id="ul1014432613519"><li>华东-上海二</li><li>华北-北京一</li><li>华北-北京二</li><li>华北-北京四</li><li>华南-广州</li></ul>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><div class="p" id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF独享模式的区域说明如下：<a name="ul1014432613519"></a><a name="ul1014432613519"></a><ul id="ul1014432613519"><li>华东-上海二</li><li>华北-北京一</li><li>华北-北京四</li><li>华南-广州</li></ul>
     </div>
     <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
     </td>

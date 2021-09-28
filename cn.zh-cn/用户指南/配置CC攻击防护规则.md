@@ -30,10 +30,6 @@ CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护�
     -   防护规则的“路径“中包含静态页面时，静态页面将被CDN缓存，导致验证一直不通过，请参考[配置“人机验证”CC防护规则后，验证码不能刷新，验证一直不通过，如何处理？](https://support.huaweicloud.com/waf_faq/waf_01_0260.html)
 
 
-## 系统影响<a name="section184511410102113"></a>
-
-WAF会在客户请求Cookie中插入HWWAFSESID，HWWAFSESTIME等字段，这些字段服务于WAF统计和安全特性。
-
 ## 操作步骤<a name="section61533550183130"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。

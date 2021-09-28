@@ -4,7 +4,7 @@
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
 >-   使用独享模式或ELB模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。
->-   当前“华北-北京二“和“华北-北京四“区域支持ELB模式。
+>-   当前“华北-北京四“区域支持ELB模式。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，在该企业项目下添加防护网站。
@@ -80,7 +80,14 @@
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row1368718254486"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p368762516486"><a name="p368762516486"></a><a name="p368762516486"></a>防护域名</p>
+    <tbody><tr id="row19309057618"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p2179125255914"><a name="p2179125255914"></a><a name="p2179125255914"></a>网站名称</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p191791952195918"><a name="p191791952195918"></a><a name="p191791952195918"></a>网站的名称。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p617945225915"><a name="p617945225915"></a><a name="p617945225915"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row1368718254486"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p368762516486"><a name="p368762516486"></a><a name="p368762516486"></a>防护域名</p>
     </td>
     <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p168710252489"><a name="p168710252489"></a><a name="p168710252489"></a>防护的域名或IP，域名支持单域名和泛域名。</p>
     <a name="ul9206119142513"></a><a name="ul9206119142513"></a><ul id="ul9206119142513"><li>单域名：输入防护的单域名。例如：www.example.com。</li><li>泛域名<div class="note" id="waf_01_0250_note149522717141"><a name="waf_01_0250_note149522717141"></a><a name="waf_01_0250_note149522717141"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="waf_01_0250_p949632718144"><a name="waf_01_0250_p949632718144"></a><a name="waf_01_0250_p949632718144"></a>泛域名不支持下划线（_）。</p>
@@ -104,11 +111,18 @@
     <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p86881725164816"><a name="p86881725164816"></a><a name="p86881725164816"></a>81</p>
     </td>
     </tr>
+    <tr id="row999016126617"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p738462712012"><a name="p738462712012"></a><a name="p738462712012"></a>网站备注</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p193849271909"><a name="p193849271909"></a><a name="p193849271909"></a>网站补充信息。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p1638418275018"><a name="p1638418275018"></a><a name="p1638418275018"></a>-</p>
+    </td>
+    </tr>
     <tr id="row1192175711538"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p131926571535"><a name="p131926571535"></a><a name="p131926571535"></a>实例组</p>
     </td>
     <td class="cellrowborder" valign="top" width="64.21%" headers="mcps1.2.4.1.2 "><p id="p1919275714537"><a name="p1919275714537"></a><a name="p1919275714537"></a>选择防护网站绑定的实例组。您可以单击创建实例组，新建新的实例组，有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p619275765317"><a name="p619275765317"></a><a name="p619275765317"></a>waf</p>
+    <td class="cellrowborder" valign="top" width="20.79%" headers="mcps1.2.4.1.3 "><p id="p619275765317"><a name="p619275765317"></a><a name="p619275765317"></a>waf_elb</p>
     </td>
     </tr>
     </tbody>
