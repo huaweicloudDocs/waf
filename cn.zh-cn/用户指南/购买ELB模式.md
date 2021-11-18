@@ -1,6 +1,6 @@
 # 购买ELB模式<a name="waf_01_0285"></a>
 
-如果您的业务服务器部署在华为云上，您可以通过购买ELB模式实例确保重要业务可靠、安全运行。
+如果您的业务服务器部署在华为云上，您可以通过购买ELB模式实例确保重要业务可靠、安全运行。购买的ELB模式为七层负载均衡，支持HTTP和HTTPS协议，监听器收到访问请求后，需要识别并通过HTTP/HTTPS协议报文头中的相关字段，进行数据的转发。
 
 ELB模式支持按需计费模式，按使用时长收费。
 
@@ -21,7 +21,7 @@ ELB模式支持按需计费模式，按使用时长收费。
 已购买华为云独享型ELB，且该ELB必须与ELB模式实例在同一个VPC内，否则，可能导致业务接入异常。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->当前“华北-北京四“支持购买ELB模式。
+>有关支持购买WAF的区域说明，请参见[Web应用防火墙支持防护哪些区域？](https://support.huaweicloud.com/waf_faq/waf_01_0101.html)。
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
 
 ## 应用场景<a name="section1828463910329"></a>
@@ -66,7 +66,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
-    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="zh-cn_topic_0178852794_ul36575198292"></a><a name="zh-cn_topic_0178852794_ul36575198292"></a><ul id="zh-cn_topic_0178852794_ul36575198292"><li>使用独享模式或ELB模式前，请确认已<a href="https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html" target="_blank" rel="noopener noreferrer">提交工单</a>申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。</li><li>当前<span class="parmname" id="zh-cn_topic_0178852794_parmname11564104243113"><a name="zh-cn_topic_0178852794_parmname11564104243113"></a><a name="zh-cn_topic_0178852794_parmname11564104243113"></a>“华北-北京四”</span>区域支持ELB模式。</li></ul>
+    <div class="notice" id="note16796202414325"><a name="note16796202414325"></a><a name="note16796202414325"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="zh-cn_topic_0178852794_p153828243557"><a name="zh-cn_topic_0178852794_p153828243557"></a><a name="zh-cn_topic_0178852794_p153828243557"></a>使用独享模式或ELB模式前，请确认已<a href="https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html" target="_blank" rel="noopener noreferrer">提交工单</a>申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。</p>
     </div></div>
     </td>
     </tr>
@@ -87,7 +87,15 @@ ELB模式支持按需计费模式，按使用时长收费。
     </tr>
     <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>WAF实例规格</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格，支持<span class="parmvalue" id="parmvalue15541152162611"><a name="parmvalue15541152162611"></a><a name="parmvalue15541152162611"></a>“WI-500”</span>和<span class="parmvalue" id="parmvalue48169613265"><a name="parmvalue48169613265"></a><a name="parmvalue48169613265"></a>“WI-100”</span></p>
+    </td>
+    </tr>
+    <tr id="row4265141163418"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p6903142716261"><a name="p6903142716261"></a><a name="p6903142716261"></a>WAF实例创建类别</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p1124092412273"><a name="p1124092412273"></a><a name="p1124092412273"></a>选择实例的资源类型，相关说明如下：</p>
+    <a name="ul1065023020287"></a><a name="ul1065023020287"></a><ul id="ul1065023020287"><li>资源租户类<p id="p0632143220285"><a name="p0632143220285"></a><a name="p0632143220285"></a>WAF实例通过弹性网卡接入用户网络。</p>
+    </li><li>普通租户类<p id="p6755344285"><a name="p6755344285"></a><a name="p6755344285"></a>WAF实例将直接创建在用户ECS中，您可以在ECS管理控制台查看创建的WAF实例。</p>
+    </li></ul>
     </td>
     </tr>
     <tr id="row68111281274"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p5811828871"><a name="p5811828871"></a><a name="p5811828871"></a>CPU架构</p>
@@ -105,7 +113,7 @@ ELB模式支持按需计费模式，按使用时长收费。
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择实例组，实例组可以管理多个ELB模式实例，您可以单击<span class="uicontrol" id="uicontrol7424211185911"><a name="uicontrol7424211185911"></a><a name="uicontrol7424211185911"></a>“创建实例组”</span>，创建新的实例组。有关创建实例组的详细操作，请参见<a href="创建实例组.md">创建实例组</a>。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>业务网卡</p>
+    <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>子网</p>
     </td>
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0161005736_p6040559116304"><a name="zh-cn_topic_0161005736_p6040559116304"></a><a name="zh-cn_topic_0161005736_p6040559116304"></a>选择实例组中已配置的子网。</p>
     </td>

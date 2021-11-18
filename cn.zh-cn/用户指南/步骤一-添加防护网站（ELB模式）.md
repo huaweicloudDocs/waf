@@ -3,8 +3,7 @@
 如果您的业务服务器部署在华为云上，您可以将网站的域名或IP添加到WAF，使网站流量切入WAF。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
->-   使用独享模式或ELB模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。
->-   当前“华北-北京四“区域支持ELB模式。
+>使用独享模式或ELB模式前，请确认已[提交工单](https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html)申请开通独享模式或ELB模式。否则，您将无法购买独享模式或ELB模式。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，在该企业项目下添加防护网站。
@@ -12,6 +11,9 @@
 ## 前提条件<a name="section2256777914731"></a>
 
 -   已购买ELB模式实例。
+
+    购买的ELB模式为七层负载均衡，支持HTTP和HTTPS协议，监听器收到访问请求后，需要识别并通过HTTP/HTTPS协议报文头中的相关字段，进行数据的转发。
+
 -   防护域名未添加到WAF，且域名已备案。
 
 ## 约束条件<a name="section1044320443914"></a>
@@ -44,9 +46,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="45.98%" headers="mcps1.2.4.1.2 "><p id="p81411753417"><a name="p81411753417"></a><a name="p81411753417"></a>需要防护的域名对应的业务端口。</p>
 <a name="ul214111516416"></a><a name="ul214111516416"></a><ul id="ul214111516416"><li>标准端口<a name="ul514195848"></a><a name="ul514195848"></a><ul id="ul514195848"><li>80：HTTP对外协议默认使用端口</li><li>443：HTTPS对外协议默认使用端口</li></ul>
-</li><li>非标准端口<p id="p141411159416"><a name="p141411159416"></a><a name="p141411159416"></a>80/443以外的端口，ELB上配置的监听器端口保持一致</p>
-<div class="notice" id="note131421058410"><a name="note131421058410"></a><a name="note131421058410"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p814215514415"><a name="p814215514415"></a><a name="p814215514415"></a>如果防护域名使用非标准端口，请查看<a href="https://support.huaweicloud.com/waf_faq/waf_01_0032.html" target="_blank" rel="noopener noreferrer">WAF支持哪些非标准端口？</a>，确保购买的WAF版本支持防护该非标准端口。</p>
-</div></div>
+</li><li>非标准端口<p id="p141411159416"><a name="p141411159416"></a><a name="p141411159416"></a>当您需要配置除<span class="parmvalue" id="parmvalue117271240162517"><a name="parmvalue117271240162517"></a><a name="parmvalue117271240162517"></a>“80”</span>/<span class="parmvalue" id="parmvalue27271140152519"><a name="parmvalue27271140152519"></a><a name="parmvalue27271140152519"></a>“443”</span>标准端口以外的端口时，勾选<span class="parmname" id="parmname15727140182512"><a name="parmname15727140182512"></a><a name="parmname15727140182512"></a>“非标准端口”</span>进行配置。取值范围为1~65535。</p>
 </li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="33.879999999999995%" headers="mcps1.2.4.1.3 "><p id="p63591324133318"><a name="p63591324133318"></a><a name="p63591324133318"></a>80</p>

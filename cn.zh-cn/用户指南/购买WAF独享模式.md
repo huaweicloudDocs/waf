@@ -9,7 +9,8 @@
 
 ## 前提条件<a name="zh-cn_topic_0110861189_section5331623210436"></a>
 
-已获取管理控制台的登录帐号（拥有WAF Administrator与BSS Administrator权限）与密码。
+-   已获取管理控制台的登录帐号（拥有WAF Administrator/WAF FullAccess与BSS Administrator权限）与密码。
+-   已成功创建虚拟私有云VPC。
 
 ## 规格限制<a name="section13957152112182"></a>
 
@@ -20,11 +21,7 @@
 如果WAF独享引擎实例与源站不在同一个VPC中，需要在安全组中设置实例与源站的子网互通。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->支持购买WAF独享模式的区域说明如下：
->-   华东-上海二
->-   华北-北京一
->-   华北-北京四
->-   华南-广州
+>有关支持购买WAF的区域说明，请参见[Web应用防火墙支持防护哪些区域？](https://support.huaweicloud.com/waf_faq/waf_01_0101.html)。
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
 
 ## 应用场景<a name="section1828463910329"></a>
@@ -68,8 +65,7 @@
     </thead>
     <tbody><tr id="row1135781814514"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p17358418175111"><a name="p17358418175111"></a><a name="p17358418175111"></a>区域</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><div class="p" id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF独享模式的区域说明如下：<a name="ul1014432613519"></a><a name="ul1014432613519"></a><ul id="ul1014432613519"><li>华东-上海二</li><li>华北-北京一</li><li>华北-北京四</li><li>华南-广州</li></ul>
-    </div>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p1317112103519"><a name="p1317112103519"></a><a name="p1317112103519"></a>支持购买WAF独享模式的区域说明，请参见<a href="https://support.huaweicloud.com/waf_faq/waf_01_0101.html" target="_blank" rel="noopener noreferrer">Web应用防火墙支持防护哪些区域？</a>。</p>
     <p id="p378413583591"><a name="p378413583591"></a><a name="p378413583591"></a>原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。</p>
     </td>
     </tr>
@@ -91,7 +87,15 @@
     </tr>
     <tr id="zh-cn_topic_0161005736_row16837105815489"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p29202425163143"><a name="zh-cn_topic_0161005736_p29202425163143"></a><a name="zh-cn_topic_0161005736_p29202425163143"></a>WAF实例规格</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格。</p>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p958111582086"><a name="p958111582086"></a><a name="p958111582086"></a>选择实例的规格，支持<span class="parmvalue" id="parmvalue15541152162611"><a name="parmvalue15541152162611"></a><a name="parmvalue15541152162611"></a>“WI-500”</span>和<span class="parmvalue" id="parmvalue48169613265"><a name="parmvalue48169613265"></a><a name="parmvalue48169613265"></a>“WI-100”</span> 。</p>
+    </td>
+    </tr>
+    <tr id="row79021927192615"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p6903142716261"><a name="p6903142716261"></a><a name="p6903142716261"></a>WAF实例创建类别</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p1124092412273"><a name="p1124092412273"></a><a name="p1124092412273"></a>选择实例的资源类型，相关说明如下：</p>
+    <a name="ul1065023020287"></a><a name="ul1065023020287"></a><ul id="ul1065023020287"><li>资源租户类<p id="p0632143220285"><a name="p0632143220285"></a><a name="p0632143220285"></a>WAF实例通过弹性网卡接入用户网络，如果使用ELB接入，仅支持独享型ELB。</p>
+    </li><li>普通租户类<p id="p6755344285"><a name="p6755344285"></a><a name="p6755344285"></a>WAF实例将直接创建在用户ECS中，您可以在ECS管理控制台查看创建的WAF实例。</p>
+    </li></ul>
     </td>
     </tr>
     <tr id="row68111281274"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p5811828871"><a name="p5811828871"></a><a name="p5811828871"></a>CPU架构</p>
@@ -109,7 +113,7 @@
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p197501314299"><a name="p197501314299"></a><a name="p197501314299"></a>选择源站所在的VPC。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>业务网卡</p>
+    <tr id="zh-cn_topic_0161005736_row2550998316304"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0161005736_p5304271416304"><a name="zh-cn_topic_0161005736_p5304271416304"></a><a name="zh-cn_topic_0161005736_p5304271416304"></a>子网</p>
     </td>
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0161005736_p6040559116304"><a name="zh-cn_topic_0161005736_p6040559116304"></a><a name="zh-cn_topic_0161005736_p6040559116304"></a>选择VPC中已配置的子网。</p>
     </td>

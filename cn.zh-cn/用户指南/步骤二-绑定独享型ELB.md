@@ -5,6 +5,9 @@
 ## 前提条件<a name="section2256777914731"></a>
 
 -   已购买ELB模式实例。
+
+    购买的ELB模式为七层负载均衡，支持HTTP和HTTPS协议，监听器收到访问请求后，需要识别并通过HTTP/HTTPS协议报文头中的相关字段，进行数据的转发。
+
 -   已购买华为云“独享型“ELB，且该ELB必须与购买的ELB模式实例在同一个VPC内。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 

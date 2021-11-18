@@ -1,9 +1,9 @@
 # 配置CC攻击防护规则<a name="waf_01_0009"></a>
 
-CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护网站上特定路径（URL）的访问频率，精准识别CC攻击以及有效缓解CC攻击。当您配置完CC攻击防护规则并开启CC攻击防护后（即“CC攻击防护“配置框的“状态“为![](figures/icon-enable-3.png)），WAF才能根据您配置的CC攻击防护规则进行CC攻击防护。
+CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护网站上特定路径（URL）的访问频率，精准识别CC攻击以及有效缓解CC攻击。当您配置完CC攻击防护规则并开启CC攻击防护后（即“CC攻击防护“配置框的“状态“为![](figures/icon-enable-4.png)），WAF才能根据您配置的CC攻击防护规则进行CC攻击防护。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，为该企业项目下域名配置防护策略。
+>如果您已开通企业项目，您需要在“企业项目“下拉列表中选择您所在的企业项目并确保已开通操作权限，才能为该企业项目下域名配置防护策略。
 
 ## 前提条件<a name="section5903171661012"></a>
 
@@ -16,7 +16,7 @@ CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护�
 ## 约束条件<a name="section187484111186"></a>
 
 -   同一“路径“请配置一条CC攻击防护规则，多条相同“路径“的CC攻击防护规则可能会导致CC攻击防护规则不生效。如果您配置了多条相同“路径“的CC攻击防护规则，请删除多余的防护规则。
--   添加或修改防护规则后，规则生效需要几分钟。规则生效后，您可以在“防护事件“页面查看防护效果。
+-   添加或修改防护规则后，规则生效需要等待几分钟。规则生效后，您可以在“防护事件“页面查看防护效果。
 -   CC攻击防护规则可以添加引用表，引用表防护规则对所有防护域名都生效，即所有防护域名都可以使用CC攻击防护规则的引用表。
 -   CC攻击防护规则支持“人机验证“、“阻断“等防护动作，您可以根据使用需求设置对应的防护动作。例如，通过配置CC攻击防护规则实现以下功能：当Cookie标识为name的用户在60秒内访问您域名下的“/admin\*“页面超过10次时，封禁该用户访问目标网址600秒。
 -   标准版（原专业版）不支持高级工作模式。
@@ -75,7 +75,7 @@ CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护�
     <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><p id="p472717511324"><a name="p472717511324"></a><a name="p472717511324"></a>当<span class="parmname" id="parmname131724123216"><a name="parmname131724123216"></a><a name="parmname131724123216"></a>“工作模式”</span>选择<span class="parmvalue" id="parmvalue660963320326"><a name="parmvalue660963320326"></a><a name="parmvalue660963320326"></a>“标准”</span>时，才配置此参数。</p>
     <p id="p2728220141413"><a name="p2728220141413"></a><a name="p2728220141413"></a>CC防护的URL链接，不包含域名。</p>
     <a name="ul1172942091416"></a><a name="ul1172942091416"></a><ul id="ul1172942091416"><li>前缀匹配：以*结尾代表以该路径为前缀。例如，需要防护的路径为<span class="parmvalue" id="parmvalue97281720131412"><a name="parmvalue97281720131412"></a><a name="parmvalue97281720131412"></a>“/admin/test.php”</span>或 <span class="parmvalue" id="parmvalue1872917207147"><a name="parmvalue1872917207147"></a><a name="parmvalue1872917207147"></a>“/adminabc”</span>，则路径可以填写为<span class="parmvalue" id="parmvalue20729720111415"><a name="parmvalue20729720111415"></a><a name="parmvalue20729720111415"></a>“/admin*”</span>。</li><li>精准匹配：需要防护的路径需要与此处填写的路径完全一致。例如，需要防护的路径为<span class="parmvalue" id="parmvalue672992019145"><a name="parmvalue672992019145"></a><a name="parmvalue672992019145"></a>“/admin”</span>，该规则必须填写为<span class="parmvalue" id="parmvalue1729182091416"><a name="parmvalue1729182091416"></a><a name="parmvalue1729182091416"></a>“/admin”</span>。</li></ul>
-    <div class="note" id="note6730182015148"><a name="note6730182015148"></a><a name="note6730182015148"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul19730132018148"></a><a name="ul19730132018148"></a><ul id="ul19730132018148"><li>该路径不支持正则，仅支持前缀匹配和精准匹配的逻辑。</li><li>路径里不能含有连续多条斜线的配置，如<span class="parmvalue" id="parmvalue473019200148"><a name="parmvalue473019200148"></a><a name="parmvalue473019200148"></a>“///admin”</span>，WAF引擎会将<span class="parmvalue" id="parmvalue177301020101413"><a name="parmvalue177301020101413"></a><a name="parmvalue177301020101413"></a>“///”</span>转为<span class="parmvalue" id="parmvalue1273010203145"><a name="parmvalue1273010203145"></a><a name="parmvalue1273010203145"></a>“/”</span>。</li><li>该路径区分大小写。</li></ul>
+    <div class="note" id="note6730182015148"><a name="note6730182015148"></a><a name="note6730182015148"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul19730132018148"></a><a name="ul19730132018148"></a><ul id="ul19730132018148"><li>该路径不支持正则，仅支持前缀匹配和精准匹配的逻辑。</li><li>路径里不能含有连续多条斜线的配置，如<span class="parmvalue" id="parmvalue473019200148"><a name="parmvalue473019200148"></a><a name="parmvalue473019200148"></a>“///admin”</span>，WAF引擎会将<span class="parmvalue" id="parmvalue177301020101413"><a name="parmvalue177301020101413"></a><a name="parmvalue177301020101413"></a>“///”</span>转为<span class="parmvalue" id="parmvalue1273010203145"><a name="parmvalue1273010203145"></a><a name="parmvalue1273010203145"></a>“/”</span>。</li><li>该路径区分大小写。</li><li>路径设置为<span class="parmvalue" id="parmvalue149871281514"><a name="parmvalue149871281514"></a><a name="parmvalue149871281514"></a>“/”</span>时，表示防护网站所有路径。</li></ul>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="26.740000000000002%" headers="mcps1.2.4.1.3 "><p id="p1073022018145"><a name="p1073022018145"></a><a name="p1073022018145"></a>/admin*</p>
@@ -189,19 +189,24 @@ CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护�
     -   若需要删除用户自行添加的CC攻击防护规则时，可单击待删除的CC攻击防护规则所在行的“删除“，删除CC攻击防护规则。
 
 
-## 防护效果<a name="section2969132523417"></a>
+## 配置实例-人机验证<a name="section16436165593412"></a>
 
-假如已添加域名“www.example.com“，且配置了如[图3](#fig172782071413)所示“阻断“防护动作的CC防护规则。可参照以下步骤验证防护效果：
+假如防护域名“www.example.com“已接入WAF，您可以参照以下操作步骤验证人机验证防护效果。
 
-1.  清理浏览器缓存，在浏览器中输入防护域名，测试网站域名是否能正常访问。
-    -   不能正常访问，参照[步骤三：域名接入配置](步骤三-域名接入配置.md)章节重新完成域名接入。
-    -   能正常访问，执行[2](#li88102353919)。
+1.  添加防护动作为“人机验证“防护规则。
 
-2.  <a name="li88102353919"></a>清理浏览器缓存，在浏览器中访问满足Cookie条件的“http://www.example.com/admin“页面，在60秒内刷新页面10次，正常情况下，在第11次访问该页面时，返回自定义的拦截页面；600秒后刷新目标页面，页面访问正常。
+    **图 5**  添加“人机验证“防护规则<a name="fig15654111421118"></a>  
+    ![](figures/添加人机验证防护规则.png "添加人机验证防护规则")
 
-    如果您设置了“人机验证“防护动作，当用户访问超过限制后需要输入验证码才能继续访问。
+2.  清理浏览器缓存，在浏览器中访问“http://www.example.com/admin/“页面。
 
-    ![](figures/zh-cn_image_0000001191376107.jpg)
+    当您在60秒内访问页面10次，在第11次访问该页面时，页面弹出验证码。此时，您需要输入验证码才能继续访问。
 
-3.  返回Web应用防火墙控制界面，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，查看防护域名拦截日志，您也可以[下载防护事件数据](下载防护事件数据.md)。
+    ![](figures/zh-cn_image_0000001224193241.jpg)
+
+3.  返回Web应用防火墙管理控制台，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，您可以查看该防护事件。
+
+    **图 6**  查看防护事件-人机验证<a name="fig41102863113"></a>  
+    ![](figures/查看防护事件-人机验证.png "查看防护事件-人机验证")
+
 

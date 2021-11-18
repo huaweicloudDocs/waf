@@ -17,7 +17,7 @@
 回源IP（该IP在回源IP段中）是随机分配的。回源时WAF会监控回源IP的状态，如果该IP异常，WAF将剔除该异常IP并随机分配正常的回源IP接收/转发访问请求。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->Web应用防火墙的回源IP网段会定期更新，及时将更新后的回源IP网段添加至相应的安全组规则中，避免出现误拦截。
+>Web应用防火墙的回源IP网段会定期更新，请及时将更新后的回源IP网段添加至相应的安全组规则中，避免出现误拦截。
 
 ## 为什么需要放行回源IP段？<a name="zh-cn_topic_0167535083_section14317120351"></a>
 
@@ -30,7 +30,7 @@ WAF实例的IP数量有限，且源站服务器收到的所有请求都来自这
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  单击管理控制台左上角的![](figures/icon-region.jpg)，选择区域或项目。
-3.  单击页面左上方的![](figures/icon-Service-1.png)，选择“安全与合规  \>  Web应用防火墙 WAF“。
+3.  单击页面左上方的![](figures/icon-Service-2.png)，选择“安全与合规  \>  Web应用防火墙 WAF“。
 4.  在左侧导航树中，选择“网站设置“，进入“网站设置“页面。
 5.  在网站列表右侧，单击“Web应用防火墙回源IP网段“，查看Web应用防火墙所有回源IP段。
 

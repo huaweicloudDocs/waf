@@ -7,7 +7,7 @@ WAF默认配置的最低TLS版本为TLS v1.0，加密套件为加密套件1，�
 同时，WAF支持开启PCI DSS和PCI 3DS合规认证功能，开启合规认证后，最低TLS版本将设置为TLS v1.2，以满足PCI DSS和PCI 3DS合规认证要求。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->如果您已开通企业项目，您可以在“企业项目“下拉列表中选择您所在的企业项目，为该企业项目下的域名配置PCI DSS/3DS合规与TLS。
+>如果您已开通企业项目，您需要在“企业项目“下拉列表中选择您所在的企业项目并确保已开通操作权限，才能为该企业项目下的域名配置PCI DSS/3DS合规与TLS。
 
 ## 前提条件<a name="section7175429781"></a>
 
@@ -84,7 +84,7 @@ WAF推荐配置的加密套件为“加密套件1“，可以满足浏览器兼�
 </td>
 <td class="cellrowborder" valign="top" width="40.160000000000004%" headers="mcps1.2.4.1.2 "><p id="p136024532115"><a name="p136024532115"></a><a name="p136024532115"></a>ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p3360645162112"><a name="p3360645162112"></a><a name="p3360645162112"></a>默认推荐配置。</p>
+<td class="cellrowborder" valign="top" width="39.01%" headers="mcps1.2.4.1.3 "><p id="p3360645162112"><a name="p3360645162112"></a><a name="p3360645162112"></a>推荐配置。</p>
 <a name="ul173601845132114"></a><a name="ul173601845132114"></a><ul id="ul173601845132114"><li>兼容性：较好，支持的客户端较为广泛</li><li>安全性：较高</li></ul>
 </td>
 </tr>
