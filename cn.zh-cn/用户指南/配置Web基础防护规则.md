@@ -1,6 +1,6 @@
 # 配置Web基础防护规则<a name="waf_01_0008"></a>
 
-Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出攻击、文件包含、Bash漏洞攻击、远程命令执行、目录遍历、敏感文件访问、命令/代码注入等常规的Web攻击，以及可支持Webshell检测、深度反逃逸检测等Web基础防护。
+Web基础防护开启后，默认防范SQL注入、XSS跨站脚本、远程溢出攻击、文件包含、Bash漏洞攻击、远程命令执行、目录遍历、敏感文件访问、命令/代码注入等常规的Web攻击。您还可以根据实际使用需求，开启Webshell检测、深度反逃逸检测和header全检测等Web基础防护。
 
 您也可以参考[Web基础防护功能最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0014.html)了解更多Web基础防护规则的配置信息。
 
@@ -15,7 +15,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 
 -   Web基础防护支持“拦截“和“仅记录“模式，检测版仅支持“仅记录“模式。
 -   添加或修改防护规则后，规则生效需要等待几分钟。规则生效后，您可以在“防护事件“页面查看防护效果。
--   当Web基础防护设置为“拦截“模式时，您可以设置攻击惩罚。设置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
+-   当Web基础防护设置为“拦截“模式时，您可以[配置攻击惩罚标准](配置攻击惩罚标准.md)。配置攻击惩罚后，如果访问者的IP、Cookie或Params恶意请求被拦截时，WAF将根据攻击惩罚设置的拦截时长来封禁访问者。
 
 ## 操作步骤<a name="section61533550183130"></a>
 
@@ -56,59 +56,19 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
     </table>
 
 4.  在“Web基础防护“配置框中，单击“高级设置“，进入“Web基础防护“界面。
-5.  选择“防护配置“页签，根据您的业务场景，开启合适的防护功能，如[图3](#fig17347539113910)所示，检测项说明如[表2](#table1054818371898)所示。
+5.  选择“防护配置“页签，根据您的业务场景，开启合适的防护功能，如[图3](#fig17347539113910)所示，检测项说明如[表3](#table1054818371898)所示。
 
     **图 3**  Web基础防护<a name="fig17347539113910"></a>  
     ![](figures/Web基础防护.png "Web基础防护")
 
     >![](public_sys-resources/icon-notice.gif) **须知：** 
-    >当“模式“设置为“拦截“时，您可以根据需要选择配置的攻击惩罚。
-
-    **表 2**  检测项说明
-
-    <a name="table1054818371898"></a>
-    <table><thead align="left"><tr id="row25491137297"><th class="cellrowborder" valign="top" width="25.28%" id="mcps1.2.3.1.1"><p id="p1854915379911"><a name="p1854915379911"></a><a name="p1854915379911"></a>检测项</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="74.72%" id="mcps1.2.3.1.2"><p id="p8549737894"><a name="p8549737894"></a><a name="p8549737894"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row354983713918"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p35498371299"><a name="p35498371299"></a><a name="p35498371299"></a>常规检测</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p125497371397"><a name="p125497371397"></a><a name="p125497371397"></a>防护SQL注入、XSS跨站脚本、远程溢出攻击、文件包含、Bash漏洞攻击、远程命令执行、目录遍历、敏感文件访问、命令/代码注入等攻击。其中，SQL注入攻击主要通过检测关键字、左括号、右括号、运算符、SQL特征符来判定。</p>
-    <div class="note" id="note66541414413"><a name="note66541414413"></a><a name="note66541414413"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p86559124115"><a name="p86559124115"></a><a name="p86559124115"></a>开启<span class="parmname" id="parmname6748631164118"><a name="parmname6748631164118"></a><a name="parmname6748631164118"></a>“常规检测”</span>后，WAF将根据内置规则对常规检测项进行检测。</p>
-    </div></div>
-    </td>
-    </tr>
-    <tr id="row5549123715914"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p754913375913"><a name="p754913375913"></a><a name="p754913375913"></a>Webshell检测</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1754993711914"><a name="p1754993711914"></a><a name="p1754993711914"></a>防护通过上传接口植入网页木马。</p>
-    <div class="note" id="note19915165154218"><a name="note19915165154218"></a><a name="note19915165154218"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1591614514423"><a name="p1591614514423"></a><a name="p1591614514423"></a>开启<span class="parmname" id="parmname6555219164311"><a name="parmname6555219164311"></a><a name="parmname6555219164311"></a>“Webshell检测”</span>后，WAF将对通过上传接口植入的网页木马进行检测。</p>
-    </div></div>
-    </td>
-    </tr>
-    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a>深度检测</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护同形字符混淆、通配符变形的命令注入、UTF7、Data URI Scheme等深度反逃逸。</p>
-    <div class="note" id="note825125516470"><a name="note825125516470"></a><a name="note825125516470"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1425155154718"><a name="p1425155154718"></a><a name="p1425155154718"></a>开启<span class="parmname" id="parmname1622619445528"><a name="parmname1622619445528"></a><a name="parmname1622619445528"></a>“深度检测”</span>后，WAF将对深度反逃逸进行检测防护。</p>
-    </div></div>
-    </td>
-    </tr>
-    <tr id="row124533351015"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p122469331102"><a name="p122469331102"></a><a name="p122469331102"></a>header全检测</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1714019071217"><a name="p1714019071217"></a><a name="p1714019071217"></a>默认关闭。关闭状态下WAF会检测常规存在注入点的header字段。</p>
-    <div class="note" id="note6982930171110"><a name="note6982930171110"></a><a name="note6982930171110"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20983730201118"><a name="p20983730201118"></a><a name="p20983730201118"></a>开启<span class="parmname" id="parmname179831730161111"><a name="parmname179831730161111"></a><a name="parmname179831730161111"></a>“header全检测”</span>后，WAF将对请求里header中所有字段进行攻击检测。</p>
-    </div></div>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+    >当“模式“设置为“拦截“时，您可以根据需要选择已配置的攻击惩罚。有关配置攻击惩罚的详细操作，请参见[配置攻击惩罚标准](配置攻击惩罚标准.md)。
 
     1.  防护等级设置。
 
         在页面上方，选择防护等级，Web基础防护设置了三种防护等级：“宽松“、“中等“、“严格“，默认情况下，选择“中等“。
 
-        **表 3**  防护等级说明
+        **表 2**  防护等级说明
 
         <a name="table4686152913388"></a>
         <table><thead align="left"><tr id="zh-cn_topic_0165951356_row257619443717"><th class="cellrowborder" valign="top" width="28.849999999999998%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0165951356_p2576844573"><a name="zh-cn_topic_0165951356_p2576844573"></a><a name="zh-cn_topic_0165951356_p2576844573"></a>防护等级</p>
@@ -131,7 +91,7 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
         <tr id="zh-cn_topic_0165951356_row857616441575"><td class="cellrowborder" valign="top" width="28.849999999999998%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0165951356_p1857694417714"><a name="zh-cn_topic_0165951356_p1857694417714"></a><a name="zh-cn_topic_0165951356_p1857694417714"></a>严格</p>
         </td>
         <td class="cellrowborder" valign="top" width="71.15%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0165951356_p55766441379"><a name="zh-cn_topic_0165951356_p55766441379"></a><a name="zh-cn_topic_0165951356_p55766441379"></a>防护粒度最精细，可以拦截具有复杂的绕过特征的攻击请求。</p>
-        <p id="zh-cn_topic_0165951356_p42472517104"><a name="zh-cn_topic_0165951356_p42472517104"></a><a name="zh-cn_topic_0165951356_p42472517104"></a>当需要更严格地防护SQL注入、跨站脚本、命令注入等攻击行为时，建议使用<span class="parmvalue" id="zh-cn_topic_0165951356_parmvalue14814484117"><a name="zh-cn_topic_0165951356_parmvalue14814484117"></a><a name="zh-cn_topic_0165951356_parmvalue14814484117"></a>“严格”</span>模式。</p>
+        <p id="p20119344130"><a name="p20119344130"></a><a name="p20119344130"></a>建议您等待业务运行一段时间后，根据防护效果配置误报屏蔽规则，再开启<span class="parmvalue" id="parmvalue4681745633"><a name="parmvalue4681745633"></a><a name="parmvalue4681745633"></a>“严格”</span>模式，使WAF能有效防护更多攻击。</p>
         </td>
         </tr>
         </tbody>
@@ -139,7 +99,49 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 
     2.  防护检测类型设置。
 
-        默认开启“常规检测“防护检测，用户可根据业务需要，参照[表2](#table1054818371898)开启其他需要防护的检测类型。
+        >![](public_sys-resources/icon-notice.gif) **须知：** 
+        >默认开启“常规检测“防护检测，用户可根据业务需要，参照[表3](#table1054818371898)开启其他需要防护的检测类型。
+
+
+    **表 3**  检测项说明
+
+    <a name="table1054818371898"></a>
+    <table><thead align="left"><tr id="row25491137297"><th class="cellrowborder" valign="top" width="25.28%" id="mcps1.2.3.1.1"><p id="p1854915379911"><a name="p1854915379911"></a><a name="p1854915379911"></a>检测项</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="74.72%" id="mcps1.2.3.1.2"><p id="p8549737894"><a name="p8549737894"></a><a name="p8549737894"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row354983713918"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p35498371299"><a name="p35498371299"></a><a name="p35498371299"></a>常规检测</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p125497371397"><a name="p125497371397"></a><a name="p125497371397"></a>防护SQL注入、XSS跨站脚本、远程溢出攻击、文件包含、Bash漏洞攻击、远程命令执行、目录遍历、敏感文件访问、命令/代码注入等攻击。其中，SQL注入攻击主要基于语义进行检测。</p>
+    <div class="note" id="note66541414413"><a name="note66541414413"></a><a name="note66541414413"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p86559124115"><a name="p86559124115"></a><a name="p86559124115"></a>开启<span class="parmname" id="parmname6748631164118"><a name="parmname6748631164118"></a><a name="parmname6748631164118"></a>“常规检测”</span>后，WAF将根据内置规则对常规检测项进行检测。</p>
+    </div></div>
+    </td>
+    </tr>
+    <tr id="row5549123715914"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p754913375913"><a name="p754913375913"></a><a name="p754913375913"></a>Webshell检测</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1754993711914"><a name="p1754993711914"></a><a name="p1754993711914"></a>防护通过上传接口植入网页木马。</p>
+    <div class="note" id="note19915165154218"><a name="note19915165154218"></a><a name="note19915165154218"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1591614514423"><a name="p1591614514423"></a><a name="p1591614514423"></a>开启<span class="parmname" id="parmname6555219164311"><a name="parmname6555219164311"></a><a name="parmname6555219164311"></a>“Webshell检测”</span>后，WAF将对通过上传接口植入的网页木马进行检测。</p>
+    </div></div>
+    </td>
+    </tr>
+    <tr id="row837585613435"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p17376556194316"><a name="p17376556194316"></a><a name="p17376556194316"></a>深度检测</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p16868294452"><a name="p16868294452"></a><a name="p16868294452"></a>防护同形字符混淆、通配符变形的命令注入、UTF7、Data URI Scheme等深度反逃逸。</p>
+    <div class="note" id="note825125516470"><a name="note825125516470"></a><a name="note825125516470"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1425155154718"><a name="p1425155154718"></a><a name="p1425155154718"></a>开启<span class="parmname" id="parmname1622619445528"><a name="parmname1622619445528"></a><a name="parmname1622619445528"></a>“深度检测”</span>后，WAF将对深度反逃逸进行检测防护。</p>
+    </div></div>
+    </td>
+    </tr>
+    <tr id="row124533351015"><td class="cellrowborder" valign="top" width="25.28%" headers="mcps1.2.3.1.1 "><p id="p122469331102"><a name="p122469331102"></a><a name="p122469331102"></a>header全检测</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.72%" headers="mcps1.2.3.1.2 "><p id="p1714019071217"><a name="p1714019071217"></a><a name="p1714019071217"></a>默认关闭。关闭状态下WAF会检测常规存在注入点的header字段，包含User-Agent、Content-type、Accept-Language和Cookie。</p>
+    <div class="note" id="note6982930171110"><a name="note6982930171110"></a><a name="note6982930171110"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20983730201118"><a name="p20983730201118"></a><a name="p20983730201118"></a>开启<span class="parmname" id="parmname179831730161111"><a name="parmname179831730161111"></a><a name="parmname179831730161111"></a>“header全检测”</span>后，WAF将对请求里header中所有字段进行攻击检测。</p>
+    </div></div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 6.  选择“防护规则“页签，查看Web基础防护规则的详细信息，如[图4](#fig8837434185019)所示，相关参数说明如[表4](#table19135226105218)所示。
 
@@ -197,22 +199,22 @@ Web基础防护开启后，可防范SQL注入、XSS跨站脚本、远程溢出�
 
 假如防护域名“www.example.com“已接入WAF，您可以参照以下操作步骤验证WAF拦截SQL注入攻击。
 
-1.  开启Web基础防护的“常规检测“。
+1.  开启Web基础防护的“常规检测“，并将防护模式设置为“拦截“。
 
-    **图 5**  Web基础防护<a name="fig11294730881"></a>  
-    ![](figures/Web基础防护.png "Web基础防护")
+    **图 5**  开启“常规检测“<a name="fig11294730881"></a>  
+    ![](figures/开启常规检测.png "开启常规检测")
 
-2.  将Web基础防护的防护模式设置为“拦截“。
+2.  开启Web基础防护。
 
-    **图 6**  防护模式设置为“拦截“<a name="fig13243340171713"></a>  
-    ![](figures/防护模式设置为拦截.png "防护模式设置为拦截")
+    **图 6**  开启Web基础防护<a name="fig13243340171713"></a>  
+    ![](figures/开启Web基础防护.png "开启Web基础防护")
 
-3.  清理浏览器缓存，在浏览器中输入模拟SQL注入攻击（例如，http://www.example.com?id=1 or 1=1）。
+3.  清理浏览器缓存，在浏览器中输入模拟SQL注入攻击（例如，http://www.example.com?id=' or 1=1）。
 
-    WAF将拦截该访问请求，拦截页面如[图7](#fig4672124158)所示。
+    WAF将拦截该访问请求，拦截页面示例如[图7](#fig4672124158)所示。
 
-    **图 7**  拦截SQL注入攻击<a name="fig4672124158"></a>  
-    ![](figures/拦截SQL注入攻击.png "拦截SQL注入攻击")
+    **图 7**  WAF拦截攻击请求<a name="fig4672124158"></a>  
+    ![](figures/WAF拦截攻击请求.png "WAF拦截攻击请求")
 
 4.  返回Web应用防火墙管理控制台，在左侧导航树中，单击“防护事件“，进入“防护事件“页面，您可以查看该防护事件。
 
