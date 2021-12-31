@@ -65,7 +65,7 @@ CC攻击防护规则支持通过限制单个IP/Cookie/Referer访问者对防护�
     </thead>
     <tbody><tr id="row948393052717"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.1 "><p id="p12483330162719"><a name="p12483330162719"></a><a name="p12483330162719"></a>工作模式</p>
     </td>
-    <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><a name="ul426016212810"></a><a name="ul426016212810"></a><ul id="ul426016212810"><li>标准：只支持对域名的防护路径做限制。</li><li>高级：支持对路径、IP、Cookie字段做限制。 标准版（原专业版）不持高级模式。</li></ul>
+    <td class="cellrowborder" valign="top" width="54.26%" headers="mcps1.2.4.1.2 "><a name="ul426016212810"></a><a name="ul426016212810"></a><ul id="ul426016212810"><li>标准：只支持对域名的防护路径做限制。</li><li>高级：支持对路径、IP、Cookie字段做限制。 标准版（原专业版）不支持高级模式。</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="26.740000000000002%" headers="mcps1.2.4.1.3 "><p id="p17483193017279"><a name="p17483193017279"></a><a name="p17483193017279"></a>标准</p>
     </td>

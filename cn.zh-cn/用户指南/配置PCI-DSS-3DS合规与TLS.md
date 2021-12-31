@@ -16,7 +16,8 @@ WAF默认配置的最低TLS版本为TLS v1.0，加密套件为加密套件1，�
 
 ## 约束条件<a name="section1119411227134"></a>
 
-当防护网站的“对外协议“为“HTTP“时，HTTP协议不涉及TLS，请忽略该章节。
+-   当防护网站的“对外协议“为“HTTP“时，HTTP协议不涉及TLS，请忽略该章节。
+-   目前华北-乌兰察布一区域不支持该功能。
 
 ## 应用场景<a name="section1645404816720"></a>
 
@@ -67,7 +68,7 @@ WAF推荐配置的加密套件为“加密套件1“，可以满足浏览器兼�
 <a name="table173581645172115"></a>
 <table><thead align="left"><tr id="row735934517212"><th class="cellrowborder" valign="top" width="20.830000000000002%" id="mcps1.2.4.1.1"><p id="p8359184512115"><a name="p8359184512115"></a><a name="p8359184512115"></a>加密套件名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="40.160000000000004%" id="mcps1.2.4.1.2"><p id="p83591545122111"><a name="p83591545122111"></a><a name="p83591545122111"></a>加密算法</p>
+<th class="cellrowborder" valign="top" width="40.160000000000004%" id="mcps1.2.4.1.2"><p id="p83591545122111"><a name="p83591545122111"></a><a name="p83591545122111"></a>支持的加密算法</p>
 </th>
 <th class="cellrowborder" valign="top" width="39.01%" id="mcps1.2.4.1.3"><p id="p143597450216"><a name="p143597450216"></a><a name="p143597450216"></a>说明</p>
 </th>

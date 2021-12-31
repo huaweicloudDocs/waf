@@ -726,7 +726,7 @@
 <td class="cellrowborder" valign="top" width="17.25172517251725%" headers="mcps1.1.5.1.4 "><p id="p20614531101119"><a name="p20614531101119"></a><a name="p20614531101119"></a>√</p>
 </td>
 </tr>
-<tr id="row1110817375910"><td class="cellrowborder" valign="top" width="24.76247624762476%" headers="mcps1.1.5.1.1 "><p id="p8680162061010"><a name="p8680162061010"></a><a name="p8680162061010"></a>查询WAF实例组绑定列表</p>
+<tr id="row1110817375910"><td class="cellrowborder" valign="top" width="24.76247624762476%" headers="mcps1.1.5.1.1 "><p id="p8680162061010"><a name="p8680162061010"></a><a name="p8680162061010"></a>查询WAF实例组绑定详情</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.803380338033804%" headers="mcps1.1.5.1.2 "><p id="p17680020171013"><a name="p17680020171013"></a><a name="p17680020171013"></a>waf:poolBinding:list</p>
 </td>

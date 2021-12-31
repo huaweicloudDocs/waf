@@ -12,10 +12,6 @@
 -   已获取管理控制台的登录帐号（拥有WAF Administrator/WAF FullAccess与BSS Administrator权限）与密码。
 -   已成功创建虚拟私有云VPC。
 
-## 规格限制<a name="section13957152112182"></a>
-
-购买独享引擎实例后，实例规格不能修改。
-
 ## 约束条件<a name="section1753081119317"></a>
 
 如果WAF独享引擎实例与源站不在同一个VPC中，需要在安全组中设置实例与源站的子网互通。
@@ -23,6 +19,10 @@
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >有关支持购买WAF的区域说明，请参见[Web应用防火墙支持防护哪些区域？](https://support.huaweicloud.com/waf_faq/waf_01_0101.html)。
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
+
+## 规格限制<a name="section13957152112182"></a>
+
+购买独享引擎实例后，实例规格不能修改。
 
 ## 应用场景<a name="section1828463910329"></a>
 

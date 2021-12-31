@@ -9,6 +9,9 @@
 
 回源IP是WAF用来代理客户端请求服务器时用的源IP，在服务器看来，接入WAF后所有源IP都会变成WAF的回源IP，而真实的客户端地址会被加在HTTP头部的XFF字段中。
 
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>回源IP是动态变化的。
+
 **图 1**  回源IP<a name="zh-cn_topic_0167535083_fig10997175131411"></a>  
 ![](figures/回源IP.png "回源IP")
 

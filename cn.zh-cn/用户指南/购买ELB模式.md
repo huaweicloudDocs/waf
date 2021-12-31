@@ -12,10 +12,6 @@ ELB模式支持按需计费模式，按使用时长收费。
 
 已获取管理控制台的登录帐号（拥有WAF Administrator与BSS Administrator权限）与密码。
 
-## 规格限制<a name="section379282141915"></a>
-
-购买ELB模式实例后，规格不能修改。
-
 ## 约束条件<a name="section1753081119317"></a>
 
 已购买华为云独享型ELB，且该ELB必须与ELB模式实例在同一个VPC内，否则，可能导致业务接入异常。
@@ -23,6 +19,10 @@ ELB模式支持按需计费模式，按使用时长收费。
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >有关支持购买WAF的区域说明，请参见[Web应用防火墙支持防护哪些区域？](https://support.huaweicloud.com/waf_faq/waf_01_0101.html)。
 >原则上，在任何一个区域购买的WAF支持防护所有区域的Web业务。但是为了提高WAF的转发效率，建议您在购买WAF时，根据防护业务的所在区域就近选择购买的WAF区域。
+
+## 规格限制<a name="section379282141915"></a>
+
+购买ELB模式实例后，规格不能修改。
 
 ## 应用场景<a name="section1828463910329"></a>
 
