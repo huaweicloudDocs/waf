@@ -121,7 +121,11 @@
     <tr id="row1513920102816"><td class="cellrowborder" valign="top" width="19.139999999999997%" headers="mcps1.2.3.1.1 "><p id="p2013420142819"><a name="p2013420142819"></a><a name="p2013420142819"></a>安全组</p>
     </td>
     <td class="cellrowborder" valign="top" width="80.86%" headers="mcps1.2.3.1.2 "><p id="p740123717124"><a name="p740123717124"></a><a name="p740123717124"></a>选择区域中已有的安全组，或者单击<span class="uicontrol" id="uicontrol95163951615"><a name="uicontrol95163951615"></a><a name="uicontrol95163951615"></a>“管理安全组”</span>，跳转到VPC管理控制台创建新的安全组。选择安全组后，该实例将受到该安全组访问规则的保护。</p>
-    <div class="notice" id="note1475493351420"><a name="note1475493351420"></a><a name="note1475493351420"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p8754833121413"><a name="p8754833121413"></a><a name="p8754833121413"></a>如果WAF独享引擎实例与源站不在同一个VPC中，需要在安全组中设置实例与源站的子网互通。</p>
+    <div class="notice" id="note1475493351420"><a name="note1475493351420"></a><a name="note1475493351420"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="ul4746184315445"></a><a name="ul4746184315445"></a><ul id="ul4746184315445"><li>安全组建议配置以下访问规则：<a name="ul152931881487"></a><a name="ul152931881487"></a><ul id="ul152931881487"><li>入方向规则<p id="p144656111486"><a name="p144656111486"></a><a name="p144656111486"></a>根据业务需求添加指定端口入方向规则，放通指定端口入方向网络流量。例如，需要放通<span class="parmvalue" id="parmvalue103881610422"><a name="parmvalue103881610422"></a><a name="parmvalue103881610422"></a>“80”</span>端口时，您可以添加<span class="parmname" id="parmname123142051218"><a name="parmname123142051218"></a><a name="parmname123142051218"></a>“策略”</span>为<span class="parmvalue" id="parmvalue14451392117"><a name="parmvalue14451392117"></a><a name="parmvalue14451392117"></a>“允许”</span>的<span class="parmvalue" id="parmvalue15525217115014"><a name="parmvalue15525217115014"></a><a name="parmvalue15525217115014"></a>“TCP”</span>、<span class="parmvalue" id="parmvalue1743817219506"><a name="parmvalue1743817219506"></a><a name="parmvalue1743817219506"></a>“80”</span>协议端口规则。</p>
+    </li><li>出方向规则<p id="p2395181318487"><a name="p2395181318487"></a><a name="p2395181318487"></a>默认。放通全部出方向网络流量。</p>
+    </li></ul>
+    <p id="p126131734115118"><a name="p126131734115118"></a><a name="p126131734115118"></a>有关添加安全组规则的详细操作，请参见<a href="https://support.huaweicloud.com/usermanual-vpc/zh-cn_topic_0030969470.html" target="_blank" rel="noopener noreferrer">添加安全组规则</a>。</p>
+    </li><li>如果WAF独享引擎实例与源站不在同一个VPC中，需要在安全组中设置实例与源站的子网互通。</li></ul>
     </div></div>
     </td>
     </tr>
