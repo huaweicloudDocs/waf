@@ -20,13 +20,15 @@
 </thead>
 <tbody><tr id="row811915141959"><td class="cellrowborder" valign="top" width="25.979999999999997%" headers="mcps1.2.3.1.1 "><p id="p31191014257"><a name="p31191014257"></a><a name="p31191014257"></a><a href="购买WAF.md">购买WAF</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="74.02%" headers="mcps1.2.3.1.2 "><p id="p1327726111313"><a name="p1327726111313"></a><a name="p1327726111313"></a>云模式支持包年/包月计费方式购买，独享模式支持按需计费方式购买。</p>
+<td class="cellrowborder" valign="top" width="74.02%" headers="mcps1.2.3.1.2 "><p id="p42778661315"><a name="p42778661315"></a><a name="p42778661315"></a>云模式支持包年/包月或按需计费方式开通，独享模式支持按需计费方式开通。</p>
+<div class="notice" id="note12771968130"><a name="note12771968130"></a><a name="note12771968130"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="ul10277126131319"></a><a name="ul10277126131319"></a><ul id="ul10277126131319"><li>ELB模式需要<a href="https://support.huaweicloud.com/usermanual-ticket/zh-cn_topic_0127038618.html" target="_blank" rel="noopener noreferrer">提交工单</a>申请开通后才能使用，购买云模式标准版及以上版本后，可同时使用ELB模式。</li><li>WAF的API接口目前是免费支持调用，暂不收费。</li></ul>
+</div></div>
 </td>
 </tr>
 <tr id="row171193141051"><td class="cellrowborder" valign="top" width="25.979999999999997%" headers="mcps1.2.3.1.1 "><p id="p21191714450"><a name="p21191714450"></a><a name="p21191714450"></a><a href="网站设置.md">接入WAF</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="74.02%" headers="mcps1.2.3.1.2 "><p id="p4959111121512"><a name="p4959111121512"></a><a name="p4959111121512"></a>添加需要防护的网站，WAF保护网站业务安全稳定。</p>
-<a name="ul1895920115151"></a><a name="ul1895920115151"></a><ul id="ul1895920115151"><li>云模式：详细操作请参见<a href="步骤一-添加防护域名（云模式）.md">网站接入（云模式）</a>。</li><li>独享模式：详细操作请参见<a href="步骤一-添加防护网站（独享模式）.md">网站接入（独享模式）</a>。</li></ul>
+<a name="ul1895920115151"></a><a name="ul1895920115151"></a><ul id="ul1895920115151"><li>云模式：详细操作请参见<a href="步骤一-添加防护域名（云模式）.md">网站接入（云模式）</a>。</li><li>独享模式：详细操作请参见<a href="步骤一-添加防护网站（独享模式）.md">网站接入（独享模式）</a>。</li><li>ELB模式：详细操作请参见<a href="添加防护网站（ELB模式）.md">网站接入（ELB模式）</a>。</li></ul>
 <div class="note" id="note4641910141713"><a name="note4641910141713"></a><a name="note4641910141713"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1764161013179"></a><a name="ul1764161013179"></a><ul id="ul1764161013179"><li>WAF引擎不是运行在客户的Web服务器上的，所以对客户的Web服务器的资源性能没有影响。</li><li>接入WAF之后，根据请求页面的大小和数量，会有几十毫秒的延迟。</li></ul>
 </div></div>
 </td>
